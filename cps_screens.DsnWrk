@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project0]
+ProjectPath=touch_control\touch_control\touch_control.PrjPcb
+[Project2]
+ProjectPath=..\..\ECAD_libraries\Altium\TC2030.LibPkg
+[Project3]
+ProjectPath=C:\Users\Public\Documents\Altium\AD19\Library\mTouch\Microchip mTouch\Microchip mTouch.LibPkg
