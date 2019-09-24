@@ -140,7 +140,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
 [Document7]
-DocumentPath=touch_control.PcbDoc
+DocumentPath=touch_control_165.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -172,6 +172,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document9]
+DocumentPath=touch_control_400.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GTFOTMNA
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for touch_control\Move Component(s) Origin To Grid - touch_control.html
