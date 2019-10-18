@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=cps_frames_mb.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\touch_control\touch_control.PrjPcb
+Record=SubProject|SourceDocument=cps_frames_mb.MbsDoc|ProjectPath=..\touch_control\touch_control.PrjPcb
+Record=DiagramHierarchy|SourceDocument=cps_frames_mb.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\touch_control\touch_control.PrjPcb
+Record=SubProject|SourceDocument=cps_frames_mb.MbsDoc|ProjectPath=..\touch_control\touch_control.PrjPcb
