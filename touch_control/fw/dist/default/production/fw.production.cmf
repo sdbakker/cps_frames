@@ -1,0 +1,1939 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\simon\AppData\Local\Temp\s18c.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2E 2E 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production\fw.production.o
+cinit CODE 0 30 30 2D 2
+text1 CODE 0 984 984 13 2
+text2 CODE 0 815 815 4 2
+text3 CODE 0 880 880 8 2
+text4 CODE 0 A81 A81 1B 2
+text5 CODE 0 851 851 6 2
+text6 CODE 0 8E7 8E7 10 2
+text7 CODE 0 8C8 8C8 F 2
+text8 CODE 0 9D6 9D6 16 2
+text9 CODE 0 971 971 13 2
+text10 CODE 0 95E 95E 13 2
+text11 CODE 0 93B 93B 11 2
+text12 CODE 0 C6A C6A 2E 2
+text13 CODE 0 802 802 1 2
+text14 CODE 0 D41 D41 3F 2
+text15 CODE 0 84B 84B 6 2
+text16 CODE 0 845 845 6 2
+text17 CODE 0 83F 83F 6 2
+text18 CODE 0 839 839 6 2
+text19 CODE 0 833 833 6 2
+text20 CODE 0 B59 B59 22 2
+text21 CODE 0 2 2 2 2
+text22 CODE 0 811 811 4 2
+text23 CODE 0 823 823 5 2
+text24 CODE 0 BC6 BC6 27 2
+text25 CODE 0 ABA ABA 1E 2
+text26 CODE 0 7F9 7F9 7 2
+text27 CODE 0 A34 A34 19 2
+text28 CODE 0 5FD 5FD 9B 2
+text29 CODE 0 871 871 7 2
+text30 CODE 0 BED BED 28 2
+text31 CODE 0 801 801 1 2
+text32 CODE 0 E92 E92 71 2
+text33 CODE 0 D04 D04 3D 2
+text34 CODE 0 86A 86A 7 2
+text35 CODE 0 863 863 7 2
+text36 CODE 0 F7F F7F 81 2
+text37 CODE 0 5D 5D 224 2
+text38 CODE 0 806 806 3 2
+text39 CODE 0 803 803 3 2
+text40 CODE 0 81E 81E 5 2
+text41 CODE 0 536 536 C7 2
+text42 CODE 0 888 888 9 2
+text43 CODE 0 94C 94C 12 2
+text44 CODE 0 8B9 8B9 F 2
+text45 CODE 0 698 698 98 2
+text46 CODE 0 A67 A67 1A 2
+text47 CODE 0 891 891 C 2
+text48 CODE 0 89D 89D D 2
+text49 CODE 0 878 878 8 2
+text50 CODE 0 C98 C98 33 2
+text51 CODE 0 8D7 8D7 10 2
+text52 CODE 0 819 819 5 2
+text53 CODE 0 D80 D80 52 2
+text54 CODE 0 F03 F03 7C 2
+text55 CODE 0 7B5 7B5 44 2
+text56 CODE 0 399 399 D5 2
+text57 CODE 0 730 730 85 2
+text58 CODE 0 C3F C3F 2B 2
+text59 CODE 0 800 800 1 2
+text60 CODE 0 B9F B9F 27 2
+text61 CODE 0 92A 92A 11 2
+text62 CODE 0 E25 E25 6D 2
+text63 CODE 0 A1B A1B 19 2
+text64 CODE 0 281 281 118 2
+text65 CODE 0 8AA 8AA F 2
+text66 CODE 0 9EC 9EC 17 2
+text67 CODE 0 46E 46E C8 2
+text68 CODE 0 82D 82D 6 2
+text69 CODE 0 C15 C15 2A 2
+text70 CODE 0 DD2 DD2 53 2
+text71 CODE 0 9C1 9C1 15 2
+text72 CODE 0 9AC 9AC 15 2
+text73 CODE 0 997 997 15 2
+text74 CODE 0 A03 A03 18 2
+text75 CODE 0 919 919 11 2
+text76 CODE 0 908 908 11 2
+text77 CODE 0 AD8 AD8 1F 2
+text78 CODE 0 8F7 8F7 11 2
+text79 CODE 0 A9C A9C 1E 2
+text80 CODE 0 AF7 AF7 20 2
+text82 CODE 0 B37 B37 22 2
+text83 CODE 0 CCB CCB 39 2
+text84 CODE 0 80D 80D 4 2
+text85 CODE 0 17FF 17FF 1 2
+text86 CODE 0 809 809 4 2
+text87 CODE 0 A4D A4D 1A 2
+nvBANK0 BANK0 1 6F 6F 1 1
+nvBANK1 BANK1 1 DC DC A 1
+maintext CODE 0 B17 B17 20 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 29 1
+inittext CODE 0 85D 85D 6 2
+stringtext1 STRCODE 0 1012 1012 5 2
+stringtext2 STRCODE 0 1017 1017 2 2
+stringtext3 STRCODE 0 1000 1000 12 2
+intentry CODE 0 4 4 2A 2
+bssBANK0 BANK0 1 49 49 21 1
+bssBANK1 BANK1 1 C4 C4 18 1
+idataBANK0 CODE 0 828 828 5 2
+idataBANK1 CODE 0 B7B B7B 24 2
+dataBANK0 BANK0 1 6A 6A 5 1
+dataBANK1 BANK1 1 A0 A0 24 1
+clrtext CODE 0 857 857 6 2
+bssCOMMON COMMON 1 7C 7C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E6-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-32F 1
+BANK1 E6-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-32F 1
+CONST 1019-17FE 2
+CONST 1800-1FFF 2
+ENTRY 1019-17FE 2
+ENTRY 1800-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2096-21EF 1
+CODE 1019-17FE 2
+CODE 1800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+COMMON 7D-7D 1
+STRCODE 1019-17FE 2
+STRCODE 1800-1FFF 2
+STRING 1019-17FE 2
+STRING 1800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\fw.production.o
+30 cinit CODE >4332:C:\Users\simon\AppData\Local\Temp\s18c.s
+30 cinit CODE >4335:C:\Users\simon\AppData\Local\Temp\s18c.s
+30 cinit CODE >4454:C:\Users\simon\AppData\Local\Temp\s18c.s
+31 cinit CODE >4455:C:\Users\simon\AppData\Local\Temp\s18c.s
+32 cinit CODE >4456:C:\Users\simon\AppData\Local\Temp\s18c.s
+33 cinit CODE >4457:C:\Users\simon\AppData\Local\Temp\s18c.s
+34 cinit CODE >4458:C:\Users\simon\AppData\Local\Temp\s18c.s
+35 cinit CODE >4459:C:\Users\simon\AppData\Local\Temp\s18c.s
+36 cinit CODE >4460:C:\Users\simon\AppData\Local\Temp\s18c.s
+37 cinit CODE >4461:C:\Users\simon\AppData\Local\Temp\s18c.s
+38 cinit CODE >4462:C:\Users\simon\AppData\Local\Temp\s18c.s
+39 cinit CODE >4463:C:\Users\simon\AppData\Local\Temp\s18c.s
+3C cinit CODE >4467:C:\Users\simon\AppData\Local\Temp\s18c.s
+3D cinit CODE >4468:C:\Users\simon\AppData\Local\Temp\s18c.s
+3E cinit CODE >4469:C:\Users\simon\AppData\Local\Temp\s18c.s
+3F cinit CODE >4470:C:\Users\simon\AppData\Local\Temp\s18c.s
+40 cinit CODE >4471:C:\Users\simon\AppData\Local\Temp\s18c.s
+41 cinit CODE >4472:C:\Users\simon\AppData\Local\Temp\s18c.s
+42 cinit CODE >4473:C:\Users\simon\AppData\Local\Temp\s18c.s
+43 cinit CODE >4474:C:\Users\simon\AppData\Local\Temp\s18c.s
+44 cinit CODE >4475:C:\Users\simon\AppData\Local\Temp\s18c.s
+45 cinit CODE >4476:C:\Users\simon\AppData\Local\Temp\s18c.s
+48 cinit CODE >4493:C:\Users\simon\AppData\Local\Temp\s18c.s
+49 cinit CODE >4497:C:\Users\simon\AppData\Local\Temp\s18c.s
+4A cinit CODE >4498:C:\Users\simon\AppData\Local\Temp\s18c.s
+4B cinit CODE >4499:C:\Users\simon\AppData\Local\Temp\s18c.s
+4C cinit CODE >4500:C:\Users\simon\AppData\Local\Temp\s18c.s
+4D cinit CODE >4501:C:\Users\simon\AppData\Local\Temp\s18c.s
+4E cinit CODE >4502:C:\Users\simon\AppData\Local\Temp\s18c.s
+51 cinit CODE >4506:C:\Users\simon\AppData\Local\Temp\s18c.s
+52 cinit CODE >4507:C:\Users\simon\AppData\Local\Temp\s18c.s
+53 cinit CODE >4508:C:\Users\simon\AppData\Local\Temp\s18c.s
+54 cinit CODE >4509:C:\Users\simon\AppData\Local\Temp\s18c.s
+55 cinit CODE >4510:C:\Users\simon\AppData\Local\Temp\s18c.s
+56 cinit CODE >4511:C:\Users\simon\AppData\Local\Temp\s18c.s
+59 cinit CODE >4517:C:\Users\simon\AppData\Local\Temp\s18c.s
+59 cinit CODE >4519:C:\Users\simon\AppData\Local\Temp\s18c.s
+5A cinit CODE >4520:C:\Users\simon\AppData\Local\Temp\s18c.s
+5B cinit CODE >4521:C:\Users\simon\AppData\Local\Temp\s18c.s
+4 intentry CODE >52:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+A intentry CODE >57:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+14 intentry CODE >59:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+1A intentry CODE >60:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+1B intentry CODE >61:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+25 intentry CODE >63:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+2B intentry CODE >64:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+2C intentry CODE >68:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+2C intentry CODE >74:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+A4D text87 CODE >249:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+A4D text87 CODE >251:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+A5A text87 CODE >252:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+A60 text87 CODE >254:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+A61 text87 CODE >256:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+A66 text87 CODE >257:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+809 text86 CODE >269:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+809 text86 CODE >270:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+80C text86 CODE >271:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+17FF text85 CODE >259:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+80D text84 CODE >261:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+80D text84 CODE >264:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+80F text84 CODE >265:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+810 text84 CODE >267:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CCB text83 CODE >225:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CCB text83 CODE >228:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CD0 text83 CODE >230:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CD5 text83 CODE >231:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CDA text83 CODE >232:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CE0 text83 CODE >235:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CE5 text83 CODE >236:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CEA text83 CODE >237:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CF0 text83 CODE >240:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CF9 text83 CODE >241:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+CFF text83 CODE >242:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D00 text83 CODE >243:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D03 text83 CODE >247:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B37 text82 CODE >206:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B37 text82 CODE >210:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B3E text82 CODE >212:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B4A text82 CODE >213:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B50 text82 CODE >215:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B51 text82 CODE >217:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B55 text82 CODE >218:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B56 text82 CODE >219:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B56 text82 CODE >221:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+B58 text82 CODE >223:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+AF7 text80 CODE >461:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AF8 text80 CODE >463:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+B16 text80 CODE >464:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A9C text79 CODE >452:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A9D text79 CODE >454:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AA2 text79 CODE >455:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AB0 text79 CODE >457:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AB9 text79 CODE >459:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+8F7 text78 CODE >345:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+8F8 text78 CODE >347:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+8FD text78 CODE >348:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+906 text78 CODE >350:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+907 text78 CODE >351:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AD8 text77 CODE >396:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AD9 text77 CODE >398:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+ADE text77 CODE >399:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AEE text77 CODE >401:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+AF6 text77 CODE >402:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+908 text76 CODE >314:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+909 text76 CODE >316:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+90E text76 CODE >317:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+917 text76 CODE >319:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+918 text76 CODE >320:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+919 text75 CODE >299:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+91A text75 CODE >301:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+91F text75 CODE >302:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+928 text75 CODE >304:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+929 text75 CODE >305:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A03 text74 CODE >329:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A04 text74 CODE >331:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A09 text74 CODE >332:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A19 text74 CODE >334:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A1A text74 CODE >335:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+997 text73 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+998 text73 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+999 text73 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+99D text73 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9A1 text73 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9A3 text73 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9A5 text73 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9AA text73 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9AB text73 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+9AC text72 CODE >972:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9AD text72 CODE >974:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9B2 text72 CODE >975:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9BF text72 CODE >977:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9C0 text72 CODE >978:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9C1 text71 CODE >964:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9C2 text71 CODE >966:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9C7 text71 CODE >967:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9D4 text71 CODE >969:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9D5 text71 CODE >970:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+DD2 text70 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DD2 text70 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DD3 text70 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DD7 text70 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DDC text70 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DDE text70 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DE2 text70 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DE7 text70 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DED text70 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DEF text70 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DF0 text70 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DF5 text70 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DF9 text70 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+DFD text70 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E07 text70 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E0B text70 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E10 text70 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E16 text70 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E1B text70 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E20 text70 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+E24 text70 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
+C15 text69 CODE >173:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C16 text69 CODE >175:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C1C text69 CODE >179:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C21 text69 CODE >181:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C24 text69 CODE >182:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C25 text69 CODE >183:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C25 text69 CODE >185:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C26 text69 CODE >186:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C33 text69 CODE >187:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C39 text69 CODE >189:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C3A text69 CODE >191:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C3C text69 CODE >193:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+C3E text69 CODE >194:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+82D text68 CODE >64:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+82E text68 CODE >66:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+832 text68 CODE >67:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+46E text67 CODE >69:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+46E text67 CODE >77:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+483 text67 CODE >79:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+485 text67 CODE >80:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+498 text67 CODE >84:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+49C text67 CODE >86:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4A1 text67 CODE >89:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4A9 text67 CODE >91:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4B2 text67 CODE >92:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4B6 text67 CODE >93:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4BB text67 CODE >95:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4C5 text67 CODE >96:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4C9 text67 CODE >97:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4CE text67 CODE >99:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4D8 text67 CODE >100:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4DC text67 CODE >101:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4E1 text67 CODE >103:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4ED text67 CODE >104:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4F1 text67 CODE >105:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4F6 text67 CODE >107:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+4FE text67 CODE >109:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+506 text67 CODE >111:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+50C text67 CODE >114:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+513 text67 CODE >116:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+51A text67 CODE >117:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+522 text67 CODE >118:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+528 text67 CODE >122:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+531 text67 CODE >125:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+535 text67 CODE >126:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+9EC text66 CODE >895:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9ED text66 CODE >897:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9F2 text66 CODE >898:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A01 text66 CODE >900:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A02 text66 CODE >901:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8AA text65 CODE >942:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8AB text65 CODE >944:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8B8 text65 CODE >945:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+281 text64 CODE >353:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+283 text64 CODE >356:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2A5 text64 CODE >358:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2C4 text64 CODE >361:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2D5 text64 CODE >363:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2DD text64 CODE >365:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2EB text64 CODE >367:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2F3 text64 CODE >370:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2F7 text64 CODE >372:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+2FF text64 CODE >373:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+300 text64 CODE >374:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+31A text64 CODE >377:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+328 text64 CODE >378:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+334 text64 CODE >382:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+34D text64 CODE >383:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+381 text64 CODE >384:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+38D text64 CODE >386:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+398 text64 CODE >388:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+A1B text63 CODE >775:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A1C text63 CODE >777:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A21 text63 CODE >779:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A31 text63 CODE >782:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A33 text63 CODE >783:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E25 text62 CODE >417:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E26 text62 CODE >419:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E2F text62 CODE >421:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E53 text62 CODE >422:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E70 text62 CODE >423:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E71 text62 CODE >426:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+E91 text62 CODE >428:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+92A text61 CODE >404:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+92B text61 CODE >406:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+92F text61 CODE >408:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+930 text61 CODE >409:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+934 text61 CODE >410:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+935 text61 CODE >411:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+936 text61 CODE >414:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+93A text61 CODE >416:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+B9F text60 CODE >141:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BA0 text60 CODE >143:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BA8 text60 CODE >145:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BAD text60 CODE >146:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BB7 text60 CODE >147:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BBE text60 CODE >148:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BC5 text60 CODE >150:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+800 text59 CODE >472:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+C3F text58 CODE >430:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+C40 text58 CODE >432:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+C5A text58 CODE >433:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+C69 text58 CODE >434:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+730 text57 CODE >436:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+731 text57 CODE >438:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+735 text57 CODE >440:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+736 text57 CODE >441:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+759 text57 CODE >442:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+774 text57 CODE >443:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+775 text57 CODE >444:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+776 text57 CODE >447:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+799 text57 CODE >448:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7B4 text57 CODE >450:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+399 text56 CODE >214:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+399 text56 CODE >217:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+3C2 text56 CODE >218:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+3EF text56 CODE >220:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+3F8 text56 CODE >221:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+409 text56 CODE >223:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+410 text56 CODE >224:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+418 text56 CODE >228:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+42A text56 CODE >230:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+432 text56 CODE >231:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+439 text56 CODE >232:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+443 text56 CODE >233:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+444 text56 CODE >237:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+44B text56 CODE >238:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+44B text56 CODE >242:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+455 text56 CODE >243:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+462 text56 CODE >245:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+469 text56 CODE >246:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+46D text56 CODE >248:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7B5 text55 CODE >195:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7B5 text55 CODE >198:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7C7 text55 CODE >200:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7CB text55 CODE >201:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7CC text55 CODE >202:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7D0 text55 CODE >206:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7DA text55 CODE >207:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7EB text55 CODE >209:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7F1 text55 CODE >210:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+7F8 text55 CODE >213:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F03 text54 CODE >250:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F03 text54 CODE >253:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F15 text54 CODE >255:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F1C text54 CODE >256:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F27 text54 CODE >257:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F28 text54 CODE >260:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F5E text54 CODE >262:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F65 text54 CODE >263:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F6C text54 CODE >264:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F74 text54 CODE >265:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+F7E text54 CODE >267:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+D80 text53 CODE >179:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+D82 text53 CODE >181:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+D8A text53 CODE >183:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DA3 text53 CODE >185:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DA8 text53 CODE >186:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DAD text53 CODE >188:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DB8 text53 CODE >190:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DBF text53 CODE >191:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DBF text53 CODE >192:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+DD1 text53 CODE >194:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+819 text52 CODE >168:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+819 text52 CODE >171:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+81D text52 CODE >172:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+8D7 text51 CODE >222:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8D7 text51 CODE >224:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8DA text51 CODE >226:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8DC text51 CODE >227:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8DE text51 CODE >228:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8E1 text51 CODE >229:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8E3 text51 CODE >230:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8E6 text51 CODE >232:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C98 text50 CODE >337:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C99 text50 CODE >340:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C9A text50 CODE >342:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+CAB text50 CODE >343:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+CAD text50 CODE >344:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+CBE text50 CODE >345:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+CC0 text50 CODE >346:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+CCA text50 CODE >348:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+878 text49 CODE >920:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+879 text49 CODE >922:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+87F text49 CODE >924:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+89D text48 CODE >914:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+89E text48 CODE >916:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8A3 text48 CODE >917:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8A9 text48 CODE >918:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+891 text47 CODE >908:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+892 text47 CODE >910:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+897 text47 CODE >911:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+89C text47 CODE >912:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A67 text46 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+A67 text46 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+A80 text46 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+698 text45 CODE >671:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+699 text45 CODE >673:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6A0 text45 CODE >675:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6A9 text45 CODE >677:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6C7 text45 CODE >679:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6D5 text45 CODE >680:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6DA text45 CODE >684:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+6DF text45 CODE >689:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+704 text45 CODE >691:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+70C text45 CODE >692:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+710 text45 CODE >693:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+711 text45 CODE >699:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+719 text45 CODE >700:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+723 text45 CODE >702:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+72B text45 CODE >703:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+72F text45 CODE >707:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8B9 text44 CODE >865:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8BA text44 CODE >867:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8BF text44 CODE >868:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8C1 text44 CODE >870:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8C7 text44 CODE >871:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+94C text43 CODE >838:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+94D text43 CODE >840:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+952 text43 CODE >841:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+95C text43 CODE >843:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+95D text43 CODE >844:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+888 text42 CODE >903:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+889 text42 CODE >905:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+890 text42 CODE >906:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+536 text41 CODE >420:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+537 text41 CODE >422:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+53D text41 CODE >425:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+54D text41 CODE >427:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+55E text41 CODE >428:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+570 text41 CODE >429:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+57C text41 CODE >430:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+586 text41 CODE >432:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+58F text41 CODE >434:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5A1 text41 CODE >435:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5B3 text41 CODE >436:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5B4 text41 CODE >439:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5C0 text41 CODE >440:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5C9 text41 CODE >441:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5DC text41 CODE >443:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5E8 text41 CODE >444:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5E8 text41 CODE >446:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5FC text41 CODE >447:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+81E text40 CODE >106:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+81F text40 CODE >108:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+822 text40 CODE >109:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+803 text39 CODE >79:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+803 text39 CODE >82:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+805 text39 CODE >83:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+806 text38 CODE >85:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+806 text38 CODE >88:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+808 text38 CODE >89:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+5D text37 CODE >454:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5F text37 CODE >456:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5F text37 CODE >459:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+61 text37 CODE >460:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+63 text37 CODE >461:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+64 text37 CODE >470:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+66 text37 CODE >471:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+70 text37 CODE >473:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+80 text37 CODE >475:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+85 text37 CODE >476:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+87 text37 CODE >477:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+88 text37 CODE >478:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+98 text37 CODE >480:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9D text37 CODE >481:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9F text37 CODE >482:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A0 text37 CODE >483:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+B0 text37 CODE >485:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+B2 text37 CODE >489:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+B2 text37 CODE >490:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+B3 text37 CODE >491:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BD text37 CODE >493:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C6 text37 CODE >501:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D0 text37 CODE >503:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D9 text37 CODE >515:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E2 text37 CODE >516:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E5 text37 CODE >522:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EB text37 CODE >523:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F1 text37 CODE >524:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F7 text37 CODE >525:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FA text37 CODE >529:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+100 text37 CODE >531:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+109 text37 CODE >532:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+10A text37 CODE >533:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+10D text37 CODE >534:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+10F text37 CODE >535:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+111 text37 CODE >536:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+112 text37 CODE >539:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+11B text37 CODE >540:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+11D text37 CODE >541:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+11F text37 CODE >542:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+122 text37 CODE >543:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+124 text37 CODE >546:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+12A text37 CODE >547:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+130 text37 CODE >549:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+132 text37 CODE >550:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+133 text37 CODE >551:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+134 text37 CODE >553:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+138 text37 CODE >554:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+13B text37 CODE >555:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+13E text37 CODE >559:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+143 text37 CODE >561:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+148 text37 CODE >562:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+14C text37 CODE >563:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+14D text37 CODE >564:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+14E text37 CODE >565:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+14E text37 CODE >567:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+153 text37 CODE >568:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+157 text37 CODE >569:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+158 text37 CODE >572:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+15D text37 CODE >573:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+163 text37 CODE >574:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+169 text37 CODE >575:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+16F text37 CODE >577:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+174 text37 CODE >579:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+17C text37 CODE >580:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+184 text37 CODE >581:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+189 text37 CODE >583:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+19B text37 CODE >584:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1A3 text37 CODE >585:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1A4 text37 CODE >588:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1B6 text37 CODE >589:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1BF text37 CODE >594:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1C7 text37 CODE >595:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1CF text37 CODE >596:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1D4 text37 CODE >598:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1E6 text37 CODE >599:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1EE text37 CODE >600:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+1EF text37 CODE >603:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+202 text37 CODE >609:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+207 text37 CODE >612:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+208 text37 CODE >614:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+20A text37 CODE >616:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+20E text37 CODE >618:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+20F text37 CODE >619:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+210 text37 CODE >620:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+210 text37 CODE >621:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+211 text37 CODE >622:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+215 text37 CODE >624:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+218 text37 CODE >625:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+21C text37 CODE >626:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+220 text37 CODE >627:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+224 text37 CODE >629:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+229 text37 CODE >631:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+22B text37 CODE >632:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+22B text37 CODE >634:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+22F text37 CODE >636:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+231 text37 CODE >640:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+236 text37 CODE >641:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+23B text37 CODE >643:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+240 text37 CODE >644:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+245 text37 CODE >647:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+258 text37 CODE >648:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+25D text37 CODE >650:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+26F text37 CODE >651:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+273 text37 CODE >653:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+275 text37 CODE >654:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+277 text37 CODE >655:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+279 text37 CODE >656:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+27B text37 CODE >657:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+27D text37 CODE >658:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+280 text37 CODE >661:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F7F text36 CODE >716:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F81 text36 CODE >725:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F8F text36 CODE >726:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F93 text36 CODE >727:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F97 text36 CODE >728:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F9B text36 CODE >730:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F9C text36 CODE >732:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FA7 text36 CODE >738:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FAD text36 CODE >740:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FB1 text36 CODE >743:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FB5 text36 CODE >745:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FB6 text36 CODE >747:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FB9 text36 CODE >748:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FBE text36 CODE >750:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FC0 text36 CODE >745:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FCD text36 CODE >754:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FD8 text36 CODE >756:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FDC text36 CODE >757:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FE0 text36 CODE >758:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FE4 text36 CODE >759:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FE8 text36 CODE >761:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FF2 text36 CODE >763:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FF6 text36 CODE >764:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FFA text36 CODE >765:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FFE text36 CODE >767:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+FFF text36 CODE >768:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+863 text35 CODE >855:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+864 text35 CODE >857:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+869 text35 CODE >858:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+86A text34 CODE >860:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+86B text34 CODE >862:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+870 text34 CODE >863:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D04 text33 CODE >398:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D05 text33 CODE >401:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D0C text33 CODE >403:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D15 text33 CODE >404:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D2C text33 CODE >406:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D2E text33 CODE >408:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D37 text33 CODE >409:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D3C text33 CODE >411:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+D40 text33 CODE >412:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E92 text32 CODE >355:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E94 text32 CODE >357:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+E98 text32 CODE >360:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EA2 text32 CODE >362:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EA4 text32 CODE >372:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EA7 text32 CODE >373:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EAC text32 CODE >375:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EAE text32 CODE >370:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EBB text32 CODE >379:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EC1 text32 CODE >381:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EC5 text32 CODE >384:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+ECB text32 CODE >386:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+ECF text32 CODE >389:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+EF7 text32 CODE >392:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F01 text32 CODE >395:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+F02 text32 CODE >396:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+801 text31 CODE >806:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BED text30 CODE >785:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BEE text30 CODE >787:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BF5 text30 CODE >789:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BF9 text30 CODE >791:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BFA text30 CODE >792:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C06 text30 CODE >793:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C07 text30 CODE >794:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C08 text30 CODE >797:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+C14 text30 CODE >799:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+871 text29 CODE >952:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+872 text29 CODE >954:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+877 text29 CODE >955:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5FD text28 CODE >286:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+5FF text28 CODE >291:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+60E text28 CODE >292:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+61D text28 CODE >294:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+629 text28 CODE >297:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+62A text28 CODE >301:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+633 text28 CODE >307:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+639 text28 CODE >309:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+63D text28 CODE >311:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+642 text28 CODE >312:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+64D text28 CODE >314:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+657 text28 CODE >316:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+65D text28 CODE >318:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+661 text28 CODE >320:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+666 text28 CODE >321:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+672 text28 CODE >332:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+695 text28 CODE >334:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+697 text28 CODE >335:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A34 text27 CODE >241:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A34 text27 CODE >244:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A36 text27 CODE >246:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A3F text27 CODE >247:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A41 text27 CODE >248:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A4B text27 CODE >249:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+A4C text27 CODE >250:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+7F9 text26 CODE >947:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+7FA text26 CODE >949:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+7FF text26 CODE >950:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+ABA text25 CODE >933:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+ABA text25 CODE >936:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+AC7 text25 CODE >938:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+ACB text25 CODE >939:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+AD7 text25 CODE >940:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+BC6 text24 CODE >279:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BC7 text24 CODE >282:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BD1 text24 CODE >284:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BDA text24 CODE >285:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BE4 text24 CODE >287:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+BEC text24 CODE >290:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+823 text23 CODE >275:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+823 text23 CODE >277:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+827 text23 CODE >278:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+811 text22 CODE >130:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+811 text22 CODE >132:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+814 text22 CODE >133:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+2 text21 CODE >140:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+2 text21 CODE >142:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+2 text21 CODE >144:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+3 text21 CODE >145:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B59 text20 CODE >98:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B59 text20 CODE >102:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B5C text20 CODE >104:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B5C text20 CODE >106:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B64 text20 CODE >107:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B66 text20 CODE >110:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B69 text20 CODE >112:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B6C text20 CODE >114:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B73 text20 CODE >115:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B76 text20 CODE >116:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B79 text20 CODE >117:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+B7A text20 CODE >123:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+833 text19 CODE >281:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+833 text19 CODE >282:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+838 text19 CODE >283:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+839 text18 CODE >273:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+839 text18 CODE >274:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+83E text18 CODE >275:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+83F text17 CODE >277:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+83F text17 CODE >278:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+844 text17 CODE >279:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+845 text16 CODE >289:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+845 text16 CODE >290:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+84A text16 CODE >291:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+84B text15 CODE >285:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+84B text15 CODE >286:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+850 text15 CODE >287:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D41 text14 CODE >88:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D41 text14 CODE >91:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D43 text14 CODE >92:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D4A text14 CODE >93:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D4C text14 CODE >94:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D53 text14 CODE >98:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D56 text14 CODE >101:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D58 text14 CODE >104:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D5A text14 CODE >107:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D5C text14 CODE >110:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D5D text14 CODE >113:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D64 text14 CODE >114:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D6B text14 CODE >115:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D72 text14 CODE >117:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D74 text14 CODE >120:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D75 text14 CODE >121:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D76 text14 CODE >122:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D7A text14 CODE >124:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D7B text14 CODE >125:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D7C text14 CODE >126:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D7D text14 CODE >129:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+D7F text14 CODE >130:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+802 text13 CODE >60:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+802 text13 CODE >62:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
+C6A text12 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C6B text12 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C6F text12 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C73 text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C74 text12 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C80 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C8B text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+C97 text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+93B text11 CODE >161:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+93B text11 CODE >163:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+947 text11 CODE >165:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+94B text11 CODE >166:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+95E text10 CODE >887:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+95F text10 CODE >889:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+964 text10 CODE >891:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+970 text10 CODE >893:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+971 text9 CODE >824:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+972 text9 CODE >826:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+977 text9 CODE >827:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+983 text9 CODE >828:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9D6 text8 CODE >191:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9D7 text8 CODE >194:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9DB text8 CODE >195:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9DF text8 CODE >196:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+9EB text8 CODE >199:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8C8 text7 CODE >206:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8C8 text7 CODE >210:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8C9 text7 CODE >212:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8CD text7 CODE >213:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8D6 text7 CODE >214:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+8E7 text6 CODE >80:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8E7 text6 CODE >82:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8EA text6 CODE >83:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8ED text6 CODE >85:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8F0 text6 CODE >87:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8F3 text6 CODE >88:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+8F6 text6 CODE >90:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+851 text5 CODE >61:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+851 text5 CODE >64:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+854 text5 CODE >66:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+856 text5 CODE >67:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+A81 text4 CODE >55:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A81 text4 CODE >60:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A84 text4 CODE >61:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A85 text4 CODE >62:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A86 text4 CODE >67:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A89 text4 CODE >68:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A8B text4 CODE >69:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A8D text4 CODE >74:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A90 text4 CODE >75:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A92 text4 CODE >76:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A94 text4 CODE >81:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A96 text4 CODE >82:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A97 text4 CODE >83:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A99 text4 CODE >89:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+A9B text4 CODE >96:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+880 text3 CODE >62:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+880 text3 CODE >67:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+883 text3 CODE >70:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+884 text3 CODE >73:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+885 text3 CODE >76:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+887 text3 CODE >77:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+815 text2 CODE >69:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+815 text2 CODE >72:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+818 text2 CODE >73:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+984 text1 CODE >50:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+984 text1 CODE >53:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+987 text1 CODE >54:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+98A text1 CODE >55:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+98D text1 CODE >56:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+990 text1 CODE >57:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+993 text1 CODE >58:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+996 text1 CODE >59:D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+B17 maintext CODE >49:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B17 maintext CODE >52:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B1A maintext CODE >58:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B1B maintext CODE >61:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B1C maintext CODE >70:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B1E maintext CODE >72:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B1E maintext CODE >75:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B26 maintext CODE >79:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B2F maintext CODE >82:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+B32 maintext CODE >87:D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+857 clrtext CODE >4482:C:\Users\simon\AppData\Local\Temp\s18c.s
+857 clrtext CODE >4483:C:\Users\simon\AppData\Local\Temp\s18c.s
+858 clrtext CODE >4484:C:\Users\simon\AppData\Local\Temp\s18c.s
+858 clrtext CODE >4485:C:\Users\simon\AppData\Local\Temp\s18c.s
+859 clrtext CODE >4486:C:\Users\simon\AppData\Local\Temp\s18c.s
+85A clrtext CODE >4487:C:\Users\simon\AppData\Local\Temp\s18c.s
+85B clrtext CODE >4488:C:\Users\simon\AppData\Local\Temp\s18c.s
+85C clrtext CODE >4489:C:\Users\simon\AppData\Local\Temp\s18c.s
+85D inittext CODE >4443:C:\Users\simon\AppData\Local\Temp\s18c.s
+85D inittext CODE >4444:C:\Users\simon\AppData\Local\Temp\s18c.s
+85E inittext CODE >4445:C:\Users\simon\AppData\Local\Temp\s18c.s
+85E inittext CODE >4446:C:\Users\simon\AppData\Local\Temp\s18c.s
+85F inittext CODE >4447:C:\Users\simon\AppData\Local\Temp\s18c.s
+860 inittext CODE >4448:C:\Users\simon\AppData\Local\Temp\s18c.s
+861 inittext CODE >4449:C:\Users\simon\AppData\Local\Temp\s18c.s
+862 inittext CODE >4450:C:\Users\simon\AppData\Local\Temp\s18c.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_Service 1BA4 0 CODE 0 text53 dist/default/production\fw.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 E6 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__end_of_Sensor_setCalibrated 113A 0 CODE 0 text47 dist/default/production\fw.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+_Sensor_Acq_ExecutePacket BA 0 CODE 0 text37 dist/default/production\fw.production.o
+__end_of_Proximity_Tick_helper 17DA 0 CODE 0 text24 dist/default/production\fw.production.o
+MTOUCH_Sensor_Sampled_ResetAll@sensor 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Proximity_Deviation_Update@name 33 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Tick 1050 0 CODE 0 text23 dist/default/production\fw.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\fw.production.o
+MTOUCH_Proximity_Reading_Get@name 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+?_abs 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_WDT_Initialize 1032 0 CODE 0 text2 dist/default/production\fw.production.o
+__Hstrings 0 0 ABS 0 strings -
+_EUSART_RxDefaultInterruptHandler E2 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+_AD1CON0bits 711 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_Service_Mainloop 0 0 ABS 0 - dist/default/production\fw.production.o
+_LATA 10C 0 ABS 0 - dist/default/production\fw.production.o
+_LATB 10D 0 ABS 0 - dist/default/production\fw.production.o
+_LATC 10E 0 ABS 0 - dist/default/production\fw.production.o
+_TMR2 1A 0 ABS 0 - dist/default/production\fw.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production\fw.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production\fw.production.o
+___sp 0 0 STACK 2 stack C:\Users\simon\AppData\Local\Temp\s18c.o
+_data A0 0 BANK1 1 dataBANK1 dist/default/production\fw.production.o
+_main 162E 0 CODE 0 maintext dist/default/production\fw.production.o
+abs@a 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+btemp 7E 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Proximity_Reading_Update 0 0 ABS 0 - dist/default/production\fw.production.o
+start 5C 0 CODE 0 init C:\Users\simon\AppData\Local\Temp\s18c.o
+_EUSART_Write 182A 0 CODE 0 text69 dist/default/production\fw.production.o
+_packet_noise 4D 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\fw.production.o
+_Proximity_Tick_helper 178C 0 CODE 0 text24 dist/default/production\fw.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_MTOUCH_Proximity_Scaling_Get 1210 0 CODE 0 text76 dist/default/production\fw.production.o
+__end_of_MTOUCH_DataStreamer_Initialize 1006 0 CODE 0 text13 dist/default/production\fw.production.o
+__end_of_EUSART_SetFramingErrorHandler 107E 0 CODE 0 text18 dist/default/production\fw.production.o
+_MTOUCH_Proximity_Tick 1046 0 CODE 0 text23 dist/default/production\fw.production.o
+__end_of_EUSART_SetOverrunErrorHandler 108A 0 CODE 0 text17 dist/default/production\fw.production.o
+__size_of_MTOUCH_DataStreamer_Service 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_getScanGroupIndex@sensor 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_Calibrate 0 0 ABS 0 - dist/default/production\fw.production.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_TMR2_StopTimer 1012 0 CODE 0 text38 dist/default/production\fw.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_EUSART_Initialize 1B00 0 CODE 0 text14 dist/default/production\fw.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_Proximity_Reading_Update_Helper 0 0 ABS 0 - dist/default/production\fw.production.o
+MTOUCH_DataStreamer_Service@i 27 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+___awmod@sign 77 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_TMR2_Initialize 1100 0 CODE 0 text3 dist/default/production\fw.production.o
+_TMR2_StartTimer 1006 0 CODE 0 text39 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_Scan_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+MTOUCH_Sensor_RawSample_Get@name 78 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Sensor_autoCalibration D30 0 CODE 0 text45 dist/default/production\fw.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Baseline_Get 1574 0 CODE 0 text79 dist/default/production\fw.production.o
+_MTOUCH_Proximity_Deviation_Get 11EE 0 CODE 0 text78 dist/default/production\fw.production.o
+__end_of_Proximity_Deviation_Update 732 0 CODE 0 text64 dist/default/production\fw.production.o
+Sensor_loadADCSettings@addressOffset 78 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Sensor_isCalibrated@sensor 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_Sampled_ResetAll 15B0 0 CODE 0 text25 dist/default/production\fw.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\simon\AppData\Local\Temp\s18c.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_Sensor_Acquisition 1E06 0 CODE 0 text32 dist/default/production\fw.production.o
+___bmul@multiplicand 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_Sensor_setSampled 10F0 0 CODE 0 text29 dist/default/production\fw.production.o
+__size_of_Sensor_isCalibrated 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_DataStreamer_Service A6C 0 CODE 0 text67 dist/default/production\fw.production.o
+__size_of_datastreamer_output_byte 0 0 ABS 0 - dist/default/production\fw.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\fw.production.o
+_TMR2_LoadPeriodRegister 103C 0 CODE 0 text40 dist/default/production\fw.production.o
+_Sensor_setCalibratAcqTime 113A 0 CODE 0 text48 dist/default/production\fw.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_EUSART_DefaultFramingErrorHandler 2FFE 0 CODE 0 text85 dist/default/production\fw.production.o
+__end_of_sensor_scan_group 2032 0 STRCODE 0 stringtext2 dist/default/production\fw.production.o
+_EUSART_DefaultOverrunErrorHandler 101A 0 CODE 0 text84 dist/default/production\fw.production.o
+__end_of_TMR2_LoadPeriodRegister 1046 0 CODE 0 text40 dist/default/production\fw.production.o
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_EUSART_Transmit_ISR 16B2 0 CODE 0 text82 dist/default/production\fw.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_MTOUCH_Sensor_AdditionalCap_Get 1382 0 CODE 0 text71 dist/default/production\fw.production.o
+_MTOUCH_Tick 1022 0 CODE 0 text22 dist/default/production\fw.production.o
+Sensor_setInactive@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Threshold_Get 1254 0 CODE 0 text75 dist/default/production\fw.production.o
+Proximity_State_Activated@prox 25 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_Proximity_State_NotActivated 732 0 CODE 0 text56 dist/default/production\fw.production.o
+Sensor_Service@scanGroup 42 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_eusartTxBuffer D4 0 BANK1 1 bssBANK1 dist/default/production\fw.production.o
+_lowpowerActivated 52 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__end_ofSensor_Scanfrequency_Evaluation@frequency_hop 202E 0 STRCODE 0 stringtext1 dist/default/production\fw.production.o
+Sensor_postAcquisitionProcess@sensor 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Proximity_Service 1B00 0 CODE 0 text53 dist/default/production\fw.production.o
+_Proximity_DefaultCallback 1000 0 CODE 0 text59 dist/default/production\fw.production.o
+_MTOUCH_Proximity_isActivated 1406 0 CODE 0 text74 dist/default/production\fw.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production\fw.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production\fw.production.o
+_ANSELC 18E 0 ABS 0 - dist/default/production\fw.production.o
+_APFCON 11D 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@sensor2ForceEnabled 25 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@best_packet_sample 36 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_Sensor_isCalibratingAcqTime 10F0 0 CODE 0 text49 dist/default/production\fw.production.o
+Proximity_Baseline_Update@prox 75 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_getScanGroupIndex@sensorGroup 74 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_BORCON 116 0 ABS 0 - dist/default/production\fw.production.o
+_MTOUCH_Proximity_Reading_Get 15B0 0 CODE 0 text77 dist/default/production\fw.production.o
+__end_of_INTERRUPT_InterruptManager 5C 0 CODE 0 intentry dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_RawSample_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of___bmul 1358 0 CODE 0 text73 dist/default/production\fw.production.o
+_Sensor_loadADCSettings A6C 0 CODE 0 text41 dist/default/production\fw.production.o
+EUSART_SetRxInterruptHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Sensor_Acquisition 1D24 0 CODE 0 text32 dist/default/production\fw.production.o
+_packet_sample 49 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__end_of_EUSART_Write 187E 0 CODE 0 text69 dist/default/production\fw.production.o
+Sensor_setActive@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_DefaultCallback@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_Proximity_Reading_Update 1276 0 CODE 0 text61 dist/default/production\fw.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_ADCOMCON 712 0 ABS 0 - dist/default/production\fw.production.o
+_Proximity_Baseline_Initialize 187E 0 CODE 0 text58 dist/default/production\fw.production.o
+_MTOUCH_Sensor_SampleAll 1468 0 CODE 0 text27 dist/default/production\fw.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+___bmul@multiplier 74 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Sensor_isCalibrated 1110 0 CODE 0 text42 dist/default/production\fw.production.o
+_Sensor_isEnabled 1298 0 CODE 0 text43 dist/default/production\fw.production.o
+__size_of_Sensor_Acq_ExecutePacket 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of___awmod 1C4A 0 CODE 0 text70 dist/default/production\fw.production.o
+Sensor_setSampled@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_SampleAll 149A 0 CODE 0 text27 dist/default/production\fw.production.o
+_MTOUCH_Sensor_Initialize 13AC 0 CODE 0 text8 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@ADxIF_flag 26 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__end_of_MTOUCH_needReburst 8 0 CODE 0 text21 dist/default/production\fw.production.o
+_MTOUCH_Sensor_AcquisitionTime_Get 1358 0 CODE 0 text72 dist/default/production\fw.production.o
+MTOUCH_Sensor_InitializeAll@sensor 7A 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+___stackhi 21EF 0 ABS 0 - C:\Users\simon\AppData\Local\Temp\s18c.o
+___stacklo 2096 0 ABS 0 - C:\Users\simon\AppData\Local\Temp\s18c.o
+__end_of_MTOUCH_Sensor_RawSample_Get 1468 0 CODE 0 text63 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_ServiceAll 0 0 ABS 0 - dist/default/production\fw.production.o
+MTOUCH_DataStreamer_Service@count_bytes_out 2A 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_EUSART_Initialize 1A82 0 CODE 0 text14 dist/default/production\fw.production.o
+Sensor_Service@error 43 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+MTOUCH_DataStreamer_Service@sequence 50 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+MTOUCH_Proximity_Scaling_Get@name 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Sensor_SampleAll@group 47 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__end_of_Proximity_Baseline_Get_helper 162E 0 CODE 0 text80 dist/default/production\fw.production.o
+MTOUCH_Sensor_AcquisitionTime_Get@name 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production\fw.production.o
+memcpy@tmp 78 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_MTOUCH_DataStreamer_Initialize 1004 0 CODE 0 text13 dist/default/production\fw.production.o
+_MTOUCH_Sensor_wasSampled 1154 0 CODE 0 text65 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_InitializeAll 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+_PIN_MANAGER_Initialize 1502 0 CODE 0 text4 dist/default/production\fw.production.o
+_Sensor_getScanGroupIndex 1930 0 CODE 0 text50 dist/default/production\fw.production.o
+_AAD1CAP 719 0 ABS 0 - dist/default/production\fw.production.o
+_AAD1GRD 718 0 ABS 0 - dist/default/production\fw.production.o
+_AAD2GRD 798 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Sensor_setInactive 10E2 0 CODE 0 text34 dist/default/production\fw.production.o
+start_initialization 60 0 CODE 0 cinit dist/default/production\fw.production.o
+_callback_notActivated B9 0 BANK1 1 dataBANK1 dist/default/production\fw.production.o
+Sensor_postAcquisitionProcess@adcIndex 78 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_EUSART_SetErrorHandler 1066 0 CODE 0 text19 dist/default/production\fw.production.o
+__end_of_datastreamer_output_byte 1066 0 CODE 0 text68 dist/default/production\fw.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production\fw.production.o
+_APFCONbits 11D 0 ABS 0 - dist/default/production\fw.production.o
+_Sensor_setSampled 10E2 0 CODE 0 text29 dist/default/production\fw.production.o
+_MTOUCH_Sensor_Enable 12E2 0 CODE 0 text9 dist/default/production\fw.production.o
+_AD1CON0 711 0 ABS 0 - dist/default/production\fw.production.o
+_AD1CON2 713 0 ABS 0 - dist/default/production\fw.production.o
+_AD1CON3 714 0 ABS 0 - dist/default/production\fw.production.o
+_AD2CON0 791 0 ABS 0 - dist/default/production\fw.production.o
+_AD2CON2 793 0 ABS 0 - dist/default/production\fw.production.o
+_AD2CON3 794 0 ABS 0 - dist/default/production\fw.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_sensor_scan_group 202E 0 STRCODE 0 stringtext2 dist/default/production\fw.production.o
+_AAD1CON2 713 0 ABS 0 - dist/default/production\fw.production.o
+_AAD1CON3 714 0 ABS 0 - dist/default/production\fw.production.o
+_eusartRxBuffer CC 0 BANK1 1 bssBANK1 dist/default/production\fw.production.o
+_AAD1RES0 71A 0 ABS 0 - dist/default/production\fw.production.o
+_AAD2CON3 794 0 ABS 0 - dist/default/production\fw.production.o
+_AAD2RES0 79A 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_EUSART_DefaultErrorHandler 101A 0 CODE 0 text86 dist/default/production\fw.production.o
+_EUSART_RxDataHandler 149A 0 CODE 0 text87 dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_ServiceAll 103C 0 CODE 0 text52 dist/default/production\fw.production.o
+_Sensor_DefaultCallback 1002 0 CODE 0 text31 dist/default/production\fw.production.o
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Sensor_Sampled_Reset 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_memcpy 1930 0 CODE 0 text12 dist/default/production\fw.production.o
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_SYSTEM_Initialize 132E 0 CODE 0 text1 dist/default/production\fw.production.o
+_mtouch_sensor BB 0 BANK1 1 dataBANK1 dist/default/production\fw.production.o
+_MTOUCH_needReburst 4 0 CODE 0 text21 dist/default/production\fw.production.o
+_MTOUCH_Sensor_Sampled_ResetAll 1574 0 CODE 0 text25 dist/default/production\fw.production.o
+_Proximity_StateMachine B3 0 BANK1 1 dataBANK1 dist/default/production\fw.production.o
+clear_ram0 10AE 0 CODE 0 clrtext dist/default/production\fw.production.o
+_SPBRGH 19C 0 ABS 0 - dist/default/production\fw.production.o
+_SPBRGL 19B 0 ABS 0 - dist/default/production\fw.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_loadADCSettings@adc_index 72 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Proximity_Baseline_Get_helper@name 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Sensor_Calibrate@sensor 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Scaling_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Initialize 178C 0 CODE 0 text60 dist/default/production\fw.production.o
+__end_of_EUSART_DefaultFramingErrorHandler 3000 0 CODE 0 text85 dist/default/production\fw.production.o
+_Sensor_postAcquisitionProcess 1A08 0 CODE 0 text33 dist/default/production\fw.production.o
+__end_of_EUSART_DefaultOverrunErrorHandler 1022 0 CODE 0 text84 dist/default/production\fw.production.o
+Sensor_isEnabled@sensor 72 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Proximity_isActivated@name 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_AD1ACQCON 717 0 ABS 0 - dist/default/production\fw.production.o
+_mtouch_proximity 58 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Baseline_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Sensor_Scanfrequency_Evaluation 2000 0 CODE 0 text36 dist/default/production\fw.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Scaling_Get 1232 0 CODE 0 text76 dist/default/production\fw.production.o
+__end_of_Sensor_Sampled_Reset 1000 0 CODE 0 text26 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@activeSensor 27 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_AdditionalCap_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_TxDefaultInterruptHandler E4 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+_Sensor_setInactive 10D4 0 CODE 0 text34 dist/default/production\fw.production.o
+__size_of_Proximity_Deviation_Update 0 0 ABS 0 - dist/default/production\fw.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\simon\AppData\Local\Temp\s18c.o
+__size_of_Sensor_RawSample_Update 0 0 ABS 0 - dist/default/production\fw.production.o
+_MTOUCH_Proximity_Threshold_Get 1232 0 CODE 0 text75 dist/default/production\fw.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit BA 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__end_of_Proximity_State_Activated 1EFE 0 CODE 0 text54 dist/default/production\fw.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__size_of_Sensor_Service 0 0 ABS 0 - dist/default/production\fw.production.o
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_Sensor_autoCalibration E60 0 CODE 0 text45 dist/default/production\fw.production.o
+__end_of_Sensor_isEnabled 12BC 0 CODE 0 text43 dist/default/production\fw.production.o
+__end_of_Sensor_Acq_ExecutePacket 502 0 CODE 0 text37 dist/default/production\fw.production.o
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\fw.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+Proximity_Reading_Update@prox 7A 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Sensor_setCalibrated 1122 0 CODE 0 text47 dist/default/production\fw.production.o
+Proximity_Deviation_Update@deviation 2F 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 60 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+_Sensor_loadADCSettings$743 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+EUSART_SetErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__end_of_Sensor_isCalibrated 1122 0 CODE 0 text42 dist/default/production\fw.production.o
+__size_of_Sensor_isEnabled 0 0 ABS 0 - dist/default/production\fw.production.o
+init_ram 10BA 0 CODE 0 inittext dist/default/production\fw.production.o
+__Linittext 0 0 ABS 0 inittext -
+memcpy@d1 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+memcpy@s1 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@packet_counter 2C 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\fw.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 5C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 5C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+memcpy@d 7A 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+memcpy@n 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+memcpy@s 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__pstringtext1 2024 0 STRCODE 0 stringtext1 dist/default/production\fw.production.o
+__pstringtext2 202E 0 STRCODE 0 stringtext2 dist/default/production\fw.production.o
+__pstringtext3 2000 0 STRCODE 0 stringtext3 dist/default/production\fw.production.o
+__pnvBANK0 6F 0 BANK0 1 nvBANK0 dist/default/production\fw.production.o
+__pnvBANK1 DC 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+___bmul 132E 0 CODE 0 text73 dist/default/production\fw.production.o
+__size_of_Proximity_State_NotActivated 0 0 ABS 0 - dist/default/production\fw.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+Proximity_State_NotActivated@prox 25 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+int$flags 7E 0 ABS 0 - dist/default/production\fw.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_MTOUCH_Sensor_InitializeAll 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@sensor_adc1 31 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@sensor_adc2 2E 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_isActivated 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Proximity_Tick_helper 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_RawSample_Update@sensor 77 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_GIE 5F 0 ABS 0 - dist/default/production\fw.production.o
+_PR2 1B 0 ABS 0 - dist/default/production\fw.production.o
+__S0 8009 0 ABS 0 - -
+__S1 E6 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_abs 14CE 0 CODE 0 text46 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_AcquisitionTime_Get 1382 0 CODE 0 text72 dist/default/production\fw.production.o
+_MTOUCH_Sensor_Scan_Initialize 11AE 0 CODE 0 text51 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Tick 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_State_NotActivated 8DC 0 CODE 0 text56 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Reading_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_Reading_Update_Helper 1D24 0 CODE 0 text62 dist/default/production\fw.production.o
+_Proximity_Deviation_Update 502 0 CODE 0 text64 dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_isActivated 1436 0 CODE 0 text74 dist/default/production\fw.production.o
+_AD2CON0bits 791 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_Baseline_Update F6A 0 CODE 0 text57 dist/default/production\fw.production.o
+MTOUCH_Sensor_AdditionalCap_Get@name 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_Sensor_isActive 1190 0 CODE 0 text44 dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Reading_Get 15EE 0 CODE 0 text77 dist/default/production\fw.production.o
+?_MTOUCH_Sensor_RawSample_Get 75 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Proximity_Baseline_Initialize@prox 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_Sensor_loadADCSettings BFA 0 CODE 0 text41 dist/default/production\fw.production.o
+__size_of_TMR2_StopTimer 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_EUSART_Receive_ISR 1A08 0 CODE 0 text83 dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@frequency_hop 2024 0 STRCODE 0 stringtext1 dist/default/production\fw.production.o
+_AD1PRECON 716 0 ABS 0 - dist/default/production\fw.production.o
+MTOUCH_Proximity_Threshold_Get@name 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_InitializeAll 1298 0 CODE 0 text11 dist/default/production\fw.production.o
+_mtouch_time_toScan 4F 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+_SYSTEM_Initialize 1308 0 CODE 0 text1 dist/default/production\fw.production.o
+Sensor_Sampled_Reset@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_InitializeAll 11AE 0 CODE 0 text7 dist/default/production\fw.production.o
+_EUSART_SetTxInterruptHandler 1096 0 CODE 0 text15 dist/default/production\fw.production.o
+__end_of_abs 1502 0 CODE 0 text46 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_wasSampled 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Sensor_getScanGroupIndex 0 0 ABS 0 - dist/default/production\fw.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 8 0 CODE 0 intentry -
+MTOUCH_DataStreamer_Service@u16temp_output 28 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\simon\AppData\Local\Temp\s18c.o
+_MTOUCH_Service_Mainloop 16B2 0 CODE 0 text20 dist/default/production\fw.production.o
+__size_of_Proximity_Baseline_Get_helper 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@AD1CON2_temp 22 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_Proximity_State_Activated 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_Tick 102A 0 CODE 0 text22 dist/default/production\fw.production.o
+?_MTOUCH_Proximity_Reading_Get 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__pdataBANK0 6A 0 BANK0 1 dataBANK0 dist/default/production\fw.production.o
+__pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\fw.production.o
+Sensor_RawSample_Update@adcIndex 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Service_Mainloop 16F6 0 CODE 0 text20 dist/default/production\fw.production.o
+__size_of___bmul 0 0 ABS 0 - dist/default/production\fw.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_MTOUCH_Sensor_isCalibrated 1406 0 CODE 0 text66 dist/default/production\fw.production.o
+__size_of_Sensor_Acquisition 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@AD2CON2_temp 23 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+_Proximity_State_Initializing F6A 0 CODE 0 text55 dist/default/production\fw.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\fw.production.o
+_MTOUCH_DataStreamer_Service 8DC 0 CODE 0 text67 dist/default/production\fw.production.o
+___awmod@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_MTOUCH_Sensor_Calibrate 12BC 0 CODE 0 text10 dist/default/production\fw.production.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\fw.production.o
+_PIE1bits 91 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_Baseline_Initialize 18D4 0 CODE 0 text58 dist/default/production\fw.production.o
+EUSART_SetFramingErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_memcpy 18D4 0 CODE 0 text12 dist/default/production\fw.production.o
+_Sensor_setActive 10C6 0 CODE 0 text35 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_Calibrate 12E2 0 CODE 0 text10 dist/default/production\fw.production.o
+__ptext10 12BC 0 CODE 0 text10 dist/default/production\fw.production.o
+__ptext11 1276 0 CODE 0 text11 dist/default/production\fw.production.o
+__ptext12 18D4 0 CODE 0 text12 dist/default/production\fw.production.o
+__ptext13 1004 0 CODE 0 text13 dist/default/production\fw.production.o
+__ptext14 1A82 0 CODE 0 text14 dist/default/production\fw.production.o
+__ptext15 1096 0 CODE 0 text15 dist/default/production\fw.production.o
+__ptext16 108A 0 CODE 0 text16 dist/default/production\fw.production.o
+__ptext17 107E 0 CODE 0 text17 dist/default/production\fw.production.o
+__ptext18 1072 0 CODE 0 text18 dist/default/production\fw.production.o
+__ptext19 1066 0 CODE 0 text19 dist/default/production\fw.production.o
+__ptext20 16B2 0 CODE 0 text20 dist/default/production\fw.production.o
+__ptext21 4 0 CODE 0 text21 dist/default/production\fw.production.o
+__ptext22 1022 0 CODE 0 text22 dist/default/production\fw.production.o
+__ptext23 1046 0 CODE 0 text23 dist/default/production\fw.production.o
+__ptext24 178C 0 CODE 0 text24 dist/default/production\fw.production.o
+__ptext25 1574 0 CODE 0 text25 dist/default/production\fw.production.o
+__ptext26 FF2 0 CODE 0 text26 dist/default/production\fw.production.o
+__ptext27 1468 0 CODE 0 text27 dist/default/production\fw.production.o
+__ptext28 BFA 0 CODE 0 text28 dist/default/production\fw.production.o
+__ptext29 10E2 0 CODE 0 text29 dist/default/production\fw.production.o
+__ptext30 17DA 0 CODE 0 text30 dist/default/production\fw.production.o
+__ptext31 1002 0 CODE 0 text31 dist/default/production\fw.production.o
+__ptext32 1D24 0 CODE 0 text32 dist/default/production\fw.production.o
+__ptext33 1A08 0 CODE 0 text33 dist/default/production\fw.production.o
+__ptext34 10D4 0 CODE 0 text34 dist/default/production\fw.production.o
+__ptext35 10C6 0 CODE 0 text35 dist/default/production\fw.production.o
+__ptext36 1EFE 0 CODE 0 text36 dist/default/production\fw.production.o
+__ptext37 BA 0 CODE 0 text37 dist/default/production\fw.production.o
+__ptext38 100C 0 CODE 0 text38 dist/default/production\fw.production.o
+__ptext39 1006 0 CODE 0 text39 dist/default/production\fw.production.o
+__ptext40 103C 0 CODE 0 text40 dist/default/production\fw.production.o
+__ptext41 A6C 0 CODE 0 text41 dist/default/production\fw.production.o
+__ptext42 1110 0 CODE 0 text42 dist/default/production\fw.production.o
+__ptext43 1298 0 CODE 0 text43 dist/default/production\fw.production.o
+__ptext44 1172 0 CODE 0 text44 dist/default/production\fw.production.o
+__ptext45 D30 0 CODE 0 text45 dist/default/production\fw.production.o
+__ptext46 14CE 0 CODE 0 text46 dist/default/production\fw.production.o
+__ptext47 1122 0 CODE 0 text47 dist/default/production\fw.production.o
+__ptext48 113A 0 CODE 0 text48 dist/default/production\fw.production.o
+__ptext49 10F0 0 CODE 0 text49 dist/default/production\fw.production.o
+__ptext50 1930 0 CODE 0 text50 dist/default/production\fw.production.o
+__ptext51 11AE 0 CODE 0 text51 dist/default/production\fw.production.o
+__ptext52 1032 0 CODE 0 text52 dist/default/production\fw.production.o
+__ptext53 1B00 0 CODE 0 text53 dist/default/production\fw.production.o
+__ptext54 1E06 0 CODE 0 text54 dist/default/production\fw.production.o
+__ptext55 F6A 0 CODE 0 text55 dist/default/production\fw.production.o
+__ptext56 732 0 CODE 0 text56 dist/default/production\fw.production.o
+__ptext57 E60 0 CODE 0 text57 dist/default/production\fw.production.o
+__ptext58 187E 0 CODE 0 text58 dist/default/production\fw.production.o
+__ptext59 1000 0 CODE 0 text59 dist/default/production\fw.production.o
+__ptext60 173E 0 CODE 0 text60 dist/default/production\fw.production.o
+__ptext61 1254 0 CODE 0 text61 dist/default/production\fw.production.o
+__ptext62 1C4A 0 CODE 0 text62 dist/default/production\fw.production.o
+__ptext63 1436 0 CODE 0 text63 dist/default/production\fw.production.o
+__ptext64 502 0 CODE 0 text64 dist/default/production\fw.production.o
+__ptext65 1154 0 CODE 0 text65 dist/default/production\fw.production.o
+__ptext66 13D8 0 CODE 0 text66 dist/default/production\fw.production.o
+__ptext67 8DC 0 CODE 0 text67 dist/default/production\fw.production.o
+__ptext68 105A 0 CODE 0 text68 dist/default/production\fw.production.o
+__ptext69 182A 0 CODE 0 text69 dist/default/production\fw.production.o
+__ptext70 1BA4 0 CODE 0 text70 dist/default/production\fw.production.o
+__ptext71 1382 0 CODE 0 text71 dist/default/production\fw.production.o
+__ptext72 1358 0 CODE 0 text72 dist/default/production\fw.production.o
+__ptext73 132E 0 CODE 0 text73 dist/default/production\fw.production.o
+__ptext74 1406 0 CODE 0 text74 dist/default/production\fw.production.o
+__ptext75 1232 0 CODE 0 text75 dist/default/production\fw.production.o
+__ptext76 1210 0 CODE 0 text76 dist/default/production\fw.production.o
+__ptext77 15B0 0 CODE 0 text77 dist/default/production\fw.production.o
+__ptext78 11EE 0 CODE 0 text78 dist/default/production\fw.production.o
+__ptext79 1538 0 CODE 0 text79 dist/default/production\fw.production.o
+__ptext80 15EE 0 CODE 0 text80 dist/default/production\fw.production.o
+__ptext82 166E 0 CODE 0 text82 dist/default/production\fw.production.o
+__ptext83 1996 0 CODE 0 text83 dist/default/production\fw.production.o
+__ptext84 101A 0 CODE 0 text84 dist/default/production\fw.production.o
+__ptext85 2FFE 0 CODE 0 text85 dist/default/production\fw.production.o
+__ptext86 1012 0 CODE 0 text86 dist/default/production\fw.production.o
+__ptext87 149A 0 CODE 0 text87 dist/default/production\fw.production.o
+__size_of_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_Receive_ISR 1996 0 CODE 0 text83 dist/default/production\fw.production.o
+MTOUCH_Sensor_Enable@sensor 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_PIN_MANAGER_Initialize 1538 0 CODE 0 text4 dist/default/production\fw.production.o
+___awmod 1BA4 0 CODE 0 text70 dist/default/production\fw.production.o
+_BAUDCON 19F 0 ABS 0 - dist/default/production\fw.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 162E 0 CODE 0 maintext dist/default/production\fw.production.o
+Proximity_Tick_helper@prox 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_EUSART_SetErrorHandler 1072 0 CODE 0 text19 dist/default/production\fw.production.o
+Sensor_setCalibratAcqTime@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+_Sensor_isActive 1172 0 CODE 0 text44 dist/default/production\fw.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+__Hinittext 0 0 ABS 0 inittext -
+__size_of_TMR2_LoadPeriodRegister 0 0 ABS 0 - dist/default/production\fw.production.o
+_LATCbits 10E 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Sensor_DefaultCallback 1004 0 CODE 0 text31 dist/default/production\fw.production.o
+datastreamer_output_byte@data 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@i 3A 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_Proximity_Baseline_Update 0 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_FramingErrorHandler E0 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_Initialize 13D8 0 CODE 0 text8 dist/default/production\fw.production.o
+_EUSART_OverrunErrorHandler DE 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Deviation_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_SetRxInterruptHandler 108A 0 CODE 0 text16 dist/default/production\fw.production.o
+_AD2ACQCON 797 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_ErrorHandler DC 0 BANK1 1 nvBANK1 dist/default/production\fw.production.o
+__size_of_Sensor_isCalibratingAcqTime 0 0 ABS 0 - dist/default/production\fw.production.o
+Proximity_DefaultCallback@name 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\fw.production.o
+__size_of_memcpy 0 0 ABS 0 - dist/default/production\fw.production.o
+EUSART_SetTxInterruptHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__size_of_MTOUCH_needReburst 0 0 ABS 0 - dist/default/production\fw.production.o
+_PIR1bits 11 0 ABS 0 - dist/default/production\fw.production.o
+_PIR2bits 12 0 ABS 0 - dist/default/production\fw.production.o
+__Lend_init 5C 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 1012 0 CODE 0 text86 dist/default/production\fw.production.o
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\fw.production.o
+_callback_sampled 6C 0 BANK0 1 dataBANK0 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_wasSampled 1172 0 CODE 0 text65 dist/default/production\fw.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_MTOUCH_Sensor_RawSample_Get 1436 0 CODE 0 text63 dist/default/production\fw.production.o
+_EUSART_SetFramingErrorHandler 1072 0 CODE 0 text18 dist/default/production\fw.production.o
+__end_of_Sensor_getScanGroupIndex 1996 0 CODE 0 text50 dist/default/production\fw.production.o
+_EUSART_SetOverrunErrorHandler 107E 0 CODE 0 text17 dist/default/production\fw.production.o
+end_of_initialization B2 0 CODE 0 cinit dist/default/production\fw.production.o
+__end_of_Sensor_postAcquisitionProcess 1A82 0 CODE 0 text33 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_SampleAll 0 0 ABS 0 - dist/default/production\fw.production.o
+__Hintentry 5C 0 CODE 0 intentry -
+Sensor_Scanfrequency_Evaluation@best_sample_period 34 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Sensor_autoCalibration 0 0 ABS 0 - dist/default/production\fw.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_MTOUCH_Proximity_InitializeAll 1276 0 CODE 0 text11 dist/default/production\fw.production.o
+__end_of_Sensor_isCalibratingAcqTime 1100 0 CODE 0 text49 dist/default/production\fw.production.o
+_sample_period 6E 0 BANK0 1 dataBANK0 dist/default/production\fw.production.o
+Sensor_isCalibrated@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__size_of_Sensor_setInactive 0 0 ABS 0 - dist/default/production\fw.production.o
+___awmod@dividend 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Sensor_wasSampled@sensor 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_MTOUCH_Proximity_Baseline_Get 1538 0 CODE 0 text79 dist/default/production\fw.production.o
+MTOUCH_Proximity_Baseline_Get@name 7A 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_Service@sensor_adc1 44 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Service@sensor_adc2 45 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_isActive@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+?_MTOUCH_Proximity_Baseline_Get 20 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_Sensor_Scanfrequency_Evaluation 1EFE 0 CODE 0 text36 dist/default/production\fw.production.o
+__end_of_Sensor_setCalibratAcqTime 1154 0 CODE 0 text48 dist/default/production\fw.production.o
+__size_of_Proximity_Service 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_MTOUCH_Initialize 11EE 0 CODE 0 text6 dist/default/production\fw.production.o
+__ptext1 1308 0 CODE 0 text1 dist/default/production\fw.production.o
+__ptext2 102A 0 CODE 0 text2 dist/default/production\fw.production.o
+__ptext3 1100 0 CODE 0 text3 dist/default/production\fw.production.o
+__ptext4 1502 0 CODE 0 text4 dist/default/production\fw.production.o
+__ptext5 10A2 0 CODE 0 text5 dist/default/production\fw.production.o
+__ptext6 11CE 0 CODE 0 text6 dist/default/production\fw.production.o
+__ptext7 1190 0 CODE 0 text7 dist/default/production\fw.production.o
+__ptext8 13AC 0 CODE 0 text8 dist/default/production\fw.production.o
+__ptext9 12E2 0 CODE 0 text9 dist/default/production\fw.production.o
+_eusartTxBufferRemaining 6F 0 BANK0 1 nvBANK0 dist/default/production\fw.production.o
+__end_of_Sensor_setActive 10D4 0 CODE 0 text35 dist/default/production\fw.production.o
+_Proximity_State_Activated 1E06 0 CODE 0 text54 dist/default/production\fw.production.o
+_MTOUCH_Proximity_ServiceAll 1032 0 CODE 0 text52 dist/default/production\fw.production.o
+MTOUCH_Sensor_Initialize@sensor 78 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_AdditionalCap_Get 13AC 0 CODE 0 text71 dist/default/production\fw.production.o
+Sensor_Acquisition@sensor_adc1 3E 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Acquisition@sensor_adc2 3B 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+MTOUCH_Proximity_Deviation_Get@name 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_Sensor_setActive 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@packet_noise_Max 32 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Proximity_DefaultCallback 1002 0 CODE 0 text59 dist/default/production\fw.production.o
+__size_of_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+_MTOUCH_Proximity_Initialize 173E 0 CODE 0 text60 dist/default/production\fw.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+_Sensor_Sampled_Reset FF2 0 CODE 0 text26 dist/default/production\fw.production.o
+__size_of_Sensor_isActive 0 0 ABS 0 - dist/default/production\fw.production.o
+__CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+_Proximity_Reading_Update 1254 0 CODE 0 text61 dist/default/production\fw.production.o
+_AD2PRECON 796 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_setCalibrated@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_eusartRxStatusBuffer C4 0 BANK1 1 bssBANK1 dist/default/production\fw.production.o
+__size_of_EUSART_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+Sensor_isCalibratingAcqTime@sensor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_mtouch_proximity_init 2024 0 STRCODE 0 stringtext3 dist/default/production\fw.production.o
+EUSART_Write@txData 72 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of__initialization B2 0 CODE 0 cinit dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@last_a 28 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@last_b 2A 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_MTOUCH_Tick 0 0 ABS 0 - dist/default/production\fw.production.o
+___awmod@divisor 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_Sensor_loadADCSettings 0 0 ABS 0 - dist/default/production\fw.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+Sensor_Acq_ExecutePacket@ADCOMCON_temp 21 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_Scan_Initialize 11CE 0 CODE 0 text51 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_isCalibrated 0 0 ABS 0 - dist/default/production\fw.production.o
+__pidataBANK0 1050 0 CODE 0 idataBANK0 dist/default/production\fw.production.o
+__pidataBANK1 16F6 0 CODE 0 idataBANK1 dist/default/production\fw.production.o
+__end_of_EUSART_SetTxInterruptHandler 10A2 0 CODE 0 text15 dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_Enable 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_MTOUCH_DataStreamer_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+_eusartRxCount 54 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\fw.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_Proximity_Baseline_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+_Sensor_Service BFA 0 CODE 0 text28 dist/default/production\fw.production.o
+__size_of_EUSART_RxDataHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+Proximity_Service@name 34 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Proximity_Service@prox 35 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__size_of_Proximity_State_Initializing 0 0 ABS 0 - dist/default/production\fw.production.o
+_callback_activated 6A 0 BANK0 1 dataBANK0 dist/default/production\fw.production.o
+Sensor_Scanfrequency_Evaluation@retry 35 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_Proximity_Reading_Update_Helper 1C4A 0 CODE 0 text62 dist/default/production\fw.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_Acquisition@retry 3D 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_Proximity_Baseline_Update E60 0 CODE 0 text57 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@sensor1ForceEnabled 24 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\fw.production.o
+_mtouch_proximity_init 2000 0 STRCODE 0 stringtext3 dist/default/production\fw.production.o
+Sensor_autoCalibration@sensor 7A 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Proximity_State_Initializing@prox 25 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__Hend_init 60 0 CODE 0 end_init -
+Sensor_postAcquisitionProcess@deviation 76 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Proximity_Initialize@name 72 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+MTOUCH_Proximity_Initialize@prox 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__end_of_Proximity_State_Initializing FF2 0 CODE 0 text55 dist/default/production\fw.production.o
+__end_of_MTOUCH_Sensor_Enable 1308 0 CODE 0 text9 dist/default/production\fw.production.o
+__end_of_MTOUCH_Proximity_Deviation_Get 1210 0 CODE 0 text78 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@sensor_adc1 2D 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+Sensor_Acq_ExecutePacket@sensor_adc2 7B 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__size_of_MTOUCH_Sensor_Sampled_ResetAll 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_main 166E 0 CODE 0 maintext dist/default/production\fw.production.o
+Sensor_autoCalibration@adcIndex 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_Sensor_RawSample_Update 17DA 0 CODE 0 text30 dist/default/production\fw.production.o
+_datastreamer_output_byte 105A 0 CODE 0 text68 dist/default/production\fw.production.o
+__size_of_Sensor_setSampled 0 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_EUSART_RxDataHandler 14CE 0 CODE 0 text87 dist/default/production\fw.production.o
+TMR2_LoadPeriodRegister@periodVal 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+_RCREG 199 0 ABS 0 - dist/default/production\fw.production.o
+_RCSTA 19D 0 ABS 0 - dist/default/production\fw.production.o
+_T2CON 1C 0 ABS 0 - dist/default/production\fw.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\fw.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production\fw.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production\fw.production.o
+_TXREG 19A 0 ABS 0 - dist/default/production\fw.production.o
+_TXSTA 19E 0 ABS 0 - dist/default/production\fw.production.o
+__end_of_Sensor_RawSample_Update 182A 0 CODE 0 text30 dist/default/production\fw.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__size_of_MTOUCH_Sensor_AcquisitionTime_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\fw.production.o
+_eusartRxLastError 53 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+_WDT_Initialize 102A 0 CODE 0 text2 dist/default/production\fw.production.o
+__size_of_Sensor_setCalibratAcqTime 0 0 ABS 0 - dist/default/production\fw.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\fw.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\fw.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+_Proximity_Baseline_Get_helper 15EE 0 CODE 0 text80 dist/default/production\fw.production.o
+__end_of_OSCILLATOR_Initialize 10AE 0 CODE 0 text5 dist/default/production\fw.production.o
+?_Proximity_Baseline_Get_helper 71 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Sensor_loadADCSettings@sensor 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__initialization 60 0 CODE 0 cinit dist/default/production\fw.production.o
+___bmul@product 73 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+__CFG_BOREN$NSLEEP 0 0 ABS 0 - dist/default/production\fw.production.o
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+_MTOUCH_Sensor_isCalibrated 13D8 0 CODE 0 text66 dist/default/production\fw.production.o
+__size_of_MTOUCH_Proximity_Threshold_Get 0 0 ABS 0 - dist/default/production\fw.production.o
+_MTOUCH_Initialize 11CE 0 CODE 0 text6 dist/default/production\fw.production.o
+__pbssBANK0 49 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__pbssBANK1 C4 0 BANK1 1 bssBANK1 dist/default/production\fw.production.o
+_T2CONbits 1C 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Sensor_DefaultCallback 0 0 ABS 0 - dist/default/production\fw.production.o
+_EUSART_Transmit_ISR 166E 0 CODE 0 text82 dist/default/production\fw.production.o
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\fw.production.o
+_eusartRxHead 7C 0 COMMON 1 bssCOMMON dist/default/production\fw.production.o
+_eusartRxTail 55 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__size_of_Sensor_setCalibrated 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_EUSART_SetRxInterruptHandler 0 0 ABS 0 - dist/default/production\fw.production.o
+__size_of_Proximity_DefaultCallback 0 0 ABS 0 - dist/default/production\fw.production.o
+_TMR2_StopTimer 100C 0 CODE 0 text38 dist/default/production\fw.production.o
+Proximity_Reading_Update_Helper@prox 79 0 COMMON 1 cstackCOMMON dist/default/production\fw.production.o
+Proximity_State_NotActivated@deviation 2D 0 BANK0 1 cstackBANK0 dist/default/production\fw.production.o
+__end_of_Sensor_Service D30 0 CODE 0 text28 dist/default/production\fw.production.o
+_eusartTxHead 57 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+_eusartTxTail 56 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+_MTOUCH_Sensor_InitializeAll 1190 0 CODE 0 text7 dist/default/production\fw.production.o
+__end_of_EUSART_SetRxInterruptHandler 1096 0 CODE 0 text16 dist/default/production\fw.production.o
+__size_of_Sensor_postAcquisitionProcess 0 0 ABS 0 - dist/default/production\fw.production.o
+_OSCILLATOR_Initialize 10A2 0 CODE 0 text5 dist/default/production\fw.production.o
+__size_of_Sensor_Scanfrequency_Evaluation 0 0 ABS 0 - dist/default/production\fw.production.o
+_sensor_globalFlags 51 0 BANK0 1 bssBANK0 dist/default/production\fw.production.o
+__end_of_TMR2_Initialize 1110 0 CODE 0 text3 dist/default/production\fw.production.o
+__end_of_TMR2_StartTimer 100C 0 CODE 0 text39 dist/default/production\fw.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 984 1308 13 2
+text2 0 815 102A 4 2
+text3 0 880 1100 8 2
+text4 0 A81 1502 1B 2
+text5 0 851 10A2 6 2
+text6 0 8E7 11CE 10 2
+text7 0 8C8 1190 F 2
+text8 0 9D6 13AC 16 2
+text9 0 971 12E2 13 2
+text10 0 95E 12BC 13 2
+text11 0 93B 1276 11 2
+text12 0 C6A 18D4 2E 2
+text13 0 802 1004 1 2
+text14 0 D41 1A82 3F 2
+text15 0 84B 1096 6 2
+text16 0 845 108A 6 2
+text17 0 83F 107E 6 2
+text18 0 839 1072 6 2
+text19 0 833 1066 6 2
+text20 0 B59 16B2 22 2
+text22 0 811 1022 4 2
+text23 0 823 1046 5 2
+text24 0 BC6 178C 27 2
+text25 0 ABA 1574 1E 2
+text27 0 A34 1468 19 2
+text29 0 871 10E2 7 2
+text30 0 BED 17DA 28 2
+text31 0 801 1002 1 2
+text32 0 E92 1D24 71 2
+text33 0 D04 1A08 3D 2
+text34 0 86A 10D4 7 2
+text35 0 863 10C6 7 2
+text36 0 F7F 1EFE 81 2
+text38 0 806 100C 3 2
+text39 0 803 1006 3 2
+text40 0 81E 103C 5 2
+text42 0 888 1110 9 2
+text43 0 94C 1298 12 2
+text44 0 8B9 1172 F 2
+text46 0 A67 14CE 1A 2
+text47 0 891 1122 C 2
+text48 0 89D 113A D 2
+text49 0 878 10F0 8 2
+text50 0 C98 1930 33 2
+text51 0 8D7 11AE 10 2
+text52 0 819 1032 5 2
+text53 0 D80 1B00 52 2
+text54 0 F03 1E06 7C 2
+text58 0 C3F 187E 2B 2
+text60 0 B9F 173E 27 2
+text61 0 92A 1254 11 2
+text62 0 E25 1C4A 6D 2
+text63 0 A1B 1436 19 2
+text65 0 8AA 1154 F 2
+text66 0 9EC 13D8 17 2
+text68 0 82D 105A 6 2
+text69 0 C15 182A 2A 2
+text70 0 DD2 1BA4 53 2
+text71 0 9C1 1382 15 2
+text72 0 9AC 1358 15 2
+text73 0 997 132E 15 2
+text74 0 A03 1406 18 2
+text75 0 919 1232 11 2
+text76 0 908 1210 11 2
+text77 0 AD8 15B0 1F 2
+text78 0 8F7 11EE 11 2
+text79 0 A9C 1538 1E 2
+text80 0 AF7 15EE 20 2
+text82 0 B37 166E 22 2
+text83 0 CCB 1996 39 2
+text84 0 80D 101A 4 2
+text85 0 17FF 2FFE 1 2
+text86 0 809 1012 4 2
+text87 0 A4D 149A 1A 2
+maintext 0 B17 162E 20 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 50 1
+inittext 0 85D 10BA 6 2
+stringtext3 0 1000 2000 19 2
+intentry 0 4 8 7FD 2
+reset_vec 0 0 0 4 2
+idataBANK0 0 828 1050 5 2
+idataBANK1 0 B7B 16F6 24 2
+dataBANK1 1 A0 A0 46 1
+clrtext 0 857 10AE 6 2
+config 0 8007 1000E 2 2
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

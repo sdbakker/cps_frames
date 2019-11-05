@@ -1,0 +1,53 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"55 mcc_generated_files/mtouch/mtouch.h
+[; ;mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
+[v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
+"68 mcc_generated_files/mtouch/mtouch_api_example.c
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         if(MTOUCH_Proximity_isActivated(0))
+[c E91 0 .. ]
+[n E91 mtouch_proximity_names Proximity0  ]
+"113 mcc_generated_files/mtouch/mtouch_proximity.h
+[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 113:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
+[v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E91 ]
+"59 mcc_generated_files/mtouch/mtouch_api_example.c
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 59: void touch_example(void)
+[v _touch_example `(v ~T0 @X0 1 ef ]
+"60
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 60: {
+{
+[e :U _touch_example ]
+[f ]
+"64
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 64:     if(MTOUCH_Service_Mainloop())
+[e $ ! != -> ( _MTOUCH_Service_Mainloop ..  `i -> 0 `i 2  ]
+"65
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 65:     {
+{
+"68
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         if(MTOUCH_Proximity_isActivated(0))
+[e $ ! != -> ( _MTOUCH_Proximity_isActivated (1 -> -> 0 `i `E91 `i -> 0 `i 3  ]
+"69
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 69:         {
+{
+"72
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 72:         }
+}
+[e $U 4  ]
+"73
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 73:         else
+[e :U 3 ]
+"74
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 74:         {
+{
+"77
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 77:         }
+}
+[e :U 4 ]
+"81
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 81:     }
+}
+[e :U 2 ]
+"85
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 85: }
+[e :UE 1 ]
+}
