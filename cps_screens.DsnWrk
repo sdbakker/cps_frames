@@ -7,8 +7,8 @@ ProjectPath=C:\Users\Public\Documents\Altium\AD19\Library\mTouch\Microchip mTouc
 [Project3]
 ProjectPath=touch_control\touch_control\touch_control.PrjPcb
 [Project4]
-ProjectPath=touch_control\PCB_Project\touch_control_pickit_adapter.PrjPcb
-[Project5]
 ProjectPath=touch_control\pishield\cps_tc_pishield.PrjPcb
-[Project6]
+[Project5]
 ProjectPath=touch_control\cps_tc_onoff_sw\cps_tc_onoff_sw.PrjPcb
+[Project6]
+ProjectPath=touch_control\cps_pickit_adapter\touch_control_pickit_adapter.PrjPcb
