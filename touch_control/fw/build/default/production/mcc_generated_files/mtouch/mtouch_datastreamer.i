@@ -246,8 +246,6 @@ typedef uint32_t uint_fast32_t;
 
     typedef uint8_t mtouch_prox_scaling_t;
 # 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_SetActivatedCallback (void (*callback)(enum mtouch_proximity_names prox));
-    void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
     void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
     void MTOUCH_Proximity_InitializeAll (void);
     void MTOUCH_Proximity_ServiceAll (void);
@@ -5092,80 +5090,4 @@ void OSCILLATOR_Initialize(void);
 # 97 "mcc_generated_files/mtouch/../mcc.h"
 void WDT_Initialize(void);
 # 41 "mcc_generated_files/mtouch/mtouch_datastreamer.c" 2
-# 51 "mcc_generated_files/mtouch/mtouch_datastreamer.c"
-uint8_t data[] = {0x5F,
-    0xB4, 0x00, 0x86, 0x4A,
-    0x03, 0xEB, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xAA, 0x55, 0x01,
-    0x6E,
-    0xA0};
 
-
-
-
-void MTOUCH_DataStreamer_Initialize(void)
-{
-}
-
-void __attribute__((inline)) datastreamer_output_byte(uint8_t data)
-{
-    EUSART_Write(data);
-}
-
-void MTOUCH_DataStreamer_Service(void)
-{
-    uint8_t i;
-    static uint8_t sequence = 0u;
-    uint16_t u16temp_output;
-    uint8_t u8temp_output;
-    volatile uint8_t count_bytes_out;
-
-    if ((sequence % 10) == 0)
-    {
-        for (i = 0; i < sizeof (data); i++)
-            datastreamer_output_byte(data[i]);
-    }
-
-
-    datastreamer_output_byte(0x55);
-
-    datastreamer_output_byte(sequence);
-
-
-    for (count_bytes_out = 0u; count_bytes_out < 1u; count_bytes_out++)
-    {
-        u16temp_output = MTOUCH_Proximity_Reading_Get(count_bytes_out);
-        datastreamer_output_byte((uint8_t) u16temp_output);
-        datastreamer_output_byte((uint8_t) (u16temp_output >> 8u));
-
-        u16temp_output = MTOUCH_Proximity_Baseline_Get(count_bytes_out);
-        datastreamer_output_byte((uint8_t) u16temp_output);
-        datastreamer_output_byte((uint8_t) (u16temp_output >> 8u));
-
-        u16temp_output = MTOUCH_Proximity_Deviation_Get(count_bytes_out);
-        datastreamer_output_byte((uint8_t) u16temp_output);
-        datastreamer_output_byte((uint8_t) (u16temp_output >> 8u));
-
-        u16temp_output = MTOUCH_Proximity_Scaling_Get(count_bytes_out);
-        datastreamer_output_byte((uint8_t) u16temp_output);
-        datastreamer_output_byte((uint8_t) (u16temp_output >> 8u));
-
-        datastreamer_output_byte(MTOUCH_Proximity_Threshold_Get(count_bytes_out));
-
-        datastreamer_output_byte(MTOUCH_Proximity_isActivated(count_bytes_out));
-
-    }
-
-
-    for (count_bytes_out = 0u; count_bytes_out < 1u; count_bytes_out++)
-    {
-        datastreamer_output_byte((uint8_t) MTOUCH_Sensor_AdditionalCap_Get(count_bytes_out));
-        datastreamer_output_byte((uint8_t) MTOUCH_Sensor_AcquisitionTime_Get(count_bytes_out));
-    }
-
-
-
-    datastreamer_output_byte(sequence++);
-
-
-    datastreamer_output_byte(~0x55);
-}

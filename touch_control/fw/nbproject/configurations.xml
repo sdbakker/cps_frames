@@ -10,9 +10,9 @@
         <logicalFolder name="mtouch" displayName="mtouch" projectFiles="true">
           <itemPath>mcc_generated_files/mtouch/mtouch_sensor.h</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch_datastreamer.h</itemPath>
-          <itemPath>mcc_generated_files/mtouch/mtouch_proximity.h</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch_config.h</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch.h</itemPath>
+          <itemPath>mcc_generated_files/mtouch/mtouch_proximity.h</itemPath>
         </logicalFolder>
         <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
@@ -48,9 +48,9 @@
         <logicalFolder name="mtouch" displayName="mtouch" projectFiles="true">
           <itemPath>mcc_generated_files/mtouch/mtouch_api_example.c</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch_sensor.c</itemPath>
-          <itemPath>mcc_generated_files/mtouch/mtouch_proximity.c</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch_datastreamer.c</itemPath>
           <itemPath>mcc_generated_files/mtouch/mtouch.c</itemPath>
+          <itemPath>mcc_generated_files/mtouch/mtouch_proximity.c</itemPath>
         </logicalFolder>
         <itemPath>mcc_generated_files/eusart.c</itemPath>
         <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>

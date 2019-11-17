@@ -4833,8 +4833,6 @@ _Bool TMR2_HasOverflowOccured(void);
 
     typedef uint8_t mtouch_prox_scaling_t;
 # 97 "./mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_SetActivatedCallback (void (*callback)(enum mtouch_proximity_names prox));
-    void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
     void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
     void MTOUCH_Proximity_InitializeAll (void);
     void MTOUCH_Proximity_ServiceAll (void);
@@ -5093,8 +5091,14 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
-# 70 "main.c"
-    do { LATCbits.LATC7 = 1; } while(0);
+
+
+
+
+
+
+
+    MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
 
     while (1)
     {
@@ -5103,9 +5107,16 @@ void main(void)
         {
 
 
-            if(MTOUCH_Proximity_isActivated(0))
+            if(MTOUCH_Proximity_isActivated(Proximity0))
             {
 
+                if(EUSART_is_tx_ready())
+                {
+                    do { LATAbits.LATA4 = 1; } while(0);
+                    _delay((unsigned long)((10)*(8000000/4000000.0)));
+                    EUSART_Write('b');
+                    do { LATCbits.LATC7 = 1; } while(0);
+                }
                 do { LATCbits.LATC0 = 1; } while(0);
             }
             else
@@ -5113,6 +5124,11 @@ void main(void)
 
                 do { LATCbits.LATC0 = 0; } while(0);
             }
+        }
+
+        if (EUSART_is_tx_done()) {
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATCbits.LATC7 = 0; } while(0);
         }
     }
 }

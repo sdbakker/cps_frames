@@ -65,9 +65,8 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
-    //LED1_SetHigh();
-    LED2_SetHigh();
+    
+    MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
     
     while (1)
     {
@@ -76,9 +75,16 @@ void main(void)
         {
 
             /* Proximity API*/
-            if(MTOUCH_Proximity_isActivated(0))
+            if(MTOUCH_Proximity_isActivated(Proximity0))
             {
                 // process if proximity is triggered
+                if(EUSART_is_tx_ready())
+                {
+                    RTS_SetHigh();
+                    __delay_us(10);
+                    EUSART_Write('b');
+                    LED2_SetHigh();
+                }
                 LED1_SetHigh();
             }
             else
@@ -86,6 +92,11 @@ void main(void)
                 // process if button is not triggered
                 LED1_SetLow();
             }
+        }
+        
+        if (EUSART_is_tx_done()) {
+            RTS_SetLow();
+            LED2_SetLow();
         }
     }
 }

@@ -4859,8 +4859,6 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 
     typedef uint8_t mtouch_prox_scaling_t;
 # 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_SetActivatedCallback (void (*callback)(enum mtouch_proximity_names prox));
-    void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
     void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
     void MTOUCH_Proximity_InitializeAll (void);
     void MTOUCH_Proximity_ServiceAll (void);
@@ -4939,7 +4937,7 @@ enum mtouch_prox_state
             Sensor_AN12,
             MTOUCH_PROXIMITY_STATE_initializing,
             0,0,0,0,0,
-            (mtouch_prox_deviation_t)100u,
+            (mtouch_prox_deviation_t)120u,
             (uint8_t)0u
         }
     };
@@ -4960,25 +4958,10 @@ static void Proximity_Baseline_Initialize (mtouch_proximity_t* prox);
 static void Proximity_Baseline_Update (mtouch_proximity_t* prox);
 static mtouch_prox_reading_t Proximity_Baseline_Get_helper (enum mtouch_proximity_names prox);
 static void Proximity_Tick_helper (mtouch_proximity_t* prox);
-static void Proximity_DefaultCallback (enum mtouch_proximity_names prox);
 static void Proximity_State_Initializing (mtouch_proximity_t* prox);
 static void Proximity_State_NotActivated (mtouch_proximity_t* prox);
 static void Proximity_State_Activated (mtouch_proximity_t* prox);
-
-
-
-
-
-
-static void (*callback_activated) (enum mtouch_proximity_names) = Proximity_DefaultCallback;
-static void (*callback_notActivated)(enum mtouch_proximity_names) = Proximity_DefaultCallback;
-
-
-
-
-
-
-
+# 119 "mcc_generated_files/mtouch/mtouch_proximity.c"
 typedef void (*proximity_statemachine_state_t)(mtouch_proximity_t*);
 proximity_statemachine_state_t Proximity_StateMachine[] =
 {
@@ -5084,7 +5067,6 @@ static void Proximity_State_NotActivated(mtouch_proximity_t* prox)
     {
         prox->state = MTOUCH_PROXIMITY_STATE_activated;
         prox->counter = (mtouch_prox_statecounter_t)0;
-        callback_activated(prox->name);
     }
     else
     {
@@ -5108,7 +5090,6 @@ static void Proximity_State_Activated(mtouch_proximity_t* prox)
     if ((prox->counter) >= ((mtouch_prox_statecounter_t)1000u))
     {
         MTOUCH_Proximity_Initialize(prox->name);
-        callback_notActivated(prox->name);
     }
 
 
@@ -5117,7 +5098,6 @@ static void Proximity_State_Activated(mtouch_proximity_t* prox)
         prox->state = MTOUCH_PROXIMITY_STATE_notActivated;
         prox->counter = (mtouch_prox_statecounter_t)0;
         prox->baseline_count = (mtouch_prox_baselinecounter_t)((0xffff))-((mtouch_prox_baselinecounter_t)1024u);
-        callback_notActivated(prox->name);
     }
 }
 
@@ -5143,7 +5123,7 @@ static void Proximity_Tick_helper(mtouch_proximity_t* prox)
         }
     }
 }
-# 299 "mcc_generated_files/mtouch/mtouch_proximity.c"
+# 288 "mcc_generated_files/mtouch/mtouch_proximity.c"
 mtouch_prox_threshold_t MTOUCH_Proximity_Threshold_Get(enum mtouch_proximity_names name)
 {
     if(name < 1u)
@@ -5312,20 +5292,6 @@ static mtouch_prox_reading_t Proximity_Baseline_Get_helper(enum mtouch_proximity
 }
 
 
-
-
-
-
-
-static void Proximity_DefaultCallback(enum mtouch_proximity_names name) { }
-void MTOUCH_Proximity_SetActivatedCallback(void (*callback)(enum mtouch_proximity_names))
-{
-    callback_activated = callback;
-}
-void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names))
-{
-    callback_notActivated = callback;
-}
 
 uint8_t MTOUCH_Proximity_State_Get(enum mtouch_proximity_names name)
 {

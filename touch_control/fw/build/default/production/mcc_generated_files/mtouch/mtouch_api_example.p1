@@ -6,8 +6,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         if(MTOUCH_Proximity_isActivated(0))
 [c E91 0 .. ]
 [n E91 mtouch_proximity_names Proximity0  ]
-"113 mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 113:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
+"111 mcc_generated_files/mtouch/mtouch_proximity.h
+[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 111:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
 [v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E91 ]
 "59 mcc_generated_files/mtouch/mtouch_api_example.c
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 59: void touch_example(void)

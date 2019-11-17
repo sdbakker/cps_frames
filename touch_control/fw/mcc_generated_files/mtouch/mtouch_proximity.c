@@ -1,4 +1,4 @@
- /*
+/*
     MICROCHIP SOFTWARE NOTICE AND DISCLAIMER:
 
     You may use this software, and any derivatives created by any person or
@@ -105,18 +105,10 @@ static void                     Proximity_Baseline_Initialize   (mtouch_proximit
 static void                     Proximity_Baseline_Update       (mtouch_proximity_t* prox);
 static mtouch_prox_reading_t    Proximity_Baseline_Get_helper   (enum mtouch_proximity_names prox);
 static void                     Proximity_Tick_helper           (mtouch_proximity_t* prox);
-static void                     Proximity_DefaultCallback       (enum mtouch_proximity_names prox);
 static void                     Proximity_State_Initializing    (mtouch_proximity_t* prox);
 static void                     Proximity_State_NotActivated    (mtouch_proximity_t* prox);
 static void                     Proximity_State_Activated       (mtouch_proximity_t* prox);
 
-/*
- * =======================================================================
- *  Callback Function Pointers
- * =======================================================================
- */
-static void (*callback_activated)   (enum mtouch_proximity_names) = Proximity_DefaultCallback;
-static void (*callback_notActivated)(enum mtouch_proximity_names) = Proximity_DefaultCallback;
 
 
 /*
@@ -229,7 +221,6 @@ static void Proximity_State_NotActivated(mtouch_proximity_t* prox)
     {
         prox->state   = MTOUCH_PROXIMITY_STATE_activated;
         prox->counter = (mtouch_prox_statecounter_t)0; 
-        callback_activated(prox->name);
     }
     else
     {
@@ -253,7 +244,6 @@ static void Proximity_State_Activated(mtouch_proximity_t* prox)
     if ((prox->counter) >= MTOUCH_PROXIMITY_ACTIVITYTIMEOUT)
     {
         MTOUCH_Proximity_Initialize(prox->name);
-        callback_notActivated(prox->name);
     }
 
     /* Threshold check */
@@ -262,7 +252,6 @@ static void Proximity_State_Activated(mtouch_proximity_t* prox)
         prox->state   = MTOUCH_PROXIMITY_STATE_notActivated;
         prox->counter = (mtouch_prox_statecounter_t)0;
         prox->baseline_count = (mtouch_prox_baselinecounter_t)MTOUCH_PROXIMITY_BASECOUNTER_MAX-MTOUCH_PROXIMITY_BASELINE_HOLD;
-        callback_notActivated(prox->name);
     }
 }
 
@@ -464,20 +453,6 @@ static mtouch_prox_reading_t Proximity_Baseline_Get_helper(enum mtouch_proximity
 }
 
 
-/*
- * =======================================================================
- * Proximity Press/Release Callback Setter Functions
- * =======================================================================
- */
-static void Proximity_DefaultCallback(enum mtouch_proximity_names name) { }
-void MTOUCH_Proximity_SetActivatedCallback(void (*callback)(enum mtouch_proximity_names))
-{
-    callback_activated = callback;
-}
-void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names))
-{
-    callback_notActivated = callback;
-}
 
 uint8_t MTOUCH_Proximity_State_Get(enum mtouch_proximity_names name)
 {

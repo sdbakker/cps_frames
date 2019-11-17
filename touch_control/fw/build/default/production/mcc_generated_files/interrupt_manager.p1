@@ -46,14 +46,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "601
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 601: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
 [v _PIR1bits `VS39 ~T0 @X0 0 e@17 ]
-[v F3298 `(v ~T0 @X0 0 tf ]
+[v F3286 `(v ~T0 @X0 0 tf ]
 "95 mcc_generated_files/eusart.h
 [; ;mcc_generated_files/eusart.h: 95: extern void (*EUSART_TxDefaultInterruptHandler)(void);
-[v _EUSART_TxDefaultInterruptHandler `*F3298 ~T0 @X0 0 e ]
-[v F3300 `(v ~T0 @X0 0 tf ]
+[v _EUSART_TxDefaultInterruptHandler `*F3286 ~T0 @X0 0 e ]
+[v F3288 `(v ~T0 @X0 0 tf ]
 "96
 [; ;mcc_generated_files/eusart.h: 96: extern void (*EUSART_RxDefaultInterruptHandler)(void);
-[v _EUSART_RxDefaultInterruptHandler `*F3300 ~T0 @X0 0 e ]
+[v _EUSART_RxDefaultInterruptHandler `*F3288 ~T0 @X0 0 e ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">

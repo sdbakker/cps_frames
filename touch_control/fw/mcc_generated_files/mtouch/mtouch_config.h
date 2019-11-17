@@ -50,7 +50,7 @@
     #define MTOUCH_SENSORS          1u
     #define MTOUCH_SCAN_GROUPS      1u
     #define MTOUCH_PROXIMITY        1u
-    #define MTOUCH_COMM_ENABLE      1u
+    //#define MTOUCH_COMM_ENABLE      1u
 
     /* 
      * =======================================================================
@@ -82,7 +82,7 @@
     #define MTOUCH_PROXIMITY_NEGATIVEDEVIATION      ((mtouch_prox_statecounter_t)32u)
     #define MTOUCH_PROXIMITY_ACTIVITYTIMEOUT        ((mtouch_prox_statecounter_t)1000u)
 
-    #define MTOUCH_PROXIMITY_THRESHOLD_Proximity0   100u
+    #define MTOUCH_PROXIMITY_THRESHOLD_Proximity0   120u
     
     #define MTOUCH_PROXIMITY_SCALING_Proximity0     0u
     

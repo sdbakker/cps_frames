@@ -4834,8 +4834,6 @@ _Bool TMR2_HasOverflowOccured(void);
 
     typedef uint8_t mtouch_prox_scaling_t;
 # 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_SetActivatedCallback (void (*callback)(enum mtouch_proximity_names prox));
-    void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
     void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
     void MTOUCH_Proximity_InitializeAll (void);
     void MTOUCH_Proximity_ServiceAll (void);

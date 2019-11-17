@@ -18,7 +18,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 "374
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"1875
+"69 main.c
+[; ;main.c: 69:     MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
+[c E2911 0 .. ]
+[n E2911 mtouch_proximity_names Proximity0  ]
+"108 ./mcc_generated_files/mtouch/mtouch_proximity.h
+[; ;./mcc_generated_files/mtouch/mtouch_proximity.h: 108:     void MTOUCH_Proximity_Threshold_Set (enum mtouch_proximity_names prox,mtouch_prox_threshold_t threshold);
+[v _MTOUCH_Proximity_Threshold_Set `(v ~T0 @X0 0 ef2`E2911`uc ]
+"55 ./mcc_generated_files/mtouch/mtouch.h
+[; ;./mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
+[v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
+"111 ./mcc_generated_files/mtouch/mtouch_proximity.h
+[; ;./mcc_generated_files/mtouch/mtouch_proximity.h: 111:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
+[v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E2911 ]
+"166 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 166: _Bool EUSART_is_tx_ready(void);
+[v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
+"1791 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1791:     struct {
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . LATA0 LATA1 LATA2 . LATA4 LATA5 ]
+"1790
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1790: typedef union {
+[u S101 `S102 1 ]
+[n S101 . . ]
+"1800
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1800: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS101 ~T0 @X0 0 e@268 ]
+[v F2802 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+[v __delay `JF2802 ~T0 @X0 0 e ]
+[p i __delay ]
+"349 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 349: void EUSART_Write(uint8_t txData);
+[v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
+"1875 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1875:     struct {
 [s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S106 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
@@ -29,16 +63,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1886
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1886: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
 [v _LATCbits `VS105 ~T0 @X0 0 e@270 ]
-"55 ./mcc_generated_files/mtouch/mtouch.h
-[; ;./mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
-[v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
-"79 main.c
-[; ;main.c: 79:             if(MTOUCH_Proximity_isActivated(0))
-[c E2911 0 .. ]
-[n E2911 mtouch_proximity_names Proximity0  ]
-"113 ./mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;./mcc_generated_files/mtouch/mtouch_proximity.h: 113:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
-[v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E2911 ]
+"261 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 261: _Bool EUSART_is_tx_done(void);
+[v _EUSART_is_tx_done `(a ~T0 @X0 0 ef ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -624,70 +651,118 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61
 [; ;main.c: 61:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"70
-[; ;main.c: 70:     do { LATCbits.LATC7 = 1; } while(0);
-[e :U 461 ]
+"69
+[; ;main.c: 69:     MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
+[e ( _MTOUCH_Proximity_Threshold_Set (2 , . `E2911 0 -> -> 80 `i `uc ]
+"71
+[; ;main.c: 71:     while (1)
+[e :U 460 ]
+"72
+[; ;main.c: 72:     {
+{
+"74
+[; ;main.c: 74:         if(MTOUCH_Service_Mainloop())
+[e $ ! != -> ( _MTOUCH_Service_Mainloop ..  `i -> 0 `i 462  ]
+"75
+[; ;main.c: 75:         {
+{
+"78
+[; ;main.c: 78:             if(MTOUCH_Proximity_isActivated(Proximity0))
+[e $ ! != -> ( _MTOUCH_Proximity_isActivated (1 . `E2911 0 `i -> 0 `i 463  ]
+"79
+[; ;main.c: 79:             {
+{
+"81
+[; ;main.c: 81:                 if(EUSART_is_tx_ready())
+[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 464  ]
+"82
+[; ;main.c: 82:                 {
+{
+"83
+[; ;main.c: 83:                     do { LATAbits.LATA4 = 1; } while(0);
+[e :U 467 ]
+{
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 466 ]
+"84
+[; ;main.c: 84:                     _delay((unsigned long)((10)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"85
+[; ;main.c: 85:                     EUSART_Write('b');
+[e ( _EUSART_Write (1 -> -> 98 `ui `uc ]
+"86
+[; ;main.c: 86:                     do { LATCbits.LATC7 = 1; } while(0);
+[e :U 470 ]
 {
 [e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 460 ]
-"72
-[; ;main.c: 72:     while (1)
-[e :U 463 ]
-"73
-[; ;main.c: 73:     {
-{
-"75
-[; ;main.c: 75:         if(MTOUCH_Service_Mainloop())
-[e $ ! != -> ( _MTOUCH_Service_Mainloop ..  `i -> 0 `i 465  ]
-"76
-[; ;main.c: 76:         {
-{
-"79
-[; ;main.c: 79:             if(MTOUCH_Proximity_isActivated(0))
-[e $ ! != -> ( _MTOUCH_Proximity_isActivated (1 -> -> 0 `i `E2911 `i -> 0 `i 466  ]
-"80
-[; ;main.c: 80:             {
-{
-"82
-[; ;main.c: 82:                 do { LATCbits.LATC0 = 1; } while(0);
 [e :U 469 ]
+"87
+[; ;main.c: 87:                 }
+}
+[e :U 464 ]
+"88
+[; ;main.c: 88:                 do { LATCbits.LATC0 = 1; } while(0);
+[e :U 473 ]
 {
 [e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 468 ]
-"83
-[; ;main.c: 83:             }
+[e :U 472 ]
+"89
+[; ;main.c: 89:             }
 }
-[e $U 470  ]
-"84
-[; ;main.c: 84:             else
-[e :U 466 ]
-"85
-[; ;main.c: 85:             {
+[e $U 474  ]
+"90
+[; ;main.c: 90:             else
+[e :U 463 ]
+"91
+[; ;main.c: 91:             {
 {
-"87
-[; ;main.c: 87:                 do { LATCbits.LATC0 = 0; } while(0);
-[e :U 473 ]
+"93
+[; ;main.c: 93:                 do { LATCbits.LATC0 = 0; } while(0);
+[e :U 477 ]
 {
 [e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 472 ]
-"88
-[; ;main.c: 88:             }
+[e :U 476 ]
+"94
+[; ;main.c: 94:             }
 }
-[e :U 470 ]
-"89
-[; ;main.c: 89:         }
-}
-[e :U 465 ]
-"90
-[; ;main.c: 90:     }
+[e :U 474 ]
+"95
+[; ;main.c: 95:         }
 }
 [e :U 462 ]
-[e $U 463  ]
-[e :U 464 ]
-"91
-[; ;main.c: 91: }
+"97
+[; ;main.c: 97:         if (EUSART_is_tx_done()) {
+[e $ ! != -> ( _EUSART_is_tx_done ..  `i -> 0 `i 478  ]
+{
+"98
+[; ;main.c: 98:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 481 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 480 ]
+"99
+[; ;main.c: 99:             do { LATCbits.LATC7 = 0; } while(0);
+[e :U 484 ]
+{
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+}
+[e :U 483 ]
+"100
+[; ;main.c: 100:         }
+}
+[e :U 478 ]
+"101
+[; ;main.c: 101:     }
+}
+[e :U 459 ]
+[e $U 460  ]
+[e :U 461 ]
+"102
+[; ;main.c: 102: }
 [e :UE 458 ]
 }

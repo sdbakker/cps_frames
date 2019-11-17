@@ -4802,8 +4802,6 @@ typedef uint32_t uint_fast32_t;
 
     typedef uint8_t mtouch_prox_scaling_t;
 # 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_SetActivatedCallback (void (*callback)(enum mtouch_proximity_names prox));
-    void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
     void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
     void MTOUCH_Proximity_InitializeAll (void);
     void MTOUCH_Proximity_ServiceAll (void);
@@ -5099,7 +5097,7 @@ void MTOUCH_Initialize(void)
     MTOUCH_Sensor_InitializeAll();
     MTOUCH_Proximity_InitializeAll();
 
-    MTOUCH_DataStreamer_Initialize();
+
 
     MTOUCH_Sensor_Sampled_ResetAll();
     MTOUCH_Sensor_Scan_Initialize();
@@ -5126,7 +5124,7 @@ _Bool MTOUCH_Service_Mainloop(void)
 
             MTOUCH_Proximity_ServiceAll();
 
-            MTOUCH_DataStreamer_Service();
+
 
             mtouch_time_toScan = MTOUCH_needReburst();
             MTOUCH_Sensor_Sampled_ResetAll();

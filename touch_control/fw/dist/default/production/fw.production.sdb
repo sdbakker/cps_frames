@@ -21,11 +21,15 @@ MTOUCH_SENSOR_ERROR_tooManyRetries -4
 MTOUCH_SENSOR_ERROR_scanOverrun -5
 MTOUCH_SENSOR_ERROR_interruptedScan -6
 ]
+"69 D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
+[e E2911 mtouch_proximity_names `uc
+Proximity0 0
+]
 "80 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [e E3010 mtouch_sensor_names `uc
 Sensor_AN12 0
 ]
-[e E3124 mtouch_prox_state `uc
+[e E3112 mtouch_prox_state `uc
 MTOUCH_PROXIMITY_STATE_initializing 0
 MTOUCH_PROXIMITY_STATE_notActivated 1
 MTOUCH_PROXIMITY_STATE_activated 2
@@ -33,30 +37,16 @@ MTOUCH_PROXIMITY_STATE_activated 2
 [e E3067 mtouch_proximity_names `uc
 Proximity0 0
 ]
-"260
-[e E3128 mtouch_proximity_hysteresis_thresholds `uc
+"250
+[e E3116 mtouch_proximity_hysteresis_thresholds `uc
 HYST_50_PERCENT 1
 HYST_25_PERCENT 2
 HYST_12_5_PERCENT 3
 HYST_6_25_PERCENT 4
 HYST_MAX 5
 ]
-"91 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
-[e E95 mtouch_proximity_names `uc
-Proximity0 0
-]
-"116
-[e E34 mtouch_sensor_names `uc
-Sensor_AN12 0
-]
-"79 D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
-[e E2911 mtouch_proximity_names `uc
-Proximity0 0
-]
 "1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 1 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
@@ -69,6 +59,10 @@ Proximity0 0
 [v _main main `(v  1 e 1 0 ]
 "88 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"132
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+"142
+[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
 "151
 [v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
 "173
@@ -111,56 +105,44 @@ Proximity0 0
 [v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
 "140
 [v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
-"60 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
-[v _MTOUCH_DataStreamer_Initialize MTOUCH_DataStreamer_Initialize `(v  1 e 1 0 ]
-"64
-[v _datastreamer_output_byte datastreamer_output_byte `T(v  1 e 1 0 ]
-"69
-[v _MTOUCH_DataStreamer_Service MTOUCH_DataStreamer_Service `(v  1 e 1 0 ]
-"141 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"133 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _MTOUCH_Proximity_Initialize MTOUCH_Proximity_Initialize `(v  1 e 1 0 ]
-"161
+"153
 [v _MTOUCH_Proximity_InitializeAll MTOUCH_Proximity_InitializeAll `(v  1 e 1 0 ]
-"168
+"160
 [v _MTOUCH_Proximity_ServiceAll MTOUCH_Proximity_ServiceAll `(v  1 e 1 0 ]
-"179
+"171
 [v _Proximity_Service Proximity_Service `(v  1 s 1 Proximity_Service ]
-"195
+"187
 [v _Proximity_State_Initializing Proximity_State_Initializing `(v  1 s 1 Proximity_State_Initializing ]
-"214
+"206
 [v _Proximity_State_NotActivated Proximity_State_NotActivated `(v  1 s 1 Proximity_State_NotActivated ]
-"250
+"241
 [v _Proximity_State_Activated Proximity_State_Activated `(v  1 s 1 Proximity_State_Activated ]
-"275
+"264
 [v _MTOUCH_Proximity_Tick MTOUCH_Proximity_Tick `(v  1 e 1 0 ]
-"279
+"268
 [v _Proximity_Tick_helper Proximity_Tick_helper `(v  1 s 1 Proximity_Tick_helper ]
-"299
-[v _MTOUCH_Proximity_Threshold_Get MTOUCH_Proximity_Threshold_Get `(uc  1 e 1 0 ]
-"314
-[v _MTOUCH_Proximity_Scaling_Get MTOUCH_Proximity_Scaling_Get `(uc  1 e 1 0 ]
-"329
+"296
+[v _MTOUCH_Proximity_Threshold_Set MTOUCH_Proximity_Threshold_Set `(v  1 e 1 0 ]
+"318
 [v _MTOUCH_Proximity_isActivated MTOUCH_Proximity_isActivated `(a  1 e 1 0 ]
-"345
-[v _MTOUCH_Proximity_Deviation_Get MTOUCH_Proximity_Deviation_Get `(c  1 e 1 0 ]
-"353
+"342
 [v _Proximity_Deviation_Update Proximity_Deviation_Update `(v  1 s 1 Proximity_Deviation_Update ]
-"396
+"385
 [v _MTOUCH_Proximity_Reading_Get MTOUCH_Proximity_Reading_Get `(ul  1 e 4 0 ]
-"404
+"393
 [v _Proximity_Reading_Update Proximity_Reading_Update `(v  1 s 1 Proximity_Reading_Update ]
-"417
+"406
 [v _Proximity_Reading_Update_Helper Proximity_Reading_Update_Helper `(v  1 s 1 Proximity_Reading_Update_Helper ]
-"430
+"419
 [v _Proximity_Baseline_Initialize Proximity_Baseline_Initialize `(v  1 s 1 Proximity_Baseline_Initialize ]
-"436
+"425
 [v _Proximity_Baseline_Update Proximity_Baseline_Update `(v  1 s 1 Proximity_Baseline_Update ]
-"452
+"441
 [v _MTOUCH_Proximity_Baseline_Get MTOUCH_Proximity_Baseline_Get `(ul  1 e 4 0 ]
-"461
+"450
 [v _Proximity_Baseline_Get_helper Proximity_Baseline_Get_helper `(ul  1 s 4 Proximity_Baseline_Get_helper ]
-"472
-[v _Proximity_DefaultCallback Proximity_DefaultCallback `(v  1 s 1 Proximity_DefaultCallback ]
 "191 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2856  1 e 1 0 ]
 "206
@@ -221,10 +203,6 @@ Proximity0 0
 [v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
 "952
 [v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
-"964
-[v _MTOUCH_Sensor_AdditionalCap_Get MTOUCH_Sensor_AdditionalCap_Get `(uc  1 e 1 0 ]
-"972
-[v _MTOUCH_Sensor_AcquisitionTime_Get MTOUCH_Sensor_AcquisitionTime_Get `(uc  1 e 1 0 ]
 "55 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "62 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
@@ -235,7 +213,7 @@ Proximity0 0
 [v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
 "106
 [v _TMR2_LoadPeriodRegister TMR2_LoadPeriodRegister `(v  1 e 1 0 ]
-[s S605 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S369 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -245,14 +223,14 @@ Proximity0 0
 `uc 1 GIE 1 0 :1:7 
 ]
 "374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
-[s S614 . 1 `uc 1 . 1 0 :2:0 
+[s S378 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S619 . 1 `S605 1 . 1 0 `S614 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES619  1 e 1 @11 ]
-[s S467 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S383 . 1 `S369 1 . 1 0 `S378 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES383  1 e 1 @11 ]
+[s S231 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -262,31 +240,31 @@ Proximity0 0
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "601
-[s S476 . 1 `uc 1 . 1 0 :6:0 
+[s S240 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 AD1IF 1 0 :1:6 
 ]
-[u S479 . 1 `S467 1 . 1 0 `S476 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES479  1 e 1 @17 ]
-[s S495 . 1 `uc 1 . 1 0 :3:0 
+[u S243 . 1 `S231 1 . 1 0 `S240 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES243  1 e 1 @17 ]
+[s S259 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 BCL1IF 1 0 :1:3 
 `uc 1 . 1 0 :2:4 
 `uc 1 AD2IF 1 0 :1:6 
 ]
 "659
-[u S500 . 1 `S495 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES500  1 e 1 @18 ]
+[u S264 . 1 `S259 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES264  1 e 1 @18 ]
 "885
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
 "905
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
 "925
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S323 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S87 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "946
-[s S327 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S91 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -294,15 +272,15 @@ Proximity0 0
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S335 . 1 `S323 1 . 1 0 `S327 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES335  1 e 1 @28 ]
+[u S99 . 1 `S87 1 . 1 0 `S91 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES99  1 e 1 @28 ]
 "996
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1046
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1085
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S47 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S856 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -312,12 +290,12 @@ Proximity0 0
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1168
-[s S56 . 1 `uc 1 . 1 0 :6:0 
+[s S865 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 AD1IE 1 0 :1:6 
 ]
-[u S59 . 1 `S47 1 . 1 0 `S56 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES59  1 e 1 @145 ]
-[s S1473 . 1 `uc 1 PS 1 0 :3:0 
+[u S868 . 1 `S856 1 . 1 0 `S865 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES868  1 e 1 @145 ]
+[s S1185 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -325,26 +303,36 @@ Proximity0 0
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1264
-[s S1480 . 1 `uc 1 PS0 1 0 :1:0 
+[s S1192 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S1487 . 1 `S1473 1 . 1 0 `S1480 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES1487  1 e 1 @149 ]
+[u S1199 . 1 `S1185 1 . 1 0 `S1192 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES1199  1 e 1 @149 ]
 "1381
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "1440
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
 "1785
 [v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S1302 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1800
+[u S1309 . 1 `S1302 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1309  1 e 1 @268 ]
 "1830
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "1869
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S1563 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1326 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -354,21 +342,21 @@ Proximity0 0
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1886
-[u S1572 . 1 `S1563 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1572  1 e 1 @270 ]
+[u S1335 . 1 `S1326 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1335  1 e 1 @270 ]
 "1931
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2035
 [v _APFCON APFCON `VEuc  1 e 1 @285 ]
-[s S443 . 1 `uc 1 GRDASEL 1 0 :1:0 
+[s S207 . 1 `uc 1 GRDASEL 1 0 :1:0 
 `uc 1 GRDBSEL 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 SDSEL 1 0 :1:4 
 `uc 1 SSSEL 1 0 :1:5 
 ]
 "2049
-[u S449 . 1 `S443 1 . 1 0 ]
-[v _APFCONbits APFCONbits `VES449  1 e 1 @285 ]
+[u S213 . 1 `S207 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES213  1 e 1 @285 ]
 "2074
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "2127
@@ -385,7 +373,7 @@ Proximity0 0
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "2501
 [v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-[s S152 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S961 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -395,11 +383,11 @@ Proximity0 0
 `uc 1 SPEN 1 0 :1:7 
 ]
 "2518
-[u S161 . 1 `S152 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES161  1 e 1 @413 ]
+[u S970 . 1 `S961 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES970  1 e 1 @413 ]
 "2563
 [v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-[s S130 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S939 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -409,8 +397,8 @@ Proximity0 0
 `uc 1 CSRC 1 0 :1:7 
 ]
 "2580
-[u S139 . 1 `S130 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES139  1 e 1 @414 ]
+[u S948 . 1 `S939 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES948  1 e 1 @414 ]
 "2625
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
 "2677
@@ -419,12 +407,12 @@ Proximity0 0
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
 "4145
 [v _AD1CON0 AD1CON0 `VEuc  1 e 1 @1809 ]
-[s S523 . 1 `uc 1 ADON 1 0 :1:0 
+[s S287 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
 "4179
-[s S527 . 1 `uc 1 . 1 0 :1:0 
+[s S291 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -432,11 +420,11 @@ Proximity0 0
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-[s S535 . 1 `uc 1 . 1 0 :1:0 
+[s S299 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_nDONE1 1 0 :1:1 
 ]
-[u S538 . 1 `S523 1 . 1 0 `S527 1 . 1 0 `S535 1 . 1 0 ]
-[v _AD1CON0bits AD1CON0bits `VES538  1 e 1 @1809 ]
+[u S302 . 1 `S287 1 . 1 0 `S291 1 . 1 0 `S299 1 . 1 0 ]
+[v _AD1CON0bits AD1CON0bits `VES302  1 e 1 @1809 ]
 "4379
 [v _ADCOMCON ADCOMCON `VEuc  1 e 1 @1810 ]
 "4533
@@ -460,11 +448,11 @@ Proximity0 0
 "6183
 [v _AD2CON0 AD2CON0 `VEuc  1 e 1 @1937 ]
 "6213
-[s S570 . 1 `uc 1 . 1 0 :1:0 
+[s S334 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_nDONE2 1 0 :1:1 
 ]
-[u S573 . 1 `S523 1 . 1 0 `S527 1 . 1 0 `S570 1 . 1 0 ]
-[v _AD2CON0bits AD2CON0bits `VES573  1 e 1 @1937 ]
+[u S337 . 1 `S287 1 . 1 0 `S291 1 . 1 0 `S334 1 . 1 0 ]
+[v _AD2CON0bits AD2CON0bits `VES337  1 e 1 @1937 ]
 "6341
 [v _AD2CON2 AD2CON2 `VEuc  1 e 1 @1939 ]
 "6423
@@ -495,18 +483,18 @@ Proximity0 0
 [v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
-[s S34 . 1 `uc 1 perr 1 0 :1:0 
+[s S843 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S39 . 1 `S34 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S39  1 e 8 0 ]
+[u S848 . 1 `S843 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S848  1 e 8 0 ]
 "71
 [v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusartRxLastError eusartRxLastError `VES39  1 e 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES848  1 e 1 0 ]
 "77
 [v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -519,18 +507,12 @@ Proximity0 0
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
 "52 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
 [v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
-"51 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
-[v _data data `[19]uc  1 e 19 0 ]
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
 "80 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
-[v _mtouch_proximity_init mtouch_proximity_init `DC[1]S1051  1 e 18 0 ]
+[v _mtouch_proximity_init mtouch_proximity_init `DC[1]S1376  1 e 18 0 ]
 "92
-[v _mtouch_proximity mtouch_proximity `[1]S1051  1 s 18 mtouch_proximity ]
-"118
-[v _callback_activated callback_activated `*.37(v  1 s 2 callback_activated ]
-"119
-[v _callback_notActivated callback_notActivated `*.37(v  1 s 2 callback_notActivated ]
-"128
+[v _mtouch_proximity mtouch_proximity `[1]S1376  1 s 18 mtouch_proximity ]
+"120
 [v _Proximity_StateMachine Proximity_StateMachine `[3]*.37(v  1 e 6 0 ]
 "143 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
@@ -540,30 +522,30 @@ Proximity0 0
 [v _packet_noise packet_noise `us  1 s 2 packet_noise ]
 "152
 [v _lowpowerActivated lowpowerActivated `a  1 s 1 lowpowerActivated ]
-[s S278 . 1 `uc 1 done 1 0 :1:0 
+[s S42 . 1 `uc 1 done 1 0 :1:0 
 `uc 1 check 1 0 :1:1 
 `uc 1 error 1 0 :1:2 
 `uc 1 interrupted 1 0 :1:3 
 ]
 "153
-[v _sensor_globalFlags sensor_globalFlags `VES278  1 s 1 sensor_globalFlags ]
+[v _sensor_globalFlags sensor_globalFlags `VES42  1 s 1 sensor_globalFlags ]
 "159
 [v _sample_period sample_period `uc  1 s 1 sample_period ]
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
 "166
-[v _mtouch_sensor mtouch_sensor `[1]S283  1 s 9 mtouch_sensor ]
+[v _mtouch_sensor mtouch_sensor `[1]S47  1 s 9 mtouch_sensor ]
 "182
-[s S296 . 2 `*.4S283 1 sensor_adc1 1 0 `*.1S283 1 sensor_adc2 1 1 ]
-[v _sensor_scan_group sensor_scan_group `DC[1]S296  1 s 2 sensor_scan_group ]
+[s S60 . 2 `*.4S47 1 sensor_adc1 1 0 `*.1S47 1 sensor_adc2 1 1 ]
+[v _sensor_scan_group sensor_scan_group `DC[1]S60  1 s 2 sensor_scan_group ]
 "49 D:\Dev\Commonplace\cps_frames\touch_control\fw\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"91
+"102
 } 0
 "50 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -629,10 +611,10 @@ Proximity0 0
 [v MTOUCH_Sensor_Calibrate@sensor sensor `E2854  1 a 1 6 ]
 "893
 } 0
-"161 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"153 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _MTOUCH_Proximity_InitializeAll MTOUCH_Proximity_InitializeAll `(v  1 e 1 0 ]
 {
-"166
+"158
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 1 0 ]
@@ -651,11 +633,6 @@ Proximity0 0
 "11
 [v memcpy@d1 d1 `*.4v  1 a 1 9 ]
 "18
-} 0
-"60 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
-[v _MTOUCH_DataStreamer_Initialize MTOUCH_DataStreamer_Initialize `(v  1 e 1 0 ]
-{
-"62
 } 0
 "88 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -707,49 +684,49 @@ Proximity0 0
 {
 "133
 } 0
-"275 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"264 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _MTOUCH_Proximity_Tick MTOUCH_Proximity_Tick `(v  1 e 1 0 ]
 {
-"278
+"267
 } 0
-"279
+"268
 [v _Proximity_Tick_helper Proximity_Tick_helper `(v  1 s 1 Proximity_Tick_helper ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_Tick_helper@prox prox `*.4S1051  1 a 1 wreg ]
-[v Proximity_Tick_helper@prox prox `*.4S1051  1 a 1 wreg ]
-"282
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Tick_helper@prox prox `*.4S1376  1 a 1 wreg ]
+[v Proximity_Tick_helper@prox prox `*.4S1376  1 a 1 wreg ]
+"271
+"268
+[v Proximity_Tick_helper@prox prox `*.4S1376  1 a 1 3 ]
 "279
-[v Proximity_Tick_helper@prox prox `*.4S1051  1 a 1 3 ]
-"290
 } 0
 "933 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
 "935
-[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.4S283  1 a 1 3 ]
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.4S47  1 a 1 3 ]
 "940
 } 0
 "947
 [v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_Sampled_Reset@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_Sampled_Reset@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S47  1 a 1 wreg ]
 "949
 "947
-[v Sensor_Sampled_Reset@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S47  1 a 1 1 ]
 "950
 } 0
 "241
@@ -763,16 +740,16 @@ Proximity0 0
 [v _Sensor_Service Sensor_Service `(E2856  1 s 1 Sensor_Service ]
 {
 [v Sensor_Service@scanGroup scanGroup `uc  1 a 1 wreg ]
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
 "289
-[v Sensor_Service@sensor_adc2 sensor_adc2 `*.1S283  1 a 1 37 ]
+[v Sensor_Service@sensor_adc2 sensor_adc2 `*.1S47  1 a 1 37 ]
 "288
-[v Sensor_Service@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 36 ]
+[v Sensor_Service@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 36 ]
 "294
 [v Sensor_Service@error error `E2856  1 a 1 35 ]
 "286
@@ -784,36 +761,36 @@ Proximity0 0
 "952
 [v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_setSampled@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_setSampled@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.4S47  1 a 1 wreg ]
 "954
 "952
-[v Sensor_setSampled@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_setSampled@sensor sensor `*.4S47  1 a 1 1 ]
 "955
 } 0
 "785
 [v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_RawSample_Update@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_RawSample_Update@sensor sensor `*.4S47  1 a 1 wreg ]
 "787
 [v Sensor_RawSample_Update@adcIndex adcIndex `uc  1 a 1 6 ]
 "785
-[v Sensor_RawSample_Update@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_RawSample_Update@sensor sensor `*.4S47  1 a 1 wreg ]
 "787
 "785
-[v Sensor_RawSample_Update@sensor sensor `*.4S283  1 a 1 7 ]
+[v Sensor_RawSample_Update@sensor sensor `*.4S47  1 a 1 7 ]
 "799
 } 0
 "806
@@ -824,86 +801,86 @@ Proximity0 0
 "355
 [v _Sensor_Acquisition Sensor_Acquisition `(E2856  1 s 1 Sensor_Acquisition ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
 "357
 [v Sensor_Acquisition@retry retry `uc  1 a 1 29 ]
 "355
-[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
-[v Sensor_Acquisition@sensor_adc2 sensor_adc2 `*.1S283  1 p 1 27 ]
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
+[v Sensor_Acquisition@sensor_adc2 sensor_adc2 `*.1S47  1 p 1 27 ]
 "357
 "355
-[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 30 ]
+[v Sensor_Acquisition@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 30 ]
 "396
 } 0
 "398
 [v _Sensor_postAcquisitionProcess Sensor_postAcquisitionProcess `(v  1 s 1 Sensor_postAcquisitionProcess ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_postAcquisitionProcess@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_postAcquisitionProcess@sensor sensor `*.4S47  1 a 1 wreg ]
 "400
 [v Sensor_postAcquisitionProcess@deviation deviation `us  1 a 2 6 ]
 "401
 [v Sensor_postAcquisitionProcess@adcIndex adcIndex `uc  1 a 1 8 ]
 "398
-[v Sensor_postAcquisitionProcess@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_postAcquisitionProcess@sensor sensor `*.4S47  1 a 1 wreg ]
 "401
 "398
-[v Sensor_postAcquisitionProcess@sensor sensor `*.4S283  1 a 1 9 ]
+[v Sensor_postAcquisitionProcess@sensor sensor `*.4S47  1 a 1 9 ]
 "412
 } 0
 "860
 [v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_setInactive@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_setInactive@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_setInactive@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_setInactive@sensor sensor `*.4S47  1 a 1 wreg ]
 "862
 "860
-[v Sensor_setInactive@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_setInactive@sensor sensor `*.4S47  1 a 1 1 ]
 "863
 } 0
 "855
 [v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_setActive@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_setActive@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_setActive@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_setActive@sensor sensor `*.4S47  1 a 1 wreg ]
 "857
 "855
-[v Sensor_setActive@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_setActive@sensor sensor `*.4S47  1 a 1 1 ]
 "858
 } 0
 "716
 [v _Sensor_Scanfrequency_Evaluation Sensor_Scanfrequency_Evaluation `(E2856  1 s 1 Sensor_Scanfrequency_Evaluation ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
 "722
 [v Sensor_Scanfrequency_Evaluation@best_packet_sample best_packet_sample `[2]us  1 a 4 22 ]
 "720
@@ -915,25 +892,25 @@ Proximity0 0
 "721
 [v Sensor_Scanfrequency_Evaluation@best_sample_period best_sample_period `uc  1 a 1 20 ]
 "716
-[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
-[v Sensor_Scanfrequency_Evaluation@sensor_adc2 sensor_adc2 `*.1S283  1 p 1 14 ]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc2 sensor_adc2 `*.1S47  1 p 1 14 ]
 "719
 [v Sensor_Scanfrequency_Evaluation@frequency_hop frequency_hop `DC[5]uc  1 s 5 frequency_hop ]
 "725
 "716
-[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 17 ]
+[v Sensor_Scanfrequency_Evaluation@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 17 ]
 "768
 } 0
 "454
 [v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2856  1 s 1 Sensor_Acq_ExecutePacket ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
 "460
 [v Sensor_Acq_ExecutePacket@last_b last_b `us  1 a 2 10 ]
 "459
@@ -953,11 +930,11 @@ Proximity0 0
 "463
 [v Sensor_Acq_ExecutePacket@ADCOMCON_temp ADCOMCON_temp `uc  1 a 1 1 ]
 "454
-[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 wreg ]
-[v Sensor_Acq_ExecutePacket@sensor_adc2 sensor_adc2 `*.1S283  1 p 1 11 ]
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 wreg ]
+[v Sensor_Acq_ExecutePacket@sensor_adc2 sensor_adc2 `*.1S47  1 p 1 11 ]
 "459
 "454
-[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S283  1 a 1 13 ]
+[v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 13 ]
 "661
 } 0
 "85 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
@@ -982,88 +959,88 @@ Proximity0 0
 "420 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _Sensor_loadADCSettings Sensor_loadADCSettings `(v  1 s 1 Sensor_loadADCSettings ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_loadADCSettings@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_loadADCSettings@sensor sensor `*.4S47  1 a 1 wreg ]
 "425
 [v Sensor_loadADCSettings@addressOffset addressOffset `uc  1 a 1 8 ]
 "420
-[v Sensor_loadADCSettings@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_loadADCSettings@sensor sensor `*.4S47  1 a 1 wreg ]
 [v Sensor_loadADCSettings@adc_index adc_index `uc  1 p 1 2 ]
 "422
 "420
-[v Sensor_loadADCSettings@sensor sensor `*.4S283  1 a 1 9 ]
+[v Sensor_loadADCSettings@sensor sensor `*.4S47  1 a 1 9 ]
 "447
 } 0
 "903
 [v _Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 Sensor_isCalibrated ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_isCalibrated@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_isCalibrated@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_isCalibrated@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_isCalibrated@sensor sensor `*.4S47  1 a 1 wreg ]
 "905
 "903
-[v Sensor_isCalibrated@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_isCalibrated@sensor sensor `*.4S47  1 a 1 1 ]
 "906
 } 0
 "838
 [v _Sensor_isEnabled Sensor_isEnabled `(a  1 s 1 Sensor_isEnabled ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_isEnabled@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_isEnabled@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_isEnabled@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_isEnabled@sensor sensor `*.4S47  1 a 1 wreg ]
 "840
 "838
-[v Sensor_isEnabled@sensor sensor `*.4S283  1 a 1 2 ]
+[v Sensor_isEnabled@sensor sensor `*.4S47  1 a 1 2 ]
 "844
 } 0
 "865
 [v _Sensor_isActive Sensor_isActive `T(a  1 s 1 Sensor_isActive ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_isActive@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_isActive@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_isActive@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_isActive@sensor sensor `*.4S47  1 a 1 wreg ]
 "867
 "865
-[v Sensor_isActive@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_isActive@sensor sensor `*.4S47  1 a 1 1 ]
 "871
 } 0
 "671
 [v _Sensor_autoCalibration Sensor_autoCalibration `(v  1 s 1 Sensor_autoCalibration ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_autoCalibration@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_autoCalibration@sensor sensor `*.4S47  1 a 1 wreg ]
 "673
 [v Sensor_autoCalibration@adcIndex adcIndex `uc  1 a 1 9 ]
 "671
-[v Sensor_autoCalibration@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_autoCalibration@sensor sensor `*.4S47  1 a 1 wreg ]
 "673
 "671
-[v Sensor_autoCalibration@sensor sensor `*.4S283  1 a 1 10 ]
+[v Sensor_autoCalibration@sensor sensor `*.4S47  1 a 1 10 ]
 "707
 } 0
 "1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
@@ -1075,68 +1052,68 @@ Proximity0 0
 "908 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _Sensor_setCalibrated Sensor_setCalibrated `T(v  1 s 1 Sensor_setCalibrated ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_setCalibrated@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_setCalibrated@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_setCalibrated@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_setCalibrated@sensor sensor `*.4S47  1 a 1 wreg ]
 "910
 "908
-[v Sensor_setCalibrated@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_setCalibrated@sensor sensor `*.4S47  1 a 1 1 ]
 "912
 } 0
 "914
 [v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `T(v  1 s 1 Sensor_setCalibratAcqTime ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_setCalibratAcqTime@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_setCalibratAcqTime@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S47  1 a 1 wreg ]
 "916
 "914
-[v Sensor_setCalibratAcqTime@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S47  1 a 1 1 ]
 "918
 } 0
 "920
 [v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 Sensor_isCalibratingAcqTime ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S283  1 a 1 wreg ]
-[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S47  1 a 1 wreg ]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S47  1 a 1 wreg ]
 "922
 "920
-[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S283  1 a 1 1 ]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S47  1 a 1 1 ]
 "924
 } 0
 "337
 [v _Sensor_getScanGroupIndex Sensor_getScanGroupIndex `(uc  1 s 1 Sensor_getScanGroupIndex ]
 {
-[s S283 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
+[s S47 . 9 `DCE2854 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
 `uc 1 active 1 8 :1:1 
 `uc 1 calibrated 1 8 :1:2 
 `uc 1 enabled 1 8 :1:3 
 `uc 1 acqTime_cal 1 8 :1:4 
 ]
-[v Sensor_getScanGroupIndex@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_getScanGroupIndex@sensor sensor `*.4S47  1 a 1 wreg ]
 "339
 [v Sensor_getScanGroupIndex@sensorGroup sensorGroup `uc  1 a 1 4 ]
 "337
-[v Sensor_getScanGroupIndex@sensor sensor `*.4S283  1 a 1 wreg ]
+[v Sensor_getScanGroupIndex@sensor sensor `*.4S47  1 a 1 wreg ]
 "340
 "337
-[v Sensor_getScanGroupIndex@sensor sensor `*.4S283  1 a 1 3 ]
+[v Sensor_getScanGroupIndex@sensor sensor `*.4S47  1 a 1 3 ]
 "348
 } 0
 "222
@@ -1144,109 +1121,104 @@ Proximity0 0
 {
 "232
 } 0
-"168 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"160 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _MTOUCH_Proximity_ServiceAll MTOUCH_Proximity_ServiceAll `(v  1 e 1 0 ]
 {
-"172
+"164
 } 0
-"179
+"171
 [v _Proximity_Service Proximity_Service `(v  1 s 1 Proximity_Service ]
 {
 [v Proximity_Service@name name `E3067  1 a 1 wreg ]
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-"181
-[v Proximity_Service@prox prox `*.4S1051  1 a 1 21 ]
-"179
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"173
+[v Proximity_Service@prox prox `*.4S1376  1 a 1 21 ]
+"171
 [v Proximity_Service@name name `E3067  1 a 1 wreg ]
-"181
+"173
 [v Proximity_Service@name name `E3067  1 a 1 20 ]
-"194
+"186
 } 0
-"250
+"241
 [v _Proximity_State_Activated Proximity_State_Activated `(v  1 s 1 Proximity_State_Activated ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_State_Activated@prox prox `*.4S1051  1 p 1 5 ]
-"267
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_State_Activated@prox prox `*.4S1376  1 p 1 5 ]
+"256
 } 0
-"195
+"187
 [v _Proximity_State_Initializing Proximity_State_Initializing `(v  1 s 1 Proximity_State_Initializing ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_State_Initializing@prox prox `*.4S1051  1 p 1 5 ]
-"213
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_State_Initializing@prox prox `*.4S1376  1 p 1 5 ]
+"205
 } 0
-"214
+"206
 [v _Proximity_State_NotActivated Proximity_State_NotActivated `(v  1 s 1 Proximity_State_NotActivated ]
 {
-"217
+"209
 [v Proximity_State_NotActivated@deviation deviation `l  1 a 4 13 ]
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-"214
-[v Proximity_State_NotActivated@prox prox `*.4S1051  1 p 1 5 ]
-"248
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"206
+[v Proximity_State_NotActivated@prox prox `*.4S1376  1 p 1 5 ]
+"239
 } 0
-"436
+"425
 [v _Proximity_Baseline_Update Proximity_Baseline_Update `(v  1 s 1 Proximity_Baseline_Update ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_Baseline_Update@prox prox `*.4S1051  1 a 1 wreg ]
-[v Proximity_Baseline_Update@prox prox `*.4S1051  1 a 1 wreg ]
-"438
-"436
-[v Proximity_Baseline_Update@prox prox `*.4S1051  1 a 1 5 ]
-"450
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Baseline_Update@prox prox `*.4S1376  1 a 1 wreg ]
+[v Proximity_Baseline_Update@prox prox `*.4S1376  1 a 1 wreg ]
+"427
+"425
+[v Proximity_Baseline_Update@prox prox `*.4S1376  1 a 1 5 ]
+"439
 } 0
-"430
+"419
 [v _Proximity_Baseline_Initialize Proximity_Baseline_Initialize `(v  1 s 1 Proximity_Baseline_Initialize ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_Baseline_Initialize@prox prox `*.4S1051  1 a 1 wreg ]
-[v Proximity_Baseline_Initialize@prox prox `*.4S1051  1 a 1 wreg ]
-"432
-"430
-[v Proximity_Baseline_Initialize@prox prox `*.4S1051  1 a 1 9 ]
-"434
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Baseline_Initialize@prox prox `*.4S1376  1 a 1 wreg ]
+[v Proximity_Baseline_Initialize@prox prox `*.4S1376  1 a 1 wreg ]
+"421
+"419
+[v Proximity_Baseline_Initialize@prox prox `*.4S1376  1 a 1 9 ]
+"423
 } 0
-"472
-[v _Proximity_DefaultCallback Proximity_DefaultCallback `(v  1 s 1 Proximity_DefaultCallback ]
-{
-[v Proximity_DefaultCallback@name name `E3067  1 p 1 1 ]
-} 0
-"141
+"133
 [v _MTOUCH_Proximity_Initialize MTOUCH_Proximity_Initialize `(v  1 e 1 0 ]
 {
 [v MTOUCH_Proximity_Initialize@name name `E3067  1 a 1 wreg ]
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-"143
-[v MTOUCH_Proximity_Initialize@prox prox `*.4S1051  1 a 1 3 ]
-"141
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+"135
+[v MTOUCH_Proximity_Initialize@prox prox `*.4S1376  1 a 1 3 ]
+"133
 [v MTOUCH_Proximity_Initialize@name name `E3067  1 a 1 wreg ]
-"143
+"135
 [v MTOUCH_Proximity_Initialize@name name `E3067  1 a 1 2 ]
-"150
+"142
 } 0
-"404
+"393
 [v _Proximity_Reading_Update Proximity_Reading_Update `(v  1 s 1 Proximity_Reading_Update ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_Reading_Update@prox prox `*.4S1051  1 a 1 wreg ]
-[v Proximity_Reading_Update@prox prox `*.4S1051  1 a 1 wreg ]
-"406
-"404
-[v Proximity_Reading_Update@prox prox `*.4S1051  1 a 1 10 ]
-"416
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Reading_Update@prox prox `*.4S1376  1 a 1 wreg ]
+[v Proximity_Reading_Update@prox prox `*.4S1376  1 a 1 wreg ]
+"395
+"393
+[v Proximity_Reading_Update@prox prox `*.4S1376  1 a 1 10 ]
+"405
 } 0
-"417
+"406
 [v _Proximity_Reading_Update_Helper Proximity_Reading_Update_Helper `(v  1 s 1 Proximity_Reading_Update_Helper ]
 {
-[s S1051 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3124 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
-[v Proximity_Reading_Update_Helper@prox prox `*.4S1051  1 a 1 wreg ]
-[v Proximity_Reading_Update_Helper@prox prox `*.4S1051  1 a 1 wreg ]
-"419
+[s S1376 . 18 `DCuc 1 name 1 0 `DCE3010 1 sensor 1 1 `E3112 1 state 1 2 `ul 1 reading 4 3 `ul 1 baseline 4 7 `c 1 integratedDeviation 1 11 `us 1 counter 2 12 `us 1 baseline_count 2 14 `c 1 threshold 1 16 `uc 1 scaling 1 17 ]
+[v Proximity_Reading_Update_Helper@prox prox `*.4S1376  1 a 1 wreg ]
+[v Proximity_Reading_Update_Helper@prox prox `*.4S1376  1 a 1 wreg ]
+"408
+"406
+[v Proximity_Reading_Update_Helper@prox prox `*.4S1376  1 a 1 9 ]
 "417
-[v Proximity_Reading_Update_Helper@prox prox `*.4S1051  1 a 1 9 ]
-"428
 } 0
 "775 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
@@ -1257,17 +1229,44 @@ Proximity0 0
 [v MTOUCH_Sensor_RawSample_Get@name name `E2854  1 a 1 8 ]
 "783
 } 0
-"353 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"342 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _Proximity_Deviation_Update Proximity_Deviation_Update `(v  1 s 1 Proximity_Deviation_Update ]
 {
 [v Proximity_Deviation_Update@name name `E3067  1 a 1 wreg ]
-"355
+"344
 [v Proximity_Deviation_Update@deviation deviation `l  1 a 4 15 ]
-"353
+"342
 [v Proximity_Deviation_Update@name name `E3067  1 a 1 wreg ]
-"356
+"345
 [v Proximity_Deviation_Update@name name `E3067  1 a 1 19 ]
-"388
+"377
+} 0
+"385
+[v _MTOUCH_Proximity_Reading_Get MTOUCH_Proximity_Reading_Get `(ul  1 e 4 0 ]
+{
+[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 wreg ]
+[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 wreg ]
+"387
+[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 6 ]
+"391
+} 0
+"441
+[v _MTOUCH_Proximity_Baseline_Get MTOUCH_Proximity_Baseline_Get `(ul  1 e 4 0 ]
+{
+[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 wreg ]
+[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 wreg ]
+"443
+[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 10 ]
+"448
+} 0
+"450
+[v _Proximity_Baseline_Get_helper Proximity_Baseline_Get_helper `(ul  1 s 4 Proximity_Baseline_Get_helper ]
+{
+[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 wreg ]
+[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 wreg ]
+"452
+[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 9 ]
+"453
 } 0
 "942 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
@@ -1287,65 +1286,6 @@ Proximity0 0
 [v MTOUCH_Sensor_isCalibrated@sensor sensor `E2854  1 a 1 6 ]
 "901
 } 0
-"69 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_datastreamer.c
-[v _MTOUCH_DataStreamer_Service MTOUCH_DataStreamer_Service `(v  1 e 1 0 ]
-{
-"73
-[v MTOUCH_DataStreamer_Service@u16temp_output u16temp_output `us  1 a 2 8 ]
-"75
-[v MTOUCH_DataStreamer_Service@count_bytes_out count_bytes_out `VEuc  1 a 1 10 ]
-"71
-[v MTOUCH_DataStreamer_Service@i i `uc  1 a 1 7 ]
-"72
-[v MTOUCH_DataStreamer_Service@sequence sequence `uc  1 s 1 sequence ]
-"126
-} 0
-"64
-[v _datastreamer_output_byte datastreamer_output_byte `T(v  1 e 1 0 ]
-{
-[v datastreamer_output_byte@data data `uc  1 a 1 wreg ]
-[v datastreamer_output_byte@data data `uc  1 a 1 wreg ]
-"66
-[v datastreamer_output_byte@data data `uc  1 a 1 3 ]
-"67
-} 0
-"173 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
-[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
-{
-[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
-[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
-[v EUSART_Write@txData txData `uc  1 a 1 2 ]
-"194
-} 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"10
-[v ___awmod@sign sign `uc  1 a 1 7 ]
-[v ___awmod@counter counter `uc  1 a 1 6 ]
-"5
-[v ___awmod@divisor divisor `i  1 p 2 1 ]
-[v ___awmod@dividend dividend `i  1 p 2 3 ]
-"34
-} 0
-"964 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
-[v _MTOUCH_Sensor_AdditionalCap_Get MTOUCH_Sensor_AdditionalCap_Get `(uc  1 e 1 0 ]
-{
-[v MTOUCH_Sensor_AdditionalCap_Get@name name `E2854  1 a 1 wreg ]
-[v MTOUCH_Sensor_AdditionalCap_Get@name name `E2854  1 a 1 wreg ]
-"966
-[v MTOUCH_Sensor_AdditionalCap_Get@name name `E2854  1 a 1 6 ]
-"970
-} 0
-"972
-[v _MTOUCH_Sensor_AcquisitionTime_Get MTOUCH_Sensor_AcquisitionTime_Get `(uc  1 e 1 0 ]
-{
-[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E2854  1 a 1 wreg ]
-[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E2854  1 a 1 wreg ]
-"974
-[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E2854  1 a 1 6 ]
-"978
-} 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
 {
@@ -1359,68 +1299,42 @@ Proximity0 0
 [v ___bmul@multiplier multiplier `uc  1 a 1 4 ]
 "51
 } 0
-"329 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
+"318 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_proximity.c
 [v _MTOUCH_Proximity_isActivated MTOUCH_Proximity_isActivated `(a  1 e 1 0 ]
 {
 [v MTOUCH_Proximity_isActivated@name name `E3067  1 a 1 wreg ]
 [v MTOUCH_Proximity_isActivated@name name `E3067  1 a 1 wreg ]
-"331
-[v MTOUCH_Proximity_isActivated@name name `E3067  1 a 1 1 ]
-"335
-} 0
-"299
-[v _MTOUCH_Proximity_Threshold_Get MTOUCH_Proximity_Threshold_Get `(uc  1 e 1 0 ]
-{
-[v MTOUCH_Proximity_Threshold_Get@name name `E3067  1 a 1 wreg ]
-[v MTOUCH_Proximity_Threshold_Get@name name `E3067  1 a 1 wreg ]
-"301
-[v MTOUCH_Proximity_Threshold_Get@name name `E3067  1 a 1 1 ]
-"305
-} 0
-"314
-[v _MTOUCH_Proximity_Scaling_Get MTOUCH_Proximity_Scaling_Get `(uc  1 e 1 0 ]
-{
-[v MTOUCH_Proximity_Scaling_Get@name name `E3067  1 a 1 wreg ]
-[v MTOUCH_Proximity_Scaling_Get@name name `E3067  1 a 1 wreg ]
-"316
-[v MTOUCH_Proximity_Scaling_Get@name name `E3067  1 a 1 1 ]
 "320
+[v MTOUCH_Proximity_isActivated@name name `E3067  1 a 1 1 ]
+"324
 } 0
-"396
-[v _MTOUCH_Proximity_Reading_Get MTOUCH_Proximity_Reading_Get `(ul  1 e 4 0 ]
+"296
+[v _MTOUCH_Proximity_Threshold_Set MTOUCH_Proximity_Threshold_Set `(v  1 e 1 0 ]
 {
-[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 wreg ]
-[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 wreg ]
-"398
-[v MTOUCH_Proximity_Reading_Get@name name `E3067  1 a 1 6 ]
-"402
+[v MTOUCH_Proximity_Threshold_Set@name name `E3067  1 a 1 wreg ]
+[v MTOUCH_Proximity_Threshold_Set@name name `E3067  1 a 1 wreg ]
+[v MTOUCH_Proximity_Threshold_Set@threshold threshold `uc  1 p 1 1 ]
+"298
+[v MTOUCH_Proximity_Threshold_Set@name name `E3067  1 a 1 3 ]
+"301
 } 0
-"345
-[v _MTOUCH_Proximity_Deviation_Get MTOUCH_Proximity_Deviation_Get `(c  1 e 1 0 ]
+"132 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
 {
-[v MTOUCH_Proximity_Deviation_Get@name name `E3067  1 a 1 wreg ]
-[v MTOUCH_Proximity_Deviation_Get@name name `E3067  1 a 1 wreg ]
-"347
-[v MTOUCH_Proximity_Deviation_Get@name name `E3067  1 a 1 1 ]
-"351
+"135
 } 0
-"452
-[v _MTOUCH_Proximity_Baseline_Get MTOUCH_Proximity_Baseline_Get `(ul  1 e 4 0 ]
+"142
+[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
 {
-[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 wreg ]
-[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 wreg ]
-"454
-[v MTOUCH_Proximity_Baseline_Get@name name `E3067  1 a 1 10 ]
-"459
+"145
 } 0
-"461
-[v _Proximity_Baseline_Get_helper Proximity_Baseline_Get_helper `(ul  1 s 4 Proximity_Baseline_Get_helper ]
+"173
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 {
-[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 wreg ]
-[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 wreg ]
-"463
-[v Proximity_Baseline_Get_helper@name name `E3067  1 a 1 9 ]
-"464
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 2 ]
+"194
 } 0
 "52 D:\Dev\Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
