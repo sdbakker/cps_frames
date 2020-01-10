@@ -43,6 +43,8 @@
 /* ======================================================================= *
  * Definitions
  * ======================================================================= */
+#define MTOUCH_SCAN_TIMER_TICK                  32.258 //unit us
+#define MTOUCH_SCAN_RELOAD                      (uint16_t)(65535-((MTOUCH_SCAN_INTERVAL*1000.0)/MTOUCH_SCAN_TIMER_TICK)) 
 
 
 /* ======================================================================= *
@@ -50,14 +52,32 @@
  * ======================================================================= */
 
 static bool mtouch_time_toScan = false;
+static uint16_t mTouchScanReload = MTOUCH_SCAN_RELOAD;
 
 /*
  * =======================================================================
  *  Local Functions
  * =======================================================================
  */
+static void MTOUCH_ScanScheduler(void);   
 static bool MTOUCH_needReburst(void);
 
+/*
+ * =======================================================================
+ * MTOUCH_ScanScheduler()
+ * =======================================================================
+ *  The interrupt handler callback for scanrate timer  
+ */
+static void MTOUCH_ScanScheduler(void)         
+{
+  
+    //schedule the next timer1 interrupt
+    TMR1_WriteTimer(mTouchScanReload);
+    
+    //schedule the scan
+    mtouch_time_toScan = true;  
+
+}
 /*
  * =======================================================================
  * MTOUCH_Service_isInProgress()
@@ -80,12 +100,10 @@ bool MTOUCH_Service_isInProgress()
 void MTOUCH_Initialize(void)
 {   
     MTOUCH_Sensor_InitializeAll();
-    MTOUCH_Proximity_InitializeAll();
-#if (MTOUCH_COMM_ENABLE == 1u)
-    MTOUCH_DataStreamer_Initialize();    
-#endif      
+    MTOUCH_Button_InitializeAll();
     MTOUCH_Sensor_Sampled_ResetAll();
     MTOUCH_Sensor_Scan_Initialize();
+    TMR1_SetInterruptHandler(MTOUCH_ScanScheduler);
 
 }
 
@@ -98,8 +116,6 @@ void MTOUCH_Initialize(void)
 bool MTOUCH_Service_Mainloop(void)
 {
 
-    /* In free running mode, the mTouch service will be executed once MTOUCH_Service_Mainloop gets called.*/
-    mtouch_time_toScan = true;
     
     if(mtouch_time_toScan)               
     {
@@ -107,10 +123,7 @@ bool MTOUCH_Service_Mainloop(void)
         return false;  
 
          
-            MTOUCH_Proximity_ServiceAll();          /* Execute state machine for all proximity w/scanned sensors */
-        #if (MTOUCH_COMM_ENABLE == 1u)
-            MTOUCH_DataStreamer_Service();          /* Execute Data Visualizer module */  
-        #endif
+            MTOUCH_Button_ServiceAll();             /* Execute state machine for all buttons w/scanned sensors */
             mtouch_time_toScan = MTOUCH_needReburst();
             MTOUCH_Sensor_Sampled_ResetAll();  
             MTOUCH_Tick();
@@ -129,7 +142,7 @@ bool MTOUCH_Service_Mainloop(void)
  */
 void MTOUCH_Tick(void)
 {
-    MTOUCH_Proximity_Tick();
+    MTOUCH_Button_Tick();
 }
 
 /*

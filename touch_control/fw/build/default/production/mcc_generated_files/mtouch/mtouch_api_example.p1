@@ -1,14 +1,14 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"55 mcc_generated_files/mtouch/mtouch.h
-[; ;mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
+"54 mcc_generated_files/mtouch/mtouch.h
+[; ;mcc_generated_files/mtouch/mtouch.h: 54:     _Bool MTOUCH_Service_Mainloop (void);
 [v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
-"68 mcc_generated_files/mtouch/mtouch_api_example.c
-[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         if(MTOUCH_Proximity_isActivated(0))
+"67 mcc_generated_files/mtouch/mtouch_api_example.c
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 67:         if (MTOUCH_Button_isPressed(0))
 [c E91 0 .. ]
-[n E91 mtouch_proximity_names Proximity0  ]
-"111 mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 111:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
-[v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E91 ]
+[n E91 mtouch_button_names Button0  ]
+"114 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 114:     _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+[v _MTOUCH_Button_isPressed `(a ~T0 @X0 0 ef1`E91 ]
 "59 mcc_generated_files/mtouch/mtouch_api_example.c
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 59: void touch_example(void)
 [v _touch_example `(v ~T0 @X0 1 ef ]
@@ -23,11 +23,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "65
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 65:     {
 {
+"67
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 67:         if (MTOUCH_Button_isPressed(0))
+[e $ ! != -> ( _MTOUCH_Button_isPressed (1 -> -> 0 `i `E91 `i -> 0 `i 3  ]
 "68
-[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         if(MTOUCH_Proximity_isActivated(0))
-[e $ ! != -> ( _MTOUCH_Proximity_isActivated (1 -> -> 0 `i `E91 `i -> 0 `i 3  ]
-"69
-[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 69:         {
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 68:         {
 {
 "72
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 72:         }
@@ -43,11 +43,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/mtouch/mtouch_api_example.c: 77:         }
 }
 [e :U 4 ]
-"81
-[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 81:     }
+"82
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 82:     }
 }
 [e :U 2 ]
-"85
-[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 85: }
+"86
+[; ;mcc_generated_files/mtouch/mtouch_api_example.c: 86: }
 [e :UE 1 ]
 }

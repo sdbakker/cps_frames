@@ -43,6 +43,9 @@
 
 #include "mcc_generated_files/mcc.h"
 
+#define FIRST_RECALIBRATION_DELAY 2000   
+uint8_t _wait_to_initialize = 1;
+uint16_t _first_delay_cntr = 0;
 /*
                          Main application
  */
@@ -66,37 +69,50 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
     
-    MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
+    SigOut_SetHigh();
+    LED1_SetHigh();
     
     while (1)
     {
-    
         if(MTOUCH_Service_Mainloop())
         {
-
-            /* Proximity API*/
-            if(MTOUCH_Proximity_isActivated(Proximity0))
-            {
-                // process if proximity is triggered
-                if(EUSART_is_tx_ready())
-                {
-                    RTS_SetHigh();
-                    __delay_us(10);
-                    EUSART_Write('b');
-                    LED2_SetHigh();
+            if (_wait_to_initialize > 0) {
+                if (++_first_delay_cntr >= FIRST_RECALIBRATION_DELAY) {
+                   MTOUCH_Button_InitializeAll(); 
+                   _wait_to_initialize = 0;
+                   LED1_SetHigh();
                 }
-                LED1_SetHigh();
+            } else {
+                /* Proximity API*/
+                if(MTOUCH_Button_isPressed(0))
+                {
+                    SigOut_SetLow();
+                    // process if proximity is triggered
+                    if(EUSART_is_tx_ready())
+                    {
+                        RTS_SetHigh();
+                        __delay_us(10);
+                        EUSART_Write('b');
+                    }
+                    LED1_SetHigh();
+                }
+                else
+                {
+                    // process if button is not triggered
+                    if (!SigIn_GetValue()) {
+                        LED2_SetHigh();
+                        SigOut_SetLow();
+                    } else {
+                        LED2_SetLow();
+                        SigOut_SetHigh(); 
+                    }
+                    LED1_SetLow(); 
+                }
             }
-            else
-            {
-                // process if button is not triggered
-                LED1_SetLow();
+
+            if (EUSART_is_tx_done()) {
+                RTS_SetLow();
             }
-        }
-        
-        if (EUSART_is_tx_done()) {
-            RTS_SetLow();
-            LED2_SetLow();
         }
     }
 }

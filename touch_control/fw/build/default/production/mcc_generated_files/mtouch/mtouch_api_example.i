@@ -179,10 +179,10 @@ typedef uint32_t uint_fast32_t;
     void MTOUCH_Sensor_NotifyInterruptOccurred(void);
 # 41 "mcc_generated_files/mtouch/mtouch_config.h" 2
 
-# 1 "mcc_generated_files/mtouch/mtouch_proximity.h" 1
-# 41 "mcc_generated_files/mtouch/mtouch_proximity.h"
+# 1 "mcc_generated_files/mtouch/mtouch_button.h" 1
+# 41 "mcc_generated_files/mtouch/mtouch_button.h"
 # 1 "mcc_generated_files/mtouch/mtouch.h" 1
-# 41 "mcc_generated_files/mtouch/mtouch_proximity.h" 2
+# 41 "mcc_generated_files/mtouch/mtouch_button.h" 2
 
 
 
@@ -191,9 +191,9 @@ typedef uint32_t uint_fast32_t;
 
 
 
-    enum mtouch_proximity_names
+    enum mtouch_button_names
     {
-        Proximity0 = 0
+        Button0 = 0
     };
 
 
@@ -201,69 +201,57 @@ typedef uint32_t uint_fast32_t;
 
 
 
+    typedef uint8_t mtouch_buttonmask_t;
 
-    typedef uint8_t mtouch_proxmask_t;
-
-    typedef uint16_t mtouch_prox_statecounter_t;
-
+    typedef uint16_t mtouch_button_statecounter_t;
 
 
 
-    typedef uint16_t mtouch_prox_baselinecounter_t;
+    typedef uint16_t mtouch_button_baselinecounter_t;
 
 
 
-    typedef uint32_t mtouch_prox_reading_t;
+    typedef uint16_t mtouch_button_reading_t;
 
 
 
-    typedef uint32_t mtouch_prox_baseline_t;
+
+    typedef uint32_t mtouch_button_baseline_t;
 
 
 
-    typedef int8_t mtouch_prox_deviation_t;
+
+    typedef int8_t mtouch_button_deviation_t;
 
 
 
-    typedef uint8_t mtouch_prox_threshold_t;
+    typedef uint8_t mtouch_button_threshold_t;
 
 
 
-    typedef uint8_t mtouch_prox_scaling_t;
-# 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
-    void MTOUCH_Proximity_InitializeAll (void);
-    void MTOUCH_Proximity_ServiceAll (void);
-    void MTOUCH_Proximity_Tick (void);
-    void MTOUCH_Proximity_Recalibrate (void);
+    typedef uint8_t mtouch_button_scaling_t;
+# 100 "mcc_generated_files/mtouch/mtouch_button.h"
+    void MTOUCH_Button_Initialize (enum mtouch_button_names button);
+    void MTOUCH_Button_InitializeAll (void);
+    void MTOUCH_Button_ServiceAll (void);
+    void MTOUCH_Button_Tick (void);
+    mtouch_button_deviation_t MTOUCH_Button_Deviation_Get (enum mtouch_button_names button);
+    mtouch_button_reading_t MTOUCH_Button_Reading_Get (enum mtouch_button_names button);
+    mtouch_button_reading_t MTOUCH_Button_Baseline_Get (enum mtouch_button_names button);
+    mtouch_button_scaling_t MTOUCH_Button_Scaling_Get (enum mtouch_button_names button);
+    void MTOUCH_Button_Scaling_Set (enum mtouch_button_names button,mtouch_button_scaling_t scaling);
+    mtouch_button_threshold_t MTOUCH_Button_Threshold_Get (enum mtouch_button_names button);
+    void MTOUCH_Button_Threshold_Set (enum mtouch_button_names button,mtouch_button_threshold_t threshold);
+    uint8_t MTOUCH_Button_Oversampling_Get(enum mtouch_button_names button);
+    void MTOUCH_Button_Oversampling_Set(enum mtouch_button_names button,uint8_t oversampling);
 
-    mtouch_prox_deviation_t MTOUCH_Proximity_Deviation_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_reading_t MTOUCH_Proximity_Reading_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_reading_t MTOUCH_Proximity_Baseline_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_scaling_t MTOUCH_Proximity_Scaling_Get (enum mtouch_proximity_names prox);
-    void MTOUCH_Proximity_Scaling_Set (enum mtouch_proximity_names prox,mtouch_prox_scaling_t scaling);
-    void MTOUCH_Proximity_Threshold_Set (enum mtouch_proximity_names prox,mtouch_prox_threshold_t threshold);
-    mtouch_prox_threshold_t MTOUCH_Proximity_Threshold_Get (enum mtouch_proximity_names prox);
-
-    _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
-    _Bool MTOUCH_Proximity_isInitialized (enum mtouch_proximity_names prox);
-    uint8_t MTOUCH_Proximity_State_Get (enum mtouch_proximity_names prox);
-    mtouch_proxmask_t MTOUCH_Proximity_Proximitymask_Get(void);
+    _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+    _Bool MTOUCH_Button_isInitialized (enum mtouch_button_names button);
+    mtouch_buttonmask_t MTOUCH_Button_Buttonmask_Get(void);
+    uint8_t MTOUCH_Button_State_Get (enum mtouch_button_names button);
 # 42 "mcc_generated_files/mtouch/mtouch_config.h" 2
-
-# 1 "mcc_generated_files/mtouch/mtouch_datastreamer.h" 1
-# 44 "mcc_generated_files/mtouch/mtouch_datastreamer.h"
-# 1 "mcc_generated_files/mtouch/mtouch_config.h" 1
-# 44 "mcc_generated_files/mtouch/mtouch_datastreamer.h" 2
-
-
-
-
-void MTOUCH_DataStreamer_Service(void);
-void MTOUCH_DataStreamer_Initialize(void);
-# 43 "mcc_generated_files/mtouch/mtouch_config.h" 2
 # 41 "mcc_generated_files/mtouch/mtouch.h" 2
-# 54 "mcc_generated_files/mtouch/mtouch.h"
+# 53 "mcc_generated_files/mtouch/mtouch.h"
     void MTOUCH_Initialize (void);
     _Bool MTOUCH_Service_Mainloop (void);
     void MTOUCH_Tick (void);
@@ -278,9 +266,9 @@ void touch_example(void)
     if(MTOUCH_Service_Mainloop())
     {
 
-
-        if(MTOUCH_Proximity_isActivated(0))
+        if (MTOUCH_Button_isPressed(0))
         {
+
 
 
         }
@@ -289,6 +277,7 @@ void touch_example(void)
 
 
         }
+
 
 
 

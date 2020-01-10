@@ -40,8 +40,7 @@
 #include <stdbool.h>
 #include "mtouch_config.h"
 #include "mtouch_sensor.h"
-#include "mtouch_proximity.h"
-#include "mtouch_datastreamer.h"
+#include "mtouch_button.h"
 #if (__XC8_VERSION < 1420)
     #error  Please update XC8 compiler to version 1.42 or higher. 
 #endif
@@ -66,14 +65,14 @@
  *
  *         Use the 'Set Callback' API to provide the function pointer
  *         to your application's function:
- *          void MTOUCH_Proximity_SetActivatedCallback   (void (*callback)(enum mtouch_proximity_names prox));
- *          void MTOUCH_Proximity_SetNotActivatedCallback(void (*callback)(enum mtouch_proximity_names prox));
+ *          void MTOUCH_Button_SetPressedCallback   (void (*callback)(enum mtouch_button_names button));
+ *          void MTOUCH_Button_SetNotPressedCallback(void (*callback)(enum mtouch_button_names button));
  *
  *  2. Alternatively, you may choose to directly poll the status of the
  *     mTouch state machine by using the appropriate API. To do this:
  *
  *          Use the appropriate API in your application:
- *          bool MTOUCH_Proximity_isActivated(enum mtouch_proximity_names prox);
+ *          bool MTOUCH_Button_isPressed     (enum mtouch_button_names    button);
  */
 
  /*

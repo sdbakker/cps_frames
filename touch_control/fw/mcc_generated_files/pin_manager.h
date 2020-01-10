@@ -65,6 +65,23 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set SigIn aliases
+#define SigIn_TRIS                 TRISAbits.TRISA2
+#define SigIn_LAT                  LATAbits.LATA2
+#define SigIn_PORT                 PORTAbits.RA2
+#define SigIn_WPU                  WPUAbits.WPUA2
+#define SigIn_ANS                  ANSELAbits.ANSA2
+#define SigIn_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
+#define SigIn_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
+#define SigIn_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
+#define SigIn_GetValue()           PORTAbits.RA2
+#define SigIn_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
+#define SigIn_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
+#define SigIn_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
+#define SigIn_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
+#define SigIn_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
+#define SigIn_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
+
 // get/set RTS aliases
 #define RTS_TRIS                 TRISAbits.TRISA4
 #define RTS_LAT                  LATAbits.LATA4
@@ -139,6 +156,20 @@
 #define RC4_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
 #define RC4_SetAnalogMode()         do { ANSELCbits.ANSC4 = 1; } while(0)
 #define RC4_SetDigitalMode()        do { ANSELCbits.ANSC4 = 0; } while(0)
+
+// get/set SigOut aliases
+#define SigOut_TRIS                 TRISCbits.TRISC6
+#define SigOut_LAT                  LATCbits.LATC6
+#define SigOut_PORT                 PORTCbits.RC6
+#define SigOut_ANS                  ANSELCbits.ANSC6
+#define SigOut_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
+#define SigOut_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
+#define SigOut_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
+#define SigOut_GetValue()           PORTCbits.RC6
+#define SigOut_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
+#define SigOut_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
+#define SigOut_SetAnalogMode()      do { ANSELCbits.ANSC6 = 1; } while(0)
+#define SigOut_SetDigitalMode()     do { ANSELCbits.ANSC6 = 0; } while(0)
 
 // get/set LED2 aliases
 #define LED2_TRIS                 TRISCbits.TRISC7

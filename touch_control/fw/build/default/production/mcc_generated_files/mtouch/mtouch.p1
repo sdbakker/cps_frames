@@ -1,30 +1,37 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"235 mcc_generated_files/mtouch/../tmr1.h
+[; ;mcc_generated_files/mtouch/../tmr1.h: 235: void TMR1_WriteTimer(uint16_t timerVal);
+[v _TMR1_WriteTimer `(v ~T0 @X0 0 ef1`us ]
 "82 mcc_generated_files/mtouch/mtouch_sensor.h
 [; ;mcc_generated_files/mtouch/mtouch_sensor.h: 82:     void MTOUCH_Sensor_InitializeAll (void);
 [v _MTOUCH_Sensor_InitializeAll `(v ~T0 @X0 0 ef ]
-"98 mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 98:     void MTOUCH_Proximity_InitializeAll (void);
-[v _MTOUCH_Proximity_InitializeAll `(v ~T0 @X0 0 ef ]
+"101 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 101:     void MTOUCH_Button_InitializeAll (void);
+[v _MTOUCH_Button_InitializeAll `(v ~T0 @X0 0 ef ]
 "95 mcc_generated_files/mtouch/mtouch_sensor.h
 [; ;mcc_generated_files/mtouch/mtouch_sensor.h: 95:     void MTOUCH_Sensor_Sampled_ResetAll (void);
 [v _MTOUCH_Sensor_Sampled_ResetAll `(v ~T0 @X0 0 ef ]
 "81
 [; ;mcc_generated_files/mtouch/mtouch_sensor.h: 81:     void MTOUCH_Sensor_Scan_Initialize (void);
 [v _MTOUCH_Sensor_Scan_Initialize `(v ~T0 @X0 0 ef ]
-"84
+[v F2960 `(v ~T0 @X0 0 tf ]
+"385 mcc_generated_files/mtouch/../tmr1.h
+[; ;mcc_generated_files/mtouch/../tmr1.h: 385:  void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F2960 ]
+"84 mcc_generated_files/mtouch/mtouch_sensor.h
 [; ;mcc_generated_files/mtouch/mtouch_sensor.h: 84:     _Bool MTOUCH_Sensor_SampleAll (void);
 [v _MTOUCH_Sensor_SampleAll `(a ~T0 @X0 0 ef ]
-"99 mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 99:     void MTOUCH_Proximity_ServiceAll (void);
-[v _MTOUCH_Proximity_ServiceAll `(v ~T0 @X0 0 ef ]
-"59 mcc_generated_files/mtouch/mtouch.c
-[; ;mcc_generated_files/mtouch/mtouch.c: 59: static _Bool MTOUCH_needReburst(void);
+"102 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 102:     void MTOUCH_Button_ServiceAll (void);
+[v _MTOUCH_Button_ServiceAll `(v ~T0 @X0 0 ef ]
+"63 mcc_generated_files/mtouch/mtouch.c
+[; ;mcc_generated_files/mtouch/mtouch.c: 63: static _Bool MTOUCH_needReburst(void);
 [v _MTOUCH_needReburst `(a ~T0 @X0 0 sf ]
-"56 mcc_generated_files/mtouch/../mtouch/mtouch.h
+"55 mcc_generated_files/mtouch/../mtouch/mtouch.h
 [v _MTOUCH_Tick `(v ~T0 @X0 0 ef ]
-"100 mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;mcc_generated_files/mtouch/mtouch_proximity.h: 100:     void MTOUCH_Proximity_Tick (void);
-[v _MTOUCH_Proximity_Tick `(v ~T0 @X0 0 ef ]
+"103 mcc_generated_files/mtouch/mtouch_button.h
+[; ;mcc_generated_files/mtouch/mtouch_button.h: 103:     void MTOUCH_Button_Tick (void);
+[v _MTOUCH_Button_Tick `(v ~T0 @X0 0 ef ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -592,147 +599,171 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8047
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 8047: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"52 mcc_generated_files/mtouch/mtouch.c
-[; ;mcc_generated_files/mtouch/mtouch.c: 52: static _Bool mtouch_time_toScan = 0;
+"54 mcc_generated_files/mtouch/mtouch.c
+[; ;mcc_generated_files/mtouch/mtouch.c: 54: static _Bool mtouch_time_toScan = 0;
 [v _mtouch_time_toScan `a ~T0 @X0 1 s ]
 [i _mtouch_time_toScan
 -> -> 0 `i `a
 ]
-"68
-[; ;mcc_generated_files/mtouch/mtouch.c: 68: _Bool MTOUCH_Service_isInProgress()
+"55
+[; ;mcc_generated_files/mtouch/mtouch.c: 55: static uint16_t mTouchScanReload = (uint16_t)(65535-((20u*1000.0)/32.258));
+[v _mTouchScanReload `us ~T0 @X0 1 s ]
+[i _mTouchScanReload
+-> - -> -> 65535 `l `d / * -> -> 20 `ui `d .1000.0 .32.258 `us
+]
+"71
+[; ;mcc_generated_files/mtouch/mtouch.c: 71: static void MTOUCH_ScanScheduler(void)
+[v _MTOUCH_ScanScheduler `(v ~T0 @X0 1 sf ]
+"72
+[; ;mcc_generated_files/mtouch/mtouch.c: 72: {
+{
+[e :U _MTOUCH_ScanScheduler ]
+[f ]
+"75
+[; ;mcc_generated_files/mtouch/mtouch.c: 75:     TMR1_WriteTimer(mTouchScanReload);
+[e ( _TMR1_WriteTimer (1 _mTouchScanReload ]
+"78
+[; ;mcc_generated_files/mtouch/mtouch.c: 78:     mtouch_time_toScan = 1;
+[e = _mtouch_time_toScan -> -> 1 `i `a ]
+"80
+[; ;mcc_generated_files/mtouch/mtouch.c: 80: }
+[e :UE 458 ]
+}
+"88
+[; ;mcc_generated_files/mtouch/mtouch.c: 88: _Bool MTOUCH_Service_isInProgress()
 [v _MTOUCH_Service_isInProgress `(a ~T0 @X0 1 ef ]
-"69
-[; ;mcc_generated_files/mtouch/mtouch.c: 69: {
+"89
+[; ;mcc_generated_files/mtouch/mtouch.c: 89: {
 {
 [e :U _MTOUCH_Service_isInProgress ]
 [f ]
-"70
-[; ;mcc_generated_files/mtouch/mtouch.c: 70:     return mtouch_time_toScan;
+"90
+[; ;mcc_generated_files/mtouch/mtouch.c: 90:     return mtouch_time_toScan;
 [e ) _mtouch_time_toScan ]
-[e $UE 458  ]
-"71
-[; ;mcc_generated_files/mtouch/mtouch.c: 71: }
-[e :UE 458 ]
+[e $UE 459  ]
+"91
+[; ;mcc_generated_files/mtouch/mtouch.c: 91: }
+[e :UE 459 ]
 }
-"80
-[; ;mcc_generated_files/mtouch/mtouch.c: 80: void MTOUCH_Initialize(void)
+"100
+[; ;mcc_generated_files/mtouch/mtouch.c: 100: void MTOUCH_Initialize(void)
 [v _MTOUCH_Initialize `(v ~T0 @X0 1 ef ]
-"81
-[; ;mcc_generated_files/mtouch/mtouch.c: 81: {
+"101
+[; ;mcc_generated_files/mtouch/mtouch.c: 101: {
 {
 [e :U _MTOUCH_Initialize ]
 [f ]
-"82
-[; ;mcc_generated_files/mtouch/mtouch.c: 82:     MTOUCH_Sensor_InitializeAll();
+"102
+[; ;mcc_generated_files/mtouch/mtouch.c: 102:     MTOUCH_Sensor_InitializeAll();
 [e ( _MTOUCH_Sensor_InitializeAll ..  ]
-"83
-[; ;mcc_generated_files/mtouch/mtouch.c: 83:     MTOUCH_Proximity_InitializeAll();
-[e ( _MTOUCH_Proximity_InitializeAll ..  ]
-"87
-[; ;mcc_generated_files/mtouch/mtouch.c: 87:     MTOUCH_Sensor_Sampled_ResetAll();
+"103
+[; ;mcc_generated_files/mtouch/mtouch.c: 103:     MTOUCH_Button_InitializeAll();
+[e ( _MTOUCH_Button_InitializeAll ..  ]
+"104
+[; ;mcc_generated_files/mtouch/mtouch.c: 104:     MTOUCH_Sensor_Sampled_ResetAll();
 [e ( _MTOUCH_Sensor_Sampled_ResetAll ..  ]
-"88
-[; ;mcc_generated_files/mtouch/mtouch.c: 88:     MTOUCH_Sensor_Scan_Initialize();
+"105
+[; ;mcc_generated_files/mtouch/mtouch.c: 105:     MTOUCH_Sensor_Scan_Initialize();
 [e ( _MTOUCH_Sensor_Scan_Initialize ..  ]
-"90
-[; ;mcc_generated_files/mtouch/mtouch.c: 90: }
-[e :UE 459 ]
+"106
+[; ;mcc_generated_files/mtouch/mtouch.c: 106:     TMR1_SetInterruptHandler(MTOUCH_ScanScheduler);
+[e ( _TMR1_SetInterruptHandler (1 &U _MTOUCH_ScanScheduler ]
+"108
+[; ;mcc_generated_files/mtouch/mtouch.c: 108: }
+[e :UE 460 ]
 }
-"98
-[; ;mcc_generated_files/mtouch/mtouch.c: 98: _Bool MTOUCH_Service_Mainloop(void)
+"116
+[; ;mcc_generated_files/mtouch/mtouch.c: 116: _Bool MTOUCH_Service_Mainloop(void)
 [v _MTOUCH_Service_Mainloop `(a ~T0 @X0 1 ef ]
-"99
-[; ;mcc_generated_files/mtouch/mtouch.c: 99: {
+"117
+[; ;mcc_generated_files/mtouch/mtouch.c: 117: {
 {
 [e :U _MTOUCH_Service_Mainloop ]
 [f ]
-"102
-[; ;mcc_generated_files/mtouch/mtouch.c: 102:     mtouch_time_toScan = 1;
-[e = _mtouch_time_toScan -> -> 1 `i `a ]
-"104
-[; ;mcc_generated_files/mtouch/mtouch.c: 104:     if(mtouch_time_toScan)
-[e $ ! != -> _mtouch_time_toScan `i -> 0 `i 461  ]
-"105
-[; ;mcc_generated_files/mtouch/mtouch.c: 105:     {
-{
-"106
-[; ;mcc_generated_files/mtouch/mtouch.c: 106:         if(MTOUCH_Sensor_SampleAll() == 0)
-[e $ ! == -> ( _MTOUCH_Sensor_SampleAll ..  `i -> 0 `i 462  ]
-"107
-[; ;mcc_generated_files/mtouch/mtouch.c: 107:         return 0;
-[e ) -> -> 0 `i `a ]
-[e $UE 460  ]
-[e :U 462 ]
-"110
-[; ;mcc_generated_files/mtouch/mtouch.c: 110:             MTOUCH_Proximity_ServiceAll();
-[e ( _MTOUCH_Proximity_ServiceAll ..  ]
-"114
-[; ;mcc_generated_files/mtouch/mtouch.c: 114:             mtouch_time_toScan = MTOUCH_needReburst();
-[e = _mtouch_time_toScan ( _MTOUCH_needReburst ..  ]
-"115
-[; ;mcc_generated_files/mtouch/mtouch.c: 115:             MTOUCH_Sensor_Sampled_ResetAll();
-[e ( _MTOUCH_Sensor_Sampled_ResetAll ..  ]
-"116
-[; ;mcc_generated_files/mtouch/mtouch.c: 116:             MTOUCH_Tick();
-[e ( _MTOUCH_Tick ..  ]
-"117
-[; ;mcc_generated_files/mtouch/mtouch.c: 117:             return 1;
-[e ) -> -> 1 `i `a ]
-[e $UE 460  ]
-"118
-[; ;mcc_generated_files/mtouch/mtouch.c: 118:     }
-}
-[e $U 463  ]
-"119
-[; ;mcc_generated_files/mtouch/mtouch.c: 119:     else
-[e :U 461 ]
 "120
-[; ;mcc_generated_files/mtouch/mtouch.c: 120:     {
-{
+[; ;mcc_generated_files/mtouch/mtouch.c: 120:     if(mtouch_time_toScan)
+[e $ ! != -> _mtouch_time_toScan `i -> 0 `i 462  ]
 "121
-[; ;mcc_generated_files/mtouch/mtouch.c: 121:         return 0;
-[e ) -> -> 0 `i `a ]
-[e $UE 460  ]
+[; ;mcc_generated_files/mtouch/mtouch.c: 121:     {
+{
 "122
-[; ;mcc_generated_files/mtouch/mtouch.c: 122:     }
-}
-[e :U 463 ]
+[; ;mcc_generated_files/mtouch/mtouch.c: 122:         if(MTOUCH_Sensor_SampleAll() == 0)
+[e $ ! == -> ( _MTOUCH_Sensor_SampleAll ..  `i -> 0 `i 463  ]
 "123
-[; ;mcc_generated_files/mtouch/mtouch.c: 123: }
-[e :UE 460 ]
-}
+[; ;mcc_generated_files/mtouch/mtouch.c: 123:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 461  ]
+[e :U 463 ]
+"126
+[; ;mcc_generated_files/mtouch/mtouch.c: 126:             MTOUCH_Button_ServiceAll();
+[e ( _MTOUCH_Button_ServiceAll ..  ]
+"127
+[; ;mcc_generated_files/mtouch/mtouch.c: 127:             mtouch_time_toScan = MTOUCH_needReburst();
+[e = _mtouch_time_toScan ( _MTOUCH_needReburst ..  ]
+"128
+[; ;mcc_generated_files/mtouch/mtouch.c: 128:             MTOUCH_Sensor_Sampled_ResetAll();
+[e ( _MTOUCH_Sensor_Sampled_ResetAll ..  ]
+"129
+[; ;mcc_generated_files/mtouch/mtouch.c: 129:             MTOUCH_Tick();
+[e ( _MTOUCH_Tick ..  ]
 "130
-[; ;mcc_generated_files/mtouch/mtouch.c: 130: void MTOUCH_Tick(void)
-[v _MTOUCH_Tick `(v ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/mtouch/mtouch.c: 130:             return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 461  ]
 "131
-[; ;mcc_generated_files/mtouch/mtouch.c: 131: {
+[; ;mcc_generated_files/mtouch/mtouch.c: 131:     }
+}
+[e $U 464  ]
+"132
+[; ;mcc_generated_files/mtouch/mtouch.c: 132:     else
+[e :U 462 ]
+"133
+[; ;mcc_generated_files/mtouch/mtouch.c: 133:     {
+{
+"134
+[; ;mcc_generated_files/mtouch/mtouch.c: 134:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 461  ]
+"135
+[; ;mcc_generated_files/mtouch/mtouch.c: 135:     }
+}
+[e :U 464 ]
+"136
+[; ;mcc_generated_files/mtouch/mtouch.c: 136: }
+[e :UE 461 ]
+}
+"143
+[; ;mcc_generated_files/mtouch/mtouch.c: 143: void MTOUCH_Tick(void)
+[v _MTOUCH_Tick `(v ~T0 @X0 1 ef ]
+"144
+[; ;mcc_generated_files/mtouch/mtouch.c: 144: {
 {
 [e :U _MTOUCH_Tick ]
 [f ]
-"132
-[; ;mcc_generated_files/mtouch/mtouch.c: 132:     MTOUCH_Proximity_Tick();
-[e ( _MTOUCH_Proximity_Tick ..  ]
-"133
-[; ;mcc_generated_files/mtouch/mtouch.c: 133: }
-[e :UE 464 ]
+"145
+[; ;mcc_generated_files/mtouch/mtouch.c: 145:     MTOUCH_Button_Tick();
+[e ( _MTOUCH_Button_Tick ..  ]
+"146
+[; ;mcc_generated_files/mtouch/mtouch.c: 146: }
+[e :UE 465 ]
 }
-"140
-[; ;mcc_generated_files/mtouch/mtouch.c: 140:  static _Bool MTOUCH_needReburst(void)
+"153
+[; ;mcc_generated_files/mtouch/mtouch.c: 153:  static _Bool MTOUCH_needReburst(void)
 [v _MTOUCH_needReburst `(a ~T0 @X0 1 sf ]
-"141
-[; ;mcc_generated_files/mtouch/mtouch.c: 141:  {
+"154
+[; ;mcc_generated_files/mtouch/mtouch.c: 154:  {
 {
 [e :U _MTOUCH_needReburst ]
 [f ]
-"142
-[; ;mcc_generated_files/mtouch/mtouch.c: 142:     _Bool needReburst = 0;
+"155
+[; ;mcc_generated_files/mtouch/mtouch.c: 155:     _Bool needReburst = 0;
 [v _needReburst `a ~T0 @X0 1 a ]
 [e = _needReburst -> -> 0 `i `a ]
-"144
-[; ;mcc_generated_files/mtouch/mtouch.c: 144:     return needReburst;
+"157
+[; ;mcc_generated_files/mtouch/mtouch.c: 157:     return needReburst;
 [e ) _needReburst ]
-[e $UE 465  ]
-"145
-[; ;mcc_generated_files/mtouch/mtouch.c: 145:  }
-[e :UE 465 ]
+[e $UE 466  ]
+"158
+[; ;mcc_generated_files/mtouch/mtouch.c: 158:  }
+[e :UE 466 ]
 }

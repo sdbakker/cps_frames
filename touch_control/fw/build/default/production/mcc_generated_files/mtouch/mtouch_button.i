@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/mtouch/mtouch_proximity.c"
+# 1 "mcc_generated_files/mtouch/mtouch_button.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/mtouch/mtouch_proximity.c" 2
-# 36 "mcc_generated_files/mtouch/mtouch_proximity.c"
+# 1 "mcc_generated_files/mtouch/mtouch_button.c" 2
+# 36 "mcc_generated_files/mtouch/mtouch_button.c"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4597,7 +4597,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
-# 36 "mcc_generated_files/mtouch/mtouch_proximity.c" 2
+# 36 "mcc_generated_files/mtouch/mtouch_button.c" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
@@ -4682,7 +4682,10 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
-# 37 "mcc_generated_files/mtouch/mtouch_proximity.c" 2
+# 37 "mcc_generated_files/mtouch/mtouch_button.c" 2
+
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdbool.h" 1 3
+# 38 "mcc_generated_files/mtouch/mtouch_button.c" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\string.h" 1 3
 # 25 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\string.h" 3
@@ -4739,14 +4742,11 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 38 "mcc_generated_files/mtouch/mtouch_proximity.c" 2
+# 39 "mcc_generated_files/mtouch/mtouch_button.c" 2
 
 
 # 1 "mcc_generated_files/mtouch/mtouch.h" 1
-# 40 "mcc_generated_files/mtouch/mtouch.h"
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdbool.h" 1 3
-# 40 "mcc_generated_files/mtouch/mtouch.h" 2
-
+# 41 "mcc_generated_files/mtouch/mtouch.h"
 # 1 "mcc_generated_files/mtouch/mtouch_config.h" 1
 # 41 "mcc_generated_files/mtouch/mtouch_config.h"
 # 1 "mcc_generated_files/mtouch/mtouch_sensor.h" 1
@@ -4807,10 +4807,10 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
     void MTOUCH_Sensor_NotifyInterruptOccurred(void);
 # 41 "mcc_generated_files/mtouch/mtouch_config.h" 2
 
-# 1 "mcc_generated_files/mtouch/mtouch_proximity.h" 1
-# 41 "mcc_generated_files/mtouch/mtouch_proximity.h"
+# 1 "mcc_generated_files/mtouch/mtouch_button.h" 1
+# 41 "mcc_generated_files/mtouch/mtouch_button.h"
 # 1 "mcc_generated_files/mtouch/mtouch.h" 1
-# 41 "mcc_generated_files/mtouch/mtouch_proximity.h" 2
+# 41 "mcc_generated_files/mtouch/mtouch_button.h" 2
 
 
 
@@ -4819,9 +4819,9 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 
 
 
-    enum mtouch_proximity_names
+    enum mtouch_button_names
     {
-        Proximity0 = 0
+        Button0 = 0
     };
 
 
@@ -4829,85 +4829,77 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 
 
 
+    typedef uint8_t mtouch_buttonmask_t;
 
-    typedef uint8_t mtouch_proxmask_t;
-
-    typedef uint16_t mtouch_prox_statecounter_t;
-
+    typedef uint16_t mtouch_button_statecounter_t;
 
 
 
-    typedef uint16_t mtouch_prox_baselinecounter_t;
+    typedef uint16_t mtouch_button_baselinecounter_t;
 
 
 
-    typedef uint32_t mtouch_prox_reading_t;
+    typedef uint16_t mtouch_button_reading_t;
 
 
 
-    typedef uint32_t mtouch_prox_baseline_t;
+
+    typedef uint32_t mtouch_button_baseline_t;
 
 
 
-    typedef int8_t mtouch_prox_deviation_t;
+
+    typedef int8_t mtouch_button_deviation_t;
 
 
 
-    typedef uint8_t mtouch_prox_threshold_t;
+    typedef uint8_t mtouch_button_threshold_t;
 
 
 
-    typedef uint8_t mtouch_prox_scaling_t;
-# 97 "mcc_generated_files/mtouch/mtouch_proximity.h"
-    void MTOUCH_Proximity_Initialize (enum mtouch_proximity_names prox);
-    void MTOUCH_Proximity_InitializeAll (void);
-    void MTOUCH_Proximity_ServiceAll (void);
-    void MTOUCH_Proximity_Tick (void);
-    void MTOUCH_Proximity_Recalibrate (void);
+    typedef uint8_t mtouch_button_scaling_t;
+# 100 "mcc_generated_files/mtouch/mtouch_button.h"
+    void MTOUCH_Button_Initialize (enum mtouch_button_names button);
+    void MTOUCH_Button_InitializeAll (void);
+    void MTOUCH_Button_ServiceAll (void);
+    void MTOUCH_Button_Tick (void);
+    mtouch_button_deviation_t MTOUCH_Button_Deviation_Get (enum mtouch_button_names button);
+    mtouch_button_reading_t MTOUCH_Button_Reading_Get (enum mtouch_button_names button);
+    mtouch_button_reading_t MTOUCH_Button_Baseline_Get (enum mtouch_button_names button);
+    mtouch_button_scaling_t MTOUCH_Button_Scaling_Get (enum mtouch_button_names button);
+    void MTOUCH_Button_Scaling_Set (enum mtouch_button_names button,mtouch_button_scaling_t scaling);
+    mtouch_button_threshold_t MTOUCH_Button_Threshold_Get (enum mtouch_button_names button);
+    void MTOUCH_Button_Threshold_Set (enum mtouch_button_names button,mtouch_button_threshold_t threshold);
+    uint8_t MTOUCH_Button_Oversampling_Get(enum mtouch_button_names button);
+    void MTOUCH_Button_Oversampling_Set(enum mtouch_button_names button,uint8_t oversampling);
 
-    mtouch_prox_deviation_t MTOUCH_Proximity_Deviation_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_reading_t MTOUCH_Proximity_Reading_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_reading_t MTOUCH_Proximity_Baseline_Get (enum mtouch_proximity_names prox);
-    mtouch_prox_scaling_t MTOUCH_Proximity_Scaling_Get (enum mtouch_proximity_names prox);
-    void MTOUCH_Proximity_Scaling_Set (enum mtouch_proximity_names prox,mtouch_prox_scaling_t scaling);
-    void MTOUCH_Proximity_Threshold_Set (enum mtouch_proximity_names prox,mtouch_prox_threshold_t threshold);
-    mtouch_prox_threshold_t MTOUCH_Proximity_Threshold_Get (enum mtouch_proximity_names prox);
-
-    _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
-    _Bool MTOUCH_Proximity_isInitialized (enum mtouch_proximity_names prox);
-    uint8_t MTOUCH_Proximity_State_Get (enum mtouch_proximity_names prox);
-    mtouch_proxmask_t MTOUCH_Proximity_Proximitymask_Get(void);
+    _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+    _Bool MTOUCH_Button_isInitialized (enum mtouch_button_names button);
+    mtouch_buttonmask_t MTOUCH_Button_Buttonmask_Get(void);
+    uint8_t MTOUCH_Button_State_Get (enum mtouch_button_names button);
 # 42 "mcc_generated_files/mtouch/mtouch_config.h" 2
-
-# 1 "mcc_generated_files/mtouch/mtouch_datastreamer.h" 1
-# 44 "mcc_generated_files/mtouch/mtouch_datastreamer.h"
-# 1 "mcc_generated_files/mtouch/mtouch_config.h" 1
-# 44 "mcc_generated_files/mtouch/mtouch_datastreamer.h" 2
-
-
-
-
-void MTOUCH_DataStreamer_Service(void);
-void MTOUCH_DataStreamer_Initialize(void);
-# 43 "mcc_generated_files/mtouch/mtouch_config.h" 2
 # 41 "mcc_generated_files/mtouch/mtouch.h" 2
-# 54 "mcc_generated_files/mtouch/mtouch.h"
+# 53 "mcc_generated_files/mtouch/mtouch.h"
     void MTOUCH_Initialize (void);
     _Bool MTOUCH_Service_Mainloop (void);
     void MTOUCH_Tick (void);
     _Bool MTOUCH_Service_isInProgress (void);
-# 40 "mcc_generated_files/mtouch/mtouch_proximity.c" 2
+# 41 "mcc_generated_files/mtouch/mtouch_button.c" 2
 
 
 
-enum mtouch_prox_state
+
+enum mtouch_button_state
 {
-    MTOUCH_PROXIMITY_STATE_initializing = 0,
-    MTOUCH_PROXIMITY_STATE_notActivated,
-    MTOUCH_PROXIMITY_STATE_activated
+    MTOUCH_BUTTON_STATE_initializing = 0,
+    MTOUCH_BUTTON_STATE_notPressed,
+    MTOUCH_BUTTON_STATE_pressDebounce,
+    MTOUCH_BUTTON_STATE_pressed,
+    MTOUCH_BUTTON_STATE_releaseDebounce
 };
 
- enum mtouch_proximity_hysteresis_thresholds
+
+    enum mtouch_button_hysteresis_thresholds
     {
         HYST_50_PERCENT = 1,
         HYST_25_PERCENT = 2,
@@ -4915,59 +4907,69 @@ enum mtouch_prox_state
         HYST_6_25_PERCENT = 4,
         HYST_MAX = 5
     };
-# 66 "mcc_generated_files/mtouch/mtouch_proximity.c"
+
+
+
+
+
+
+
     typedef struct
     {
-        const uint8_t name;
+        const enum mtouch_button_names name;
         const enum mtouch_sensor_names sensor;
-        enum mtouch_prox_state state;
-        mtouch_prox_reading_t reading;
-        mtouch_prox_baseline_t baseline;
-        mtouch_prox_deviation_t integratedDeviation;
-        mtouch_prox_statecounter_t counter;
-        mtouch_prox_baselinecounter_t baseline_count;
-        mtouch_prox_deviation_t threshold;
-        mtouch_prox_scaling_t scaling;
-    } mtouch_proximity_t;
+        enum mtouch_button_state state;
+        mtouch_button_reading_t reading;
+        mtouch_button_baseline_t baseline;
+        mtouch_button_deviation_t deviation;
+        mtouch_button_statecounter_t counter;
+        mtouch_button_baselinecounter_t baseline_count;
+        mtouch_button_threshold_t threshold;
+        mtouch_button_scaling_t scaling;
+    } mtouch_button_t;
 
-    const mtouch_proximity_t mtouch_proximity_init[1u] =
+    const mtouch_button_t mtouch_button_init[1u] =
     {
 
-        { Proximity0,
+        { Button0,
             Sensor_AN12,
-            MTOUCH_PROXIMITY_STATE_initializing,
+            MTOUCH_BUTTON_STATE_initializing,
             0,0,0,0,0,
-            (mtouch_prox_deviation_t)120u,
-            (uint8_t)0u
+            (mtouch_button_deviation_t)20u,
+            (mtouch_button_scaling_t)1u
         }
     };
 
-    static mtouch_proximity_t mtouch_proximity[1u];
+static mtouch_button_t mtouch_button[1u];
 
 
 
 
 
 
+static void Button_Service (enum mtouch_button_names name);
+static void Button_Deviation_Update (mtouch_button_t* button);
+static void Button_Reading_Update (mtouch_button_t* button);
+static void Button_Reading_Update_Helper(mtouch_button_t* button);
+static void Button_Baseline_Initialize (mtouch_button_t* button);
+static void Button_Baseline_Update (mtouch_button_t* button);
+static mtouch_button_reading_t Button_Baseline_Get_helper (enum mtouch_button_names button);
+static void Button_Tick_helper (mtouch_button_t* button);
 
-static void Proximity_Service (enum mtouch_proximity_names name);
-static void Proximity_Deviation_Update (enum mtouch_proximity_names prox);
-static void Proximity_Reading_Update (mtouch_proximity_t* prox);
-static void Proximity_Reading_Update_Helper (mtouch_proximity_t* prox);
-static void Proximity_Baseline_Initialize (mtouch_proximity_t* prox);
-static void Proximity_Baseline_Update (mtouch_proximity_t* prox);
-static mtouch_prox_reading_t Proximity_Baseline_Get_helper (enum mtouch_proximity_names prox);
-static void Proximity_Tick_helper (mtouch_proximity_t* prox);
-static void Proximity_State_Initializing (mtouch_proximity_t* prox);
-static void Proximity_State_NotActivated (mtouch_proximity_t* prox);
-static void Proximity_State_Activated (mtouch_proximity_t* prox);
-# 119 "mcc_generated_files/mtouch/mtouch_proximity.c"
-typedef void (*proximity_statemachine_state_t)(mtouch_proximity_t*);
-proximity_statemachine_state_t Proximity_StateMachine[] =
+static void Button_State_Initializing (mtouch_button_t* button);
+static void Button_State_NotPressed (mtouch_button_t* button);
+static void Button_State_Pressed (mtouch_button_t* button);
+static void Button_State_PressDebounce (mtouch_button_t* button);
+static void Button_State_ReleaseDebounce(mtouch_button_t* button);
+# 125 "mcc_generated_files/mtouch/mtouch_button.c"
+typedef void (*button_statemachine_state_t)(mtouch_button_t*);
+button_statemachine_state_t Button_StateMachine[] =
 {
-    Proximity_State_Initializing,
-    Proximity_State_NotActivated,
-    Proximity_State_Activated
+    Button_State_Initializing,
+    Button_State_NotPressed,
+    Button_State_PressDebounce,
+    Button_State_Pressed,
+    Button_State_ReleaseDebounce
 };
 
 
@@ -4976,214 +4978,283 @@ proximity_statemachine_state_t Proximity_StateMachine[] =
 
 
 
-void MTOUCH_Proximity_Initialize(enum mtouch_proximity_names name)
+void MTOUCH_Button_Initialize(enum mtouch_button_names name)
 {
-    mtouch_proximity_t* prox = &mtouch_proximity[name];
+    mtouch_button_t* button = &mtouch_button[name];
 
-    prox->state = MTOUCH_PROXIMITY_STATE_initializing;
-    prox->baseline = (mtouch_prox_baseline_t)0;
-    prox->counter = (mtouch_prox_statecounter_t)0;
-    prox->baseline_count = (mtouch_prox_baselinecounter_t)0;
+    button->state = MTOUCH_BUTTON_STATE_initializing;
+    button->baseline = (mtouch_button_baseline_t)0;
+    button->counter = (mtouch_button_statecounter_t)0;
+    button->baseline_count = (mtouch_button_baselinecounter_t)0;
 
+    MTOUCH_Sensor_Calibrate(button->sensor);
 }
 
-void MTOUCH_Proximity_Recalibrate(void)
+void MTOUCH_Button_InitializeAll(void)
 {
-    uint8_t i;
-    for (i = 0; i < 1u; i++)
+    enum mtouch_button_names button;
+
+    memcpy(mtouch_button,mtouch_button_init,sizeof(mtouch_button_init));
+
+    for (button = 0; button < 1u; button++)
     {
-        MTOUCH_Proximity_Initialize(i);
+        MTOUCH_Button_Initialize(button);
     }
 }
 
-void MTOUCH_Proximity_InitializeAll(void)
+
+
+
+
+
+
+ void MTOUCH_Button_ServiceAll(void)
 {
-    memcpy(mtouch_proximity,mtouch_proximity_init,sizeof(mtouch_proximity_init));
-
-    MTOUCH_Proximity_Initialize(Proximity0);
-}
-
-void MTOUCH_Proximity_ServiceAll(void)
-{
-
-    Proximity_Service(Proximity0);
-}
+    enum mtouch_button_names button;
 
 
-
-
-
-
-static void Proximity_Service(enum mtouch_proximity_names name)
-{
-    mtouch_proximity_t* prox = &mtouch_proximity[name];
-
-    if (MTOUCH_Sensor_wasSampled(prox->sensor) && MTOUCH_Sensor_isCalibrated(prox->sensor))
+    for (button = 0; button < 1u; button++)
     {
-        Proximity_Reading_Update(prox);
-        Proximity_Deviation_Update(name);
+        Button_Service(button);
+    }
+}
 
-        if (prox->state >= (uint8_t)(sizeof(Proximity_StateMachine)/sizeof(proximity_statemachine_state_t)))
+static void Button_Service(enum mtouch_button_names name)
+{
+    mtouch_button_t* button = &mtouch_button[name];
+
+    if (MTOUCH_Sensor_wasSampled(button->sensor) && MTOUCH_Sensor_isCalibrated(button->sensor))
+    {
+        Button_Reading_Update(button);
+        Button_Deviation_Update(button);
+
+        if (button->state >= (uint8_t)(sizeof(Button_StateMachine)/sizeof(button_statemachine_state_t)))
         {
-            MTOUCH_Proximity_Initialize(prox->name);
+            MTOUCH_Button_Initialize(button->name);
         }
-        Proximity_StateMachine[prox->state](prox);
+        Button_StateMachine[(uint8_t)button->state](button);
     }
 }
-static void Proximity_State_Initializing(mtouch_proximity_t* prox)
+
+static void Button_State_Initializing(mtouch_button_t* button)
 {
 
-    if ((prox->counter) <= (mtouch_prox_statecounter_t)((mtouch_prox_baselinecounter_t)16u)/2)
+    if ((button->counter) <= (mtouch_button_statecounter_t)((mtouch_button_baselinecounter_t)16u)/2)
     {
-        Proximity_Baseline_Initialize(prox);
+        Button_Baseline_Initialize(button);
     } else {
-        Proximity_Baseline_Update(prox);
+        Button_Baseline_Update(button);
     }
 
 
-    (prox->counter)++;
-    if ((prox->counter) >= (mtouch_prox_statecounter_t)((mtouch_prox_baselinecounter_t)16u))
+    (button->counter)++;
+    if ((button->counter) >= (mtouch_button_statecounter_t)((mtouch_button_baselinecounter_t)16u))
     {
-        prox->state = MTOUCH_PROXIMITY_STATE_notActivated;
-        prox->counter = (mtouch_prox_statecounter_t)0;
+        button->reading = (mtouch_button_reading_t)((button->baseline)>>((uint8_t)4u));
+        button->state = MTOUCH_BUTTON_STATE_notPressed;
+        button->counter = (mtouch_button_statecounter_t)0;
     }
 
 }
-static void Proximity_State_NotActivated(mtouch_proximity_t* prox)
+static void Button_State_NotPressed(mtouch_button_t* button)
 {
 
-    int32_t deviation = (int32_t)((uint32_t)(MTOUCH_Proximity_Reading_Get(prox->name)) - (uint32_t)(MTOUCH_Proximity_Baseline_Get(prox->name)));
-    if (deviation < (int32_t)(-prox->threshold))
+    if ((button->deviation) < (mtouch_button_deviation_t)(-button->threshold))
     {
-        (prox->counter)++;
-        if ((prox->counter) > (mtouch_prox_statecounter_t)((mtouch_prox_statecounter_t)32u))
+        (button->counter)++;
+        if ((button->counter) > (mtouch_button_statecounter_t)((mtouch_button_statecounter_t)64u))
         {
-            prox->counter = (mtouch_prox_statecounter_t)0;
-            MTOUCH_Proximity_Initialize(prox->name);
+            button->counter = (mtouch_button_statecounter_t)0;
+            MTOUCH_Button_Initialize(button->name);
         }
     }
 
-    else if ((prox->integratedDeviation) > (prox->threshold))
+    else if ((button->deviation) > (button->threshold))
     {
-        prox->state = MTOUCH_PROXIMITY_STATE_activated;
-        prox->counter = (mtouch_prox_statecounter_t)0;
+
+        button->state = MTOUCH_BUTTON_STATE_pressDebounce;
+        button->counter = (mtouch_button_statecounter_t)0;
     }
     else
     {
 
-        prox->counter = (mtouch_prox_statecounter_t)0;
+        button->counter = (mtouch_button_statecounter_t)0;
     }
 
 
 
-    (prox->baseline_count)++;
-    if ((prox->baseline_count) == ((mtouch_prox_baselinecounter_t)128u))
+    (button->baseline_count)++;
+    if ((button->baseline_count) == ((mtouch_button_baselinecounter_t)128u))
     {
-        prox->baseline_count = (mtouch_prox_baselinecounter_t)0;
-        Proximity_Baseline_Update(prox);
-    }
-}
-
-static void Proximity_State_Activated(mtouch_proximity_t* prox)
-{
-
-    if ((prox->counter) >= ((mtouch_prox_statecounter_t)1000u))
-    {
-        MTOUCH_Proximity_Initialize(prox->name);
-    }
-
-
-    else if ((prox->integratedDeviation) < (prox->threshold-((prox->threshold) >> HYST_50_PERCENT)))
-    {
-        prox->state = MTOUCH_PROXIMITY_STATE_notActivated;
-        prox->counter = (mtouch_prox_statecounter_t)0;
-        prox->baseline_count = (mtouch_prox_baselinecounter_t)((0xffff))-((mtouch_prox_baselinecounter_t)1024u);
+        button->baseline_count = (mtouch_button_baselinecounter_t)0;
+        Button_Baseline_Update(button);
     }
 }
 
-
-
-
-
-
-
-void MTOUCH_Proximity_Tick(void)
-{
-    Proximity_Tick_helper(&mtouch_proximity[0]);
-}
-static void Proximity_Tick_helper(mtouch_proximity_t* prox)
+static void Button_State_Pressed(mtouch_button_t* button)
 {
 
-    if ((prox->state) == MTOUCH_PROXIMITY_STATE_activated)
+    if ((button->counter) >= ((mtouch_button_statecounter_t)6000u))
     {
-        (prox->counter)++;
-        if (prox->counter == (mtouch_prox_statecounter_t)0)
+        MTOUCH_Button_Initialize(button->name);
+    }
+
+
+    else if ((button->deviation) < (mtouch_button_deviation_t)((button->threshold)- ((button->threshold) >> HYST_50_PERCENT)))
+    {
+        button->state = MTOUCH_BUTTON_STATE_releaseDebounce;
+        button->counter = (mtouch_button_statecounter_t)0;
+    }
+}
+
+static void Button_State_PressDebounce (mtouch_button_t* button)
+{
+
+    if((button->deviation) > (button->threshold))
+    {
+        (button->counter)++;
+        if ((button->counter) >= (5u))
         {
-            prox->counter = (mtouch_prox_statecounter_t)0xFFFF;
+            button->state = MTOUCH_BUTTON_STATE_pressed;
+            button->counter = (mtouch_button_statecounter_t)0;
+        }
+    }
+    else
+    {
+        button->state = MTOUCH_BUTTON_STATE_notPressed;
+        button->counter = (mtouch_button_statecounter_t)0;
+    }
+}
+
+static void Button_State_ReleaseDebounce(mtouch_button_t* button)
+{
+    if ((button->deviation) < (mtouch_button_deviation_t)((button->threshold)-((button->threshold) >> HYST_50_PERCENT)))
+    {
+        (button->counter)++;
+        if ((button->counter) >= (5u))
+        {
+            button->state = MTOUCH_BUTTON_STATE_notPressed;
+            button->counter = 0;
+            button->baseline_count = (mtouch_button_baselinecounter_t)((0xffff))-((mtouch_button_baselinecounter_t)1024u);
+        }
+    }
+    else
+    {
+        button->state = MTOUCH_BUTTON_STATE_pressed;
+        button->counter = (mtouch_button_statecounter_t)0;
+    }
+}
+
+
+
+
+
+void MTOUCH_Button_Tick(void)
+{
+    Button_Tick_helper(&mtouch_button[0]);
+}
+static void Button_Tick_helper(mtouch_button_t* button)
+{
+
+    if ((button->state) == MTOUCH_BUTTON_STATE_pressed)
+    {
+        (button->counter)++;
+        if (button->counter == (mtouch_button_statecounter_t)0)
+        {
+            button->counter = (mtouch_button_statecounter_t)0xFFFF;
         }
     }
 }
-# 288 "mcc_generated_files/mtouch/mtouch_proximity.c"
-mtouch_prox_threshold_t MTOUCH_Proximity_Threshold_Get(enum mtouch_proximity_names name)
+
+
+
+
+
+
+
+mtouch_button_threshold_t MTOUCH_Button_Threshold_Get(enum mtouch_button_names name)
 {
     if(name < 1u)
-        return mtouch_proximity[name].threshold;
+        return mtouch_button[name].threshold;
     else
-        return (mtouch_prox_deviation_t)0;
+        return (mtouch_button_threshold_t)0;
 }
 
-void MTOUCH_Proximity_Threshold_Set(enum mtouch_proximity_names name,mtouch_prox_threshold_t threshold)
+void MTOUCH_Button_Threshold_Set(enum mtouch_button_names name,mtouch_button_threshold_t threshold)
 {
     if(name < 1u)
-        if(threshold >= ((mtouch_prox_threshold_t)(1)) && threshold <= ((mtouch_prox_threshold_t)(127)))
-            mtouch_proximity[name].threshold = threshold;
+    {
+        if(threshold >= ((mtouch_button_threshold_t)(1)) && threshold <= ((mtouch_button_threshold_t)(127)))
+           mtouch_button[name].threshold = threshold;
+    }
 }
 
-mtouch_prox_scaling_t MTOUCH_Proximity_Scaling_Get(enum mtouch_proximity_names name)
+mtouch_button_scaling_t MTOUCH_Button_Scaling_Get(enum mtouch_button_names name)
 {
     if(name < 1u)
-        return mtouch_proximity[name].scaling;
+        return mtouch_button[name].scaling;
     else
-        return (mtouch_prox_scaling_t)0;
+        return (mtouch_button_scaling_t)0;
 }
 
-void MTOUCH_Proximity_Scaling_Set(enum mtouch_proximity_names name,mtouch_prox_scaling_t scaling)
+void MTOUCH_Button_Scaling_Set(enum mtouch_button_names name,mtouch_button_scaling_t scaling)
 {
     if(name < 1u)
-        if(scaling <= ((mtouch_prox_scaling_t)(8)))
-            mtouch_proximity[name].scaling = scaling;
+    {
+        if(scaling <= ((mtouch_button_scaling_t)(8)))
+            mtouch_button[name].scaling = scaling;
+    }
 }
 
-_Bool MTOUCH_Proximity_isActivated(enum mtouch_proximity_names name)
+uint8_t MTOUCH_Button_Oversampling_Get(enum mtouch_button_names name)
 {
     if(name < 1u)
-        return (mtouch_proximity[name].state == MTOUCH_PROXIMITY_STATE_activated) ? 1 : 0;
+        return (uint8_t)MTOUCH_Sensor_Oversampling_Get(mtouch_button[name].sensor);
+    else
+        return (uint8_t)0;
+}
+
+void MTOUCH_Button_Oversampling_Set(enum mtouch_button_names name,uint8_t oversampling)
+{
+    if(name < 1u)
+    {
+        MTOUCH_Sensor_Oversampling_Set(mtouch_button[name].sensor, oversampling);
+    }
+}
+
+_Bool MTOUCH_Button_isPressed(enum mtouch_button_names name)
+{
+    if(name < 1u)
+        return (_Bool)((mtouch_button[name].state == MTOUCH_BUTTON_STATE_pressed || mtouch_button[name].state == MTOUCH_BUTTON_STATE_releaseDebounce) ? 1 : 0);
     else
         return 0;
 }
 
-_Bool MTOUCH_Proximity_isInitialized(enum mtouch_proximity_names name)
+_Bool MTOUCH_Button_isInitialized(enum mtouch_button_names name)
 {
     if(name < 1u)
-        return (mtouch_proximity[name].state == MTOUCH_PROXIMITY_STATE_initializing) ? 0 : 1;
+        return (_Bool)((mtouch_button[name].state == MTOUCH_BUTTON_STATE_initializing) ? 0 : 1);
     else
         return 0;
 }
 
-mtouch_prox_deviation_t MTOUCH_Proximity_Deviation_Get(enum mtouch_proximity_names name)
+
+mtouch_button_deviation_t MTOUCH_Button_Deviation_Get(enum mtouch_button_names name)
 {
     if(name < 1u)
-        return mtouch_proximity[name].integratedDeviation;
+        return mtouch_button[name].deviation;
     else
-        return (mtouch_prox_deviation_t)0;
+        return (mtouch_button_deviation_t)0;
 }
 
-static void Proximity_Deviation_Update(enum mtouch_proximity_names name)
+static void Button_Deviation_Update(mtouch_button_t* button)
 {
     int32_t deviation;
-    deviation = (int32_t)((uint32_t)(MTOUCH_Proximity_Reading_Get(name)) - (uint32_t)(MTOUCH_Proximity_Baseline_Get(name)));
 
-    deviation = deviation >> (mtouch_proximity[name].scaling);
+    deviation = (int32_t)((int32_t)(button->reading) - (int32_t)((button->baseline)>>((uint8_t)4u)));
+
+
+    deviation = deviation >> (button->scaling);
 
 
     if (deviation > ((0x7f)))
@@ -5195,122 +5266,102 @@ static void Proximity_Deviation_Update(enum mtouch_proximity_names name)
         deviation = ((-1-0x7f));
     }
 
-    if(deviation < 0)
-    {
-        mtouch_proximity[name].integratedDeviation = 0;
-    }
-    else if((mtouch_prox_deviation_t)deviation < (mtouch_prox_deviation_t)(mtouch_proximity[name].threshold >> 3))
-    {
-
-        if(mtouch_proximity[name].integratedDeviation >0 )
-            mtouch_proximity[name].integratedDeviation--;
-    }
-    else
-    {
-        mtouch_proximity[name].integratedDeviation -= mtouch_proximity[name].integratedDeviation >> ((uint8_t)2u);;
-        if(((0x7f)) - mtouch_proximity[name].integratedDeviation > deviation)
-            mtouch_proximity[name].integratedDeviation += deviation;
-        else
-            mtouch_proximity[name].integratedDeviation = ((0x7f));
-    }
+    button->deviation = (mtouch_button_deviation_t)deviation;
 }
 
-
-
-
-
-
-
-mtouch_prox_reading_t MTOUCH_Proximity_Reading_Get(enum mtouch_proximity_names name)
+mtouch_buttonmask_t MTOUCH_Button_Buttonmask_Get(void)
 {
-    if (name < 1u)
-        return mtouch_proximity[name].reading;
-    else
-        return (mtouch_prox_reading_t)0;
-}
-
-static void Proximity_Reading_Update(mtouch_proximity_t* prox)
-{
-    if (GIE == (uint8_t)1)
-    {
-        GIE = (uint8_t)0;
-        Proximity_Reading_Update_Helper(prox);
-        GIE = (uint8_t)1;
-    }
-    else
-    {
-        Proximity_Reading_Update_Helper(prox);
-    }
-}
-static void Proximity_Reading_Update_Helper (mtouch_proximity_t* prox)
-{
-    if(prox->state != MTOUCH_PROXIMITY_STATE_initializing)
-    {
-        prox->reading -= prox->reading>>((uint8_t)1u);
-        prox->reading += MTOUCH_Sensor_RawSample_Get(prox->sensor);
-    }
-    else
-    {
-        prox->reading = MTOUCH_Sensor_RawSample_Get(prox->sensor) << ((uint8_t)1u);
-    }
-}
-
-static void Proximity_Baseline_Initialize(mtouch_proximity_t* prox)
-{
-    prox->baseline = MTOUCH_Sensor_RawSample_Get(prox->sensor);
-    prox->baseline <<= (((uint8_t)4u) + ((uint8_t)1u));
-}
-
-static void Proximity_Baseline_Update(mtouch_proximity_t* prox)
-{
-    if (GIE == (uint8_t)1)
-    {
-        GIE = (uint8_t)0;
-        prox->baseline -= (prox->baseline) >> ((uint8_t)4u);
-        prox->baseline += prox->reading;
-        GIE = (uint8_t)1;
-    }
-    else
-    {
-        prox->baseline -= (prox->baseline) >> ((uint8_t)4u);
-        prox->baseline += prox->reading;
-    }
-}
-
-mtouch_prox_reading_t MTOUCH_Proximity_Baseline_Get(enum mtouch_proximity_names name)
-{
-    if (name < 1u)
-        return Proximity_Baseline_Get_helper(name);
-    else
-        return (mtouch_prox_reading_t)0;
-
-}
-
-static mtouch_prox_reading_t Proximity_Baseline_Get_helper(enum mtouch_proximity_names name)
-{
-    return (mtouch_prox_reading_t)(mtouch_proximity[name].baseline >> ((uint8_t)4u));
-}
-
-
-
-uint8_t MTOUCH_Proximity_State_Get(enum mtouch_proximity_names name)
-{
-    if(name < 1u)
-        return (uint8_t)mtouch_proximity[name].state;
-    else
-        return 0;
-}
-
-mtouch_proxmask_t MTOUCH_Proximity_Proximitymask_Get(void)
-{
-    mtouch_proxmask_t output = 0;
+    mtouch_buttonmask_t output = 0;
 
     for (uint8_t i = 0; i < 1u; i++)
     {
-        if (MTOUCH_Proximity_isActivated(i) == 1)
+        if (MTOUCH_Button_isPressed(i) == 1)
         {
-            output |= (mtouch_proxmask_t)0x01 << i;
+            output |= (mtouch_buttonmask_t)0x01 << i;
         }
     }
     return output;
+}
+
+
+
+
+
+
+mtouch_button_reading_t MTOUCH_Button_Reading_Get(enum mtouch_button_names name)
+{
+    if(name < 1u)
+        return mtouch_button[name].reading;
+    else
+        return (mtouch_button_reading_t)0;
+}
+
+static void Button_Reading_Update(mtouch_button_t* button)
+{
+    if (GIE == (uint8_t) 1)
+    {
+        GIE = (uint8_t) 0;
+        Button_Reading_Update_Helper(button);
+        GIE = (uint8_t) 1;
+    }
+    else
+    {
+        Button_Reading_Update_Helper(button);
+    }
+}
+
+static void Button_Reading_Update_Helper(mtouch_button_t* button)
+{
+    if (button->state != MTOUCH_BUTTON_STATE_initializing)
+    {
+        button->reading -= button->reading>>((uint8_t)4u);
+        button->reading += MTOUCH_Sensor_RawSample_Get(button->sensor) >> ((uint8_t)4u);
+    }
+    else
+    {
+        button->reading = MTOUCH_Sensor_RawSample_Get(button->sensor);
+    }
+}
+
+static void Button_Baseline_Initialize(mtouch_button_t* button)
+{
+    button->baseline = MTOUCH_Sensor_RawSample_Get(button->sensor);
+    button->baseline <<= ((uint8_t)4u);
+}
+
+static void Button_Baseline_Update(mtouch_button_t* button)
+{
+    if (GIE == (uint8_t)1)
+    {
+        GIE = (uint8_t)0;
+        button->baseline -= (button->baseline) >> ((uint8_t)4u);
+        button->baseline += button->reading;
+        GIE = (uint8_t)1;
+    }
+    else
+    {
+        button->baseline -= (button->baseline) >> ((uint8_t)4u);
+        button->baseline += button->reading;
+    }
+}
+
+mtouch_button_reading_t MTOUCH_Button_Baseline_Get(enum mtouch_button_names name)
+{
+    if(name < 1u)
+        return Button_Baseline_Get_helper(name);
+    else
+        return (mtouch_button_reading_t)0;
+}
+
+static mtouch_button_reading_t Button_Baseline_Get_helper(enum mtouch_button_names name)
+{
+    return (mtouch_button_reading_t)((mtouch_button[name].baseline) >> ((uint8_t)4u));
+}
+
+uint8_t MTOUCH_Button_State_Get(enum mtouch_button_names name)
+{
+    if(name < 1u)
+        return (uint8_t)mtouch_button[name].state;
+    else
+        return 0;
 }

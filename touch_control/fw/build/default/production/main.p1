@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+"73 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "357 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 357:     struct {
@@ -18,19 +18,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "374
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"69 main.c
-[; ;main.c: 69:     MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
-[c E2911 0 .. ]
-[n E2911 mtouch_proximity_names Proximity0  ]
-"108 ./mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;./mcc_generated_files/mtouch/mtouch_proximity.h: 108:     void MTOUCH_Proximity_Threshold_Set (enum mtouch_proximity_names prox,mtouch_prox_threshold_t threshold);
-[v _MTOUCH_Proximity_Threshold_Set `(v ~T0 @X0 0 ef2`E2911`uc ]
-"55 ./mcc_generated_files/mtouch/mtouch.h
-[; ;./mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
+"1875
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1875:     struct {
+[s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S106 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"1874
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1874: typedef union {
+[u S105 `S106 1 ]
+[n S105 . . ]
+"1886
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1886: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS105 ~T0 @X0 0 e@270 ]
+"54 ./mcc_generated_files/mtouch/mtouch.h
+[; ;./mcc_generated_files/mtouch/mtouch.h: 54:     _Bool MTOUCH_Service_Mainloop (void);
 [v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
-"111 ./mcc_generated_files/mtouch/mtouch_proximity.h
-[; ;./mcc_generated_files/mtouch/mtouch_proximity.h: 111:     _Bool MTOUCH_Proximity_isActivated (enum mtouch_proximity_names prox);
-[v _MTOUCH_Proximity_isActivated `(a ~T0 @X0 0 ef1`E2911 ]
+"101 ./mcc_generated_files/mtouch/mtouch_button.h
+[; ;./mcc_generated_files/mtouch/mtouch_button.h: 101:     void MTOUCH_Button_InitializeAll (void);
+[v _MTOUCH_Button_InitializeAll `(v ~T0 @X0 0 ef ]
+"87 main.c
+[; ;main.c: 87:                 if(MTOUCH_Button_isPressed(0))
+[c E2928 0 .. ]
+[n E2928 mtouch_button_names Button0  ]
+"114 ./mcc_generated_files/mtouch/mtouch_button.h
+[; ;./mcc_generated_files/mtouch/mtouch_button.h: 114:     _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+[v _MTOUCH_Button_isPressed `(a ~T0 @X0 0 ef1`E2928 ]
 "166 ./mcc_generated_files/eusart.h
 [; ;./mcc_generated_files/eusart.h: 166: _Bool EUSART_is_tx_ready(void);
 [v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
@@ -52,17 +63,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "349 ./mcc_generated_files/eusart.h
 [; ;./mcc_generated_files/eusart.h: 349: void EUSART_Write(uint8_t txData);
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
-"1875 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1875:     struct {
-[s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S106 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"1874
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1874: typedef union {
-[u S105 `S106 1 ]
-[n S105 . . ]
-"1886
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 1886: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
-[v _LATCbits `VS105 ~T0 @X0 0 e@270 ]
+"435 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 435:     struct {
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 434: typedef union {
+[u S33 `S34 1 ]
+[n S33 . . ]
+"444
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 444: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
+[v _PORTAbits `VS33 ~T0 @X0 0 e@12 ]
 "261 ./mcc_generated_files/eusart.h
 [; ;./mcc_generated_files/eusart.h: 261: _Bool EUSART_is_tx_done(void);
 [v _EUSART_is_tx_done `(a ~T0 @X0 0 ef ]
@@ -633,136 +644,229 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8047
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 8047: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
+"47 main.c
+[; ;main.c: 47: uint8_t _wait_to_initialize = 1;
+[v __wait_to_initialize `uc ~T0 @X0 1 e ]
+[i __wait_to_initialize
+-> -> 1 `i `uc
+]
+"48
+[; ;main.c: 48: uint16_t _first_delay_cntr = 0;
+[v __first_delay_cntr `us ~T0 @X0 1 e ]
+[i __first_delay_cntr
+-> -> 0 `i `us
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"49 main.c
-[; ;main.c: 49: void main(void)
+"52
+[; ;main.c: 52: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"50
-[; ;main.c: 50: {
+"53
+[; ;main.c: 53: {
 {
 [e :U _main ]
 [f ]
-"52
-[; ;main.c: 52:     SYSTEM_Initialize();
+"55
+[; ;main.c: 55:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"58
-[; ;main.c: 58:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
 "61
-[; ;main.c: 61:     (INTCONbits.PEIE = 1);
+[; ;main.c: 61:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"64
+[; ;main.c: 64:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"69
-[; ;main.c: 69:     MTOUCH_Proximity_Threshold_Set(Proximity0, 80);
-[e ( _MTOUCH_Proximity_Threshold_Set (2 , . `E2911 0 -> -> 80 `i `uc ]
-"71
-[; ;main.c: 71:     while (1)
-[e :U 460 ]
 "72
-[; ;main.c: 72:     {
+[; ;main.c: 72:     do { LATCbits.LATC6 = 1; } while(0);
+[e :U 461 ]
 {
-"74
-[; ;main.c: 74:         if(MTOUCH_Service_Mainloop())
-[e $ ! != -> ( _MTOUCH_Service_Mainloop ..  `i -> 0 `i 462  ]
+[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 460 ]
+"73
+[; ;main.c: 73:     do { LATCbits.LATC0 = 1; } while(0);
+[e :U 464 ]
+{
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 463 ]
 "75
-[; ;main.c: 75:         {
+[; ;main.c: 75:     while (1)
+[e :U 466 ]
+"76
+[; ;main.c: 76:     {
 {
+"77
+[; ;main.c: 77:         if(MTOUCH_Service_Mainloop())
+[e $ ! != -> ( _MTOUCH_Service_Mainloop ..  `i -> 0 `i 468  ]
 "78
-[; ;main.c: 78:             if(MTOUCH_Proximity_isActivated(Proximity0))
-[e $ ! != -> ( _MTOUCH_Proximity_isActivated (1 . `E2911 0 `i -> 0 `i 463  ]
+[; ;main.c: 78:         {
+{
 "79
-[; ;main.c: 79:             {
+[; ;main.c: 79:             if (_wait_to_initialize > 0) {
+[e $ ! > -> __wait_to_initialize `i -> 0 `i 469  ]
+{
+"80
+[; ;main.c: 80:                 if (++_first_delay_cntr >= 2000) {
+[e $ ! >= -> =+ __first_delay_cntr -> -> 1 `i `us `ui -> -> 2000 `i `ui 470  ]
 {
 "81
-[; ;main.c: 81:                 if(EUSART_is_tx_ready())
-[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 464  ]
+[; ;main.c: 81:                    MTOUCH_Button_InitializeAll();
+[e ( _MTOUCH_Button_InitializeAll ..  ]
 "82
-[; ;main.c: 82:                 {
-{
+[; ;main.c: 82:                    _wait_to_initialize = 0;
+[e = __wait_to_initialize -> -> 0 `i `uc ]
 "83
-[; ;main.c: 83:                     do { LATAbits.LATA4 = 1; } while(0);
-[e :U 467 ]
-{
-[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
-}
-[e :U 466 ]
-"84
-[; ;main.c: 84:                     _delay((unsigned long)((10)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"85
-[; ;main.c: 85:                     EUSART_Write('b');
-[e ( _EUSART_Write (1 -> -> 98 `ui `uc ]
-"86
-[; ;main.c: 86:                     do { LATCbits.LATC7 = 1; } while(0);
-[e :U 470 ]
-{
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-}
-[e :U 469 ]
-"87
-[; ;main.c: 87:                 }
-}
-[e :U 464 ]
-"88
-[; ;main.c: 88:                 do { LATCbits.LATC0 = 1; } while(0);
+[; ;main.c: 83:                    do { LATCbits.LATC0 = 1; } while(0);
 [e :U 473 ]
 {
 [e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 472 ]
-"89
-[; ;main.c: 89:             }
+"84
+[; ;main.c: 84:                 }
+}
+[e :U 470 ]
+"85
+[; ;main.c: 85:             } else {
 }
 [e $U 474  ]
-"90
-[; ;main.c: 90:             else
-[e :U 463 ]
+[e :U 469 ]
+{
+"87
+[; ;main.c: 87:                 if(MTOUCH_Button_isPressed(0))
+[e $ ! != -> ( _MTOUCH_Button_isPressed (1 -> -> 0 `i `E2928 `i -> 0 `i 475  ]
+"88
+[; ;main.c: 88:                 {
+{
+"89
+[; ;main.c: 89:                     do { LATCbits.LATC6 = 0; } while(0);
+[e :U 478 ]
+{
+[e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 477 ]
 "91
-[; ;main.c: 91:             {
+[; ;main.c: 91:                     if(EUSART_is_tx_ready())
+[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 479  ]
+"92
+[; ;main.c: 92:                     {
 {
 "93
-[; ;main.c: 93:                 do { LATCbits.LATC0 = 0; } while(0);
-[e :U 477 ]
+[; ;main.c: 93:                         do { LATAbits.LATA4 = 1; } while(0);
+[e :U 482 ]
 {
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 476 ]
-"94
-[; ;main.c: 94:             }
-}
-[e :U 474 ]
-"95
-[; ;main.c: 95:         }
-}
-[e :U 462 ]
-"97
-[; ;main.c: 97:         if (EUSART_is_tx_done()) {
-[e $ ! != -> ( _EUSART_is_tx_done ..  `i -> 0 `i 478  ]
-{
-"98
-[; ;main.c: 98:             do { LATAbits.LATA4 = 0; } while(0);
 [e :U 481 ]
-{
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+"94
+[; ;main.c: 94:                         _delay((unsigned long)((10)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"95
+[; ;main.c: 95:                         EUSART_Write('b');
+[e ( _EUSART_Write (1 -> -> 98 `ui `uc ]
+"96
+[; ;main.c: 96:                     }
 }
-[e :U 480 ]
-"99
-[; ;main.c: 99:             do { LATCbits.LATC7 = 0; } while(0);
+[e :U 479 ]
+"97
+[; ;main.c: 97:                     do { LATCbits.LATC0 = 1; } while(0);
+[e :U 485 ]
+{
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+}
 [e :U 484 ]
+"98
+[; ;main.c: 98:                 }
+}
+[e $U 486  ]
+"99
+[; ;main.c: 99:                 else
+[e :U 475 ]
+"100
+[; ;main.c: 100:                 {
+{
+"102
+[; ;main.c: 102:                     if (!PORTAbits.RA2) {
+[e $ ! ! != -> . . _PORTAbits 0 2 `i -> 0 `i 487  ]
+{
+"103
+[; ;main.c: 103:                         do { LATCbits.LATC7 = 1; } while(0);
+[e :U 490 ]
+{
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 489 ]
+"104
+[; ;main.c: 104:                         do { LATCbits.LATC6 = 0; } while(0);
+[e :U 493 ]
+{
+[e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
+}
+[e :U 492 ]
+"105
+[; ;main.c: 105:                     } else {
+}
+[e $U 494  ]
+[e :U 487 ]
+{
+"106
+[; ;main.c: 106:                         do { LATCbits.LATC7 = 0; } while(0);
+[e :U 497 ]
 {
 [e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 483 ]
-"100
-[; ;main.c: 100:         }
+[e :U 496 ]
+"107
+[; ;main.c: 107:                         do { LATCbits.LATC6 = 1; } while(0);
+[e :U 500 ]
+{
+[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 478 ]
-"101
-[; ;main.c: 101:     }
+[e :U 499 ]
+"108
+[; ;main.c: 108:                     }
 }
-[e :U 459 ]
-[e $U 460  ]
-[e :U 461 ]
-"102
-[; ;main.c: 102: }
+[e :U 494 ]
+"109
+[; ;main.c: 109:                     do { LATCbits.LATC0 = 0; } while(0);
+[e :U 503 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 502 ]
+"110
+[; ;main.c: 110:                 }
+}
+[e :U 486 ]
+"111
+[; ;main.c: 111:             }
+}
+[e :U 474 ]
+"113
+[; ;main.c: 113:             if (EUSART_is_tx_done()) {
+[e $ ! != -> ( _EUSART_is_tx_done ..  `i -> 0 `i 504  ]
+{
+"114
+[; ;main.c: 114:                 do { LATAbits.LATA4 = 0; } while(0);
+[e :U 507 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 506 ]
+"115
+[; ;main.c: 115:             }
+}
+[e :U 504 ]
+"116
+[; ;main.c: 116:         }
+}
+[e :U 468 ]
+"117
+[; ;main.c: 117:     }
+}
+[e :U 465 ]
+[e $U 466  ]
+[e :U 467 ]
+"118
+[; ;main.c: 118: }
 [e :UE 458 ]
 }

@@ -39,8 +39,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "mtouch_sensor.h"
-#include "mtouch_proximity.h"
-#include "mtouch_datastreamer.h"
+#include "mtouch_button.h"
 
 /*
  * =======================================================================
@@ -49,8 +48,8 @@
  */
     #define MTOUCH_SENSORS          1u
     #define MTOUCH_SCAN_GROUPS      1u
-    #define MTOUCH_PROXIMITY        1u
-    //#define MTOUCH_COMM_ENABLE      1u
+    #define MTOUCH_BUTTONS          1u
+    #define MTOUCH_COMM_ENABLE      1u
 
     /* 
      * =======================================================================
@@ -58,6 +57,11 @@
      * =======================================================================
      */
 
+    /*
+     *  Defines the scan interval (milliseconds)
+     *  Range - 1 to 255
+     */
+    #define MTOUCH_SCAN_INTERVAL    20u      //unit ms
     
     #define MTOUCH_SENSOR_ADCON0_Sensor_AN12             ( 0xc<<2 | 0x1 )
     #define MTOUCH_SENSOR_PRECHARGE_Sensor_AN12          48u
@@ -67,27 +71,30 @@
     #define MTOUCH_SENSOR_ACTIVE_THRESHOLD               100u  
     
 
-    
     /* 
      * =======================================================================
-     * Proximity Parameters
+     * Button Parameters
      * =======================================================================
      */
-    #define MTOUCH_PROXIMITY_READING_GAIN           ((uint8_t)1u)
-    #define MTOUCH_PROXIMITY_BASELINE_GAIN          ((uint8_t)4u)
-    #define MTOUCH_PROXIMITY_BASELINE_INIT          ((mtouch_prox_baselinecounter_t)16u)
-    #define MTOUCH_PROXIMITY_BASELINE_RATE          ((mtouch_prox_baselinecounter_t)128u)
-    #define MTOUCH_PROXIMITY_BASELINE_HOLD          ((mtouch_prox_baselinecounter_t)1024u)
-    #define MTOUCH_PROXIMITY_DEVIATION_GAIN         ((uint8_t)2u);
-    #define MTOUCH_PROXIMITY_NEGATIVEDEVIATION      ((mtouch_prox_statecounter_t)32u)
-    #define MTOUCH_PROXIMITY_ACTIVITYTIMEOUT        ((mtouch_prox_statecounter_t)1000u)
 
-    #define MTOUCH_PROXIMITY_THRESHOLD_Proximity0   120u
+    #define MTOUCH_BUTTON_READING_GAIN              ((uint8_t)4u)
+    #define MTOUCH_BUTTON_BASELINE_GAIN             ((uint8_t)4u)
+    #define MTOUCH_BUTTON_BASELINE_INIT             ((mtouch_button_baselinecounter_t)16u)
+    #define MTOUCH_BUTTON_BASELINE_RATE             ((mtouch_button_baselinecounter_t)128u)
+    #define MTOUCH_BUTTON_BASELINE_HOLD             ((mtouch_button_baselinecounter_t)1024u)
+    #define MTOUCH_BUTTON_NEGATIVEDEVIATION         ((mtouch_button_statecounter_t)64u)
+    #define MTOUCH_BUTTON_PRESSTIMEOUT              ((mtouch_button_statecounter_t)6000u)
+    //#define MTOUCH_BUTTON_DEBOUNCE_COUNT            (10u)
+    #define MTOUCH_BUTTON_DEBOUNCE_COUNT            (5u)
     
-    #define MTOUCH_PROXIMITY_SCALING_Proximity0     0u
-    
-    #define MTOUCH_PROXIMITY_COMMON_HYSTERESIS       HYST_50_PERCENT
+    #define MTOUCH_BUTTON_SENSOR_Button0             Sensor_AN12
 
+    #define MTOUCH_BUTTON_THRESHOLD_Button0          20u
+    
+    #define MTOUCH_BUTTON_SCALING_Button0            1u
+
+    #define MTOUCH_BUTTON_COMMON_HYSTERESIS          HYST_50_PERCENT
+    
 
 
 

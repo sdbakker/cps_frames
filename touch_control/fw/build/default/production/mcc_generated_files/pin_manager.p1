@@ -641,26 +641,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0x70;
 [e = _TRISB -> -> 112 `i `uc ]
 "69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0x6A;
-[e = _TRISC -> -> 106 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0x2A;
+[e = _TRISC -> -> 42 `i `uc ]
 "74
-[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0x7E;
-[e = _ANSELC -> -> 126 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0x3E;
+[e = _ANSELC -> -> 62 `i `uc ]
 "75
 [; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0x50;
 [e = _ANSELB -> -> 80 `i `uc ]
 "76
-[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x27;
-[e = _ANSELA -> -> 39 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x23;
+[e = _ANSELA -> -> 35 `i `uc ]
 "81
 [; ;mcc_generated_files/pin_manager.c: 81:     WPUB = 0x00;
 [e = _WPUB -> -> 0 `i `uc ]
 "82
-[; ;mcc_generated_files/pin_manager.c: 82:     WPUA = 0x00;
-[e = _WPUA -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 82:     WPUA = 0x04;
+[e = _WPUA -> -> 4 `i `uc ]
 "83
-[; ;mcc_generated_files/pin_manager.c: 83:     OPTION_REGbits.nWPUEN = 1;
-[e = . . _OPTION_REGbits 0 5 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 83:     OPTION_REGbits.nWPUEN = 0;
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
 "89
 [; ;mcc_generated_files/pin_manager.c: 89:     APFCON = 0x00;
 [e = _APFCON -> -> 0 `i `uc ]

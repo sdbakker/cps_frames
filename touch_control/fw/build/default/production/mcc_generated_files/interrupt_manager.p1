@@ -46,14 +46,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "601
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 601: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
 [v _PIR1bits `VS39 ~T0 @X0 0 e@17 ]
-[v F3286 `(v ~T0 @X0 0 tf ]
+[v F3305 `(v ~T0 @X0 0 tf ]
 "95 mcc_generated_files/eusart.h
 [; ;mcc_generated_files/eusart.h: 95: extern void (*EUSART_TxDefaultInterruptHandler)(void);
-[v _EUSART_TxDefaultInterruptHandler `*F3286 ~T0 @X0 0 e ]
-[v F3288 `(v ~T0 @X0 0 tf ]
+[v _EUSART_TxDefaultInterruptHandler `*F3305 ~T0 @X0 0 e ]
+[v F3307 `(v ~T0 @X0 0 tf ]
 "96
 [; ;mcc_generated_files/eusart.h: 96: extern void (*EUSART_RxDefaultInterruptHandler)(void);
-[v _EUSART_RxDefaultInterruptHandler `*F3288 ~T0 @X0 0 e ]
+[v _EUSART_RxDefaultInterruptHandler `*F3307 ~T0 @X0 0 e ]
+"367 mcc_generated_files/tmr1.h
+[; ;mcc_generated_files/tmr1.h: 367: void TMR1_ISR(void);
+[v _TMR1_ISR `(v ~T0 @X0 0 ef ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -664,31 +667,46 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 463  ]
 "65
-[; ;mcc_generated_files/interrupt_manager.c: 65:         else
+[; ;mcc_generated_files/interrupt_manager.c: 65:         else if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF == 1)
 [e :U 462 ]
+[e $ ! && == -> . . _PIE1bits 0 0 `i -> 1 `i == -> . . _PIR1bits 0 0 `i -> 1 `i 464  ]
 "66
 [; ;mcc_generated_files/interrupt_manager.c: 66:         {
 {
+"67
+[; ;mcc_generated_files/interrupt_manager.c: 67:             TMR1_ISR();
+[e ( _TMR1_ISR ..  ]
 "68
 [; ;mcc_generated_files/interrupt_manager.c: 68:         }
 }
+[e $U 465  ]
+"69
+[; ;mcc_generated_files/interrupt_manager.c: 69:         else
+[e :U 464 ]
+"70
+[; ;mcc_generated_files/interrupt_manager.c: 70:         {
+{
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72:         }
+}
+[e :U 465 ]
 [e :U 463 ]
 [e :U 461 ]
-"69
-[; ;mcc_generated_files/interrupt_manager.c: 69:     }
-}
-[e $U 464  ]
-"70
-[; ;mcc_generated_files/interrupt_manager.c: 70:     else
-[e :U 459 ]
-"71
-[; ;mcc_generated_files/interrupt_manager.c: 71:     {
-{
 "73
 [; ;mcc_generated_files/interrupt_manager.c: 73:     }
 }
-[e :U 464 ]
+[e $U 466  ]
 "74
-[; ;mcc_generated_files/interrupt_manager.c: 74: }
+[; ;mcc_generated_files/interrupt_manager.c: 74:     else
+[e :U 459 ]
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:     {
+{
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:     }
+}
+[e :U 466 ]
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78: }
 [e :UE 458 ]
 }

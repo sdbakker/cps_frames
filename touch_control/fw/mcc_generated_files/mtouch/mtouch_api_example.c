@@ -63,18 +63,19 @@ void touch_example(void)
     */
     if(MTOUCH_Service_Mainloop())
     {
-
-        /* Proximity API*/
-        if(MTOUCH_Proximity_isActivated(0))
+        /* Button API*/
+        if (MTOUCH_Button_isPressed(0))
         {
-            // process if proximity is triggered
+            /* process if button is pressed */
             /* LED_SetHigh();*/
+            
         }
         else
         {
-            // process if button is not triggered
+            /* process if button is not pressed */
             /* LED_SetLow();*/
         }
+
 
 
 
