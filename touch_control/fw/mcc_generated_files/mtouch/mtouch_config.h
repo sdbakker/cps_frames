@@ -84,8 +84,8 @@
     #define MTOUCH_BUTTON_BASELINE_HOLD             ((mtouch_button_baselinecounter_t)1024u)
     #define MTOUCH_BUTTON_NEGATIVEDEVIATION         ((mtouch_button_statecounter_t)64u)
     #define MTOUCH_BUTTON_PRESSTIMEOUT              ((mtouch_button_statecounter_t)6000u)
-    //#define MTOUCH_BUTTON_DEBOUNCE_COUNT            (10u)
-    #define MTOUCH_BUTTON_DEBOUNCE_COUNT            (5u)
+    #define MTOUCH_BUTTON_DEBOUNCE_COUNT            (10u)
+    //#define MTOUCH_BUTTON_DEBOUNCE_COUNT            (5u)
     
     #define MTOUCH_BUTTON_SENSOR_Button0             Sensor_AN12
 
@@ -93,7 +93,8 @@
     
     #define MTOUCH_BUTTON_SCALING_Button0            1u
 
-    #define MTOUCH_BUTTON_COMMON_HYSTERESIS          HYST_50_PERCENT
+    #define MTOUCH_BUTTON_COMMON_HYSTERESIS          HYST_6_25_PERCENT
+    //#define MTOUCH_BUTTON_COMMON_HYSTERESIS          HYST_50_PERCENT
     
 
 

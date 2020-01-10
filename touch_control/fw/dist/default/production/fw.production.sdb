@@ -3,11 +3,11 @@
 [d edition pro ]
 [d chip 16LF1559 ]
 [d frameptr 6 ]
-"67 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_api_example.c
+"67 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_api_example.c
 [e E91 mtouch_button_names `uc
 Button0 0
 ]
-"143 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"143 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [e E2871 mtouch_sensor_names `uc
 Sensor_AN12 0
 ]
@@ -21,11 +21,7 @@ MTOUCH_SENSOR_ERROR_tooManyRetries -4
 MTOUCH_SENSOR_ERROR_scanOverrun -5
 MTOUCH_SENSOR_ERROR_interruptedScan -6
 ]
-"87 D:\Dev\_Commonplace\cps_frames\touch_control\fw\main.c
-[e E2928 mtouch_button_names `uc
-Button0 0
-]
-"84 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"84 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [e E3067 mtouch_button_names `uc
 Button0 0
 ]
@@ -47,19 +43,23 @@ HYST_12_5_PERCENT 3
 HYST_6_25_PERCENT 4
 HYST_MAX 5
 ]
-"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+"87 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/main.c
+[e E2928 mtouch_button_names `uc
+Button0 0
+]
+"1 /opt/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
 [v _abs abs `(i  1 e 2 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 1 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+"10 /opt/microchip/xc8/v2.10/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"52 D:\Dev\_Commonplace\cps_frames\touch_control\fw\main.c
+"52 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/main.c
 [v _main main `(v  1 e 1 0 ]
-"88 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+"88 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 "132
 [v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
@@ -91,15 +91,15 @@ HYST_MAX 5
 [v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
 "289
 [v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
-"52 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+"52 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+"50 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "70
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"71 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+"71 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c
 [v _MTOUCH_ScanScheduler MTOUCH_ScanScheduler `(v  1 s 1 MTOUCH_ScanScheduler ]
 "100
 [v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
@@ -109,7 +109,7 @@ HYST_MAX 5
 [v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
 "153
 [v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
-"141 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"141 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
 "153
 [v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
@@ -145,7 +145,7 @@ HYST_MAX 5
 [v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
 "516
 [v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
-"191 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"191 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2873  1 e 1 0 ]
 "206
 [v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
@@ -209,9 +209,9 @@ HYST_MAX 5
 [v _MTOUCH_Sensor_Oversampling_Get MTOUCH_Sensor_Oversampling_Get `(uc  1 e 1 0 ]
 "996
 [v _MTOUCH_Sensor_Oversampling_Set MTOUCH_Sensor_Oversampling_Set `(v  1 e 1 0 ]
-"55 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+"55 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"64 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -221,7 +221,7 @@ HYST_MAX 5
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 "175
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"62 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+"62 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "79
 [v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
@@ -238,7 +238,7 @@ HYST_MAX 5
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1559.h
+"374 /opt/microchip/xc8/v2.10/pic/include/pic16lf1559.h
 [s S378 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -246,7 +246,7 @@ HYST_MAX 5
 ]
 [u S383 . 1 `S369 1 . 1 0 `S378 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES383  1 e 1 @11 ]
-[s S1363 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1836 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -254,8 +254,8 @@ HYST_MAX 5
 `uc 1 RA5 1 0 :1:5 
 ]
 "444
-[u S1370 . 1 `S1363 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES1370  1 e 1 @12 ]
+[u S1843 . 1 `S1836 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1843  1 e 1 @12 ]
 [s S231 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -285,7 +285,7 @@ HYST_MAX 5
 [v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
 "741
 [v _T1CON T1CON `VEuc  1 e 1 @24 ]
-[s S1454 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S1667 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -293,17 +293,17 @@ HYST_MAX 5
 `uc 1 TMR1CS 1 0 :2:6 
 ]
 "763
-[s S1461 . 1 `uc 1 . 1 0 :4:0 
+[s S1674 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 `uc 1 TMR1CS0 1 0 :1:6 
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
-[u S1467 . 1 `S1454 1 . 1 0 `S1461 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES1467  1 e 1 @24 ]
+[u S1680 . 1 `S1667 1 . 1 0 `S1674 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1680  1 e 1 @24 ]
 "808
 [v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
-[s S1484 . 1 `uc 1 T1GSS 1 0 :2:0 
+[s S1697 . 1 `uc 1 T1GSS 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -312,13 +312,13 @@ HYST_MAX 5
 `uc 1 TMR1GE 1 0 :1:7 
 ]
 "830
-[s S1492 . 1 `uc 1 T1GSS0 1 0 :1:0 
+[s S1705 . 1 `uc 1 T1GSS0 1 0 :1:0 
 `uc 1 T1GSS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 GO 1 0 :1:3 
 ]
-[u S1497 . 1 `S1484 1 . 1 0 `S1492 1 . 1 0 ]
-[v _T1GCONbits T1GCONbits `VES1497  1 e 1 @25 ]
+[u S1710 . 1 `S1697 1 . 1 0 `S1705 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1710  1 e 1 @25 ]
 "885
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
 "905
@@ -346,7 +346,7 @@ HYST_MAX 5
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1085
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S869 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S1200 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -356,12 +356,12 @@ HYST_MAX 5
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1168
-[s S878 . 1 `uc 1 . 1 0 :6:0 
+[s S1209 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 AD1IE 1 0 :1:6 
 ]
-[u S881 . 1 `S869 1 . 1 0 `S878 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES881  1 e 1 @145 ]
-[s S1206 . 1 `uc 1 PS 1 0 :3:0 
+[u S1212 . 1 `S1200 1 . 1 0 `S1209 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1212  1 e 1 @145 ]
+[s S1537 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -369,22 +369,22 @@ HYST_MAX 5
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1264
-[s S1213 . 1 `uc 1 PS0 1 0 :1:0 
+[s S1544 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S1220 . 1 `S1206 1 . 1 0 `S1213 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES1220  1 e 1 @149 ]
+[u S1551 . 1 `S1537 1 . 1 0 `S1544 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES1551  1 e 1 @149 ]
 "1381
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "1440
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
 "1785
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S1339 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1812 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -392,13 +392,13 @@ HYST_MAX 5
 `uc 1 LATA5 1 0 :1:5 
 ]
 "1800
-[u S1346 . 1 `S1339 1 . 1 0 ]
-[v _LATAbits LATAbits `VES1346  1 e 1 @268 ]
+[u S1819 . 1 `S1812 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1819  1 e 1 @268 ]
 "1830
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "1869
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S1312 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1785 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -408,8 +408,8 @@ HYST_MAX 5
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1886
-[u S1321 . 1 `S1312 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1321  1 e 1 @270 ]
+[u S1794 . 1 `S1785 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1794  1 e 1 @270 ]
 "1931
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2035
@@ -439,7 +439,7 @@ HYST_MAX 5
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "2501
 [v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-[s S974 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S1305 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -449,11 +449,11 @@ HYST_MAX 5
 `uc 1 SPEN 1 0 :1:7 
 ]
 "2518
-[u S983 . 1 `S974 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES983  1 e 1 @413 ]
+[u S1314 . 1 `S1305 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1314  1 e 1 @413 ]
 "2563
 [v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-[s S952 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S1283 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -463,8 +463,8 @@ HYST_MAX 5
 `uc 1 CSRC 1 0 :1:7 
 ]
 "2580
-[u S961 . 1 `S952 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES961  1 e 1 @414 ]
+[u S1292 . 1 `S1283 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1292  1 e 1 @414 ]
 "2625
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
 "2677
@@ -535,11 +535,11 @@ HYST_MAX 5
 [v _AAD2RES0 AAD2RES0 `VEus  1 e 2 @1946 ]
 "8464
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"47 D:\Dev\_Commonplace\cps_frames\touch_control\fw\main.c
+"47 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/main.c
 [v __wait_to_initialize _wait_to_initialize `uc  1 e 1 0 ]
 "48
 [v __first_delay_cntr _first_delay_cntr `us  1 e 2 0 ]
-"62 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+"62 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/eusart.c
 [v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
 "63
 [v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
@@ -553,18 +553,18 @@ HYST_MAX 5
 [v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
-[s S856 . 1 `uc 1 perr 1 0 :1:0 
+[s S1187 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S861 . 1 `S856 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S861  1 e 8 0 ]
+[u S1192 . 1 `S1187 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S1192  1 e 8 0 ]
 "71
 [v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusartRxLastError eusartRxLastError `VES861  1 e 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1192  1 e 1 0 ]
 "77
 [v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -575,18 +575,18 @@ HYST_MAX 5
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "82
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"54 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+"54 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c
 [v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
 "55
 [v _mTouchScanReload mTouchScanReload `us  1 s 2 mTouchScanReload ]
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-"84 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
-[v _mtouch_button_init mtouch_button_init `DC[1]S1563  1 e 16 0 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"84 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[1]S866  1 e 16 0 ]
 "96
-[v _mtouch_button mtouch_button `[1]S1563  1 s 16 mtouch_button ]
+[v _mtouch_button mtouch_button `[1]S866  1 s 16 mtouch_button ]
 "126
 [v _Button_StateMachine Button_StateMachine `[5]*.37(v  1 e 10 0 ]
-"143 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"143 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
 "150
 [v _packet_sample packet_sample `[2]us  1 s 4 packet_sample ]
@@ -614,16 +614,16 @@ HYST_MAX 5
 "182
 [s S60 . 2 `*.4S47 1 sensor_adc1 1 0 `*.1S47 1 sensor_adc2 1 1 ]
 [v _sensor_scan_group sensor_scan_group `DC[1]S60  1 s 2 sensor_scan_group ]
-"57 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"57 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"52 D:\Dev\_Commonplace\cps_frames\touch_control\fw\main.c
+"52 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "118
 } 0
-"50 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+"50 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "60
@@ -633,38 +633,38 @@ HYST_MAX 5
 {
 "74
 } 0
-"62 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+"62 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"64 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"64 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "91
 } 0
-"55 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/pin_manager.c
+"55 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "96
 } 0
-"62 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mcc.c
+"62 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "68
 } 0
-"100 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+"100 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c
 [v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
 {
 "108
 } 0
-"171 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"171 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "173
 } 0
-"206 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"206 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
 {
 "208
@@ -689,14 +689,14 @@ HYST_MAX 5
 [v MTOUCH_Sensor_Enable@sensor sensor `E2871  1 a 1 7 ]
 "828
 } 0
-"153 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"153 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
 {
 "155
 [v MTOUCH_Button_InitializeAll@button button `E3067  1 a 1 6 ]
 "163
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memcpy.c
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 1 0 ]
 {
 [v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
@@ -714,7 +714,7 @@ HYST_MAX 5
 [v memcpy@d1 d1 `*.4v  1 a 1 3 ]
 "18
 } 0
-"88 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+"88 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 {
 "130
@@ -749,7 +749,7 @@ HYST_MAX 5
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
 "283
 } 0
-"116 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+"116 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c
 [v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
 {
 "136
@@ -764,7 +764,7 @@ HYST_MAX 5
 {
 "146
 } 0
-"312 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"312 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
 {
 "315
@@ -772,15 +772,15 @@ HYST_MAX 5
 "316
 [v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Tick_helper@button button `*.4S1563  1 a 1 wreg ]
-[v Button_Tick_helper@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.4S866  1 a 1 wreg ]
+[v Button_Tick_helper@button button `*.4S866  1 a 1 wreg ]
 "319
 "316
-[v Button_Tick_helper@button button `*.4S1563  1 a 1 4 ]
+[v Button_Tick_helper@button button `*.4S866  1 a 1 4 ]
 "327
 } 0
-"933 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"933 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
 {
 [s S47 . 9 `DCE2871 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
@@ -1017,7 +1017,7 @@ HYST_MAX 5
 [v Sensor_Acq_ExecutePacket@sensor_adc1 sensor_adc1 `*.4S47  1 a 1 18 ]
 "661
 } 0
-"85 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr2.c
+"85 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr2.c
 [v _TMR2_StopTimer TMR2_StopTimer `(v  1 e 1 0 ]
 {
 "89
@@ -1036,7 +1036,7 @@ HYST_MAX 5
 [v TMR2_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 2 ]
 "109
 } 0
-"420 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"420 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _Sensor_loadADCSettings Sensor_loadADCSettings `(v  1 s 1 Sensor_loadADCSettings ]
 {
 [s S47 . 9 `DCE2871 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
@@ -1123,13 +1123,13 @@ HYST_MAX 5
 [v Sensor_autoCalibration@sensor sensor `*.4S47  1 a 1 1 ]
 "707
 } 0
-"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+"1 /opt/microchip/xc8/v2.10/pic/sources/c99/common/abs.c
 [v _abs abs `(i  1 e 2 0 ]
 {
 [v abs@a a `i  1 p 2 2 ]
 "4
 } 0
-"908 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"908 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _Sensor_setCalibrated Sensor_setCalibrated `T(v  1 s 1 Sensor_setCalibrated ]
 {
 [s S47 . 9 `DCE2871 1 sensor 1 0 `DCuc 1 adcon0 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 sampled 1 8 :1:0 
@@ -1201,7 +1201,7 @@ HYST_MAX 5
 {
 "232
 } 0
-"171 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"171 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
 {
 "173
@@ -1212,16 +1212,16 @@ HYST_MAX 5
 [v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
 {
 [v Button_Service@name name `E3067  1 a 1 wreg ]
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
 "184
-[v Button_Service@button button `*.4S1563  1 a 1 13 ]
+[v Button_Service@button button `*.4S866  1 a 1 13 ]
 "182
 [v Button_Service@name name `E3067  1 a 1 wreg ]
 "184
 [v Button_Service@name name `E3067  1 a 1 12 ]
 "197
 } 0
-"942 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"942 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
 {
 [v MTOUCH_Sensor_wasSampled@sensor sensor `E2871  1 a 1 wreg ]
@@ -1239,55 +1239,55 @@ HYST_MAX 5
 [v MTOUCH_Sensor_isCalibrated@sensor sensor `E2871  1 a 1 7 ]
 "901
 } 0
-"254 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"254 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_State_Pressed@button button `*.4S1563  1 p 1 5 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.4S866  1 p 1 5 ]
 "268
 } 0
 "270
 [v _Button_State_PressDebounce Button_State_PressDebounce `(v  1 s 1 Button_State_PressDebounce ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_State_PressDebounce@button button `*.4S1563  1 p 1 5 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_PressDebounce@button button `*.4S866  1 p 1 5 ]
 "287
 } 0
 "219
 [v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_State_NotPressed@button button `*.4S1563  1 p 1 5 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.4S866  1 p 1 5 ]
 "252
 } 0
 "199
 [v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_State_Initializing@button button `*.4S1563  1 p 1 5 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.4S866  1 p 1 5 ]
 "218
 } 0
 "289
 [v _Button_State_ReleaseDebounce Button_State_ReleaseDebounce `(v  1 s 1 Button_State_ReleaseDebounce ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_State_ReleaseDebounce@button button `*.4S1563  1 p 1 5 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_ReleaseDebounce@button button `*.4S866  1 p 1 5 ]
 "306
 } 0
 "141
 [v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
 {
 [v MTOUCH_Button_Initialize@name name `E3067  1 a 1 wreg ]
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
 "143
-[v MTOUCH_Button_Initialize@button button `*.4S1563  1 a 1 1 ]
+[v MTOUCH_Button_Initialize@button button `*.4S866  1 a 1 1 ]
 "141
 [v MTOUCH_Button_Initialize@name name `E3067  1 a 1 wreg ]
 "143
 [v MTOUCH_Button_Initialize@name name `E3067  1 a 1 0 ]
 "151
 } 0
-"887 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"887 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
 {
 [v MTOUCH_Sensor_Calibrate@sensor sensor `E2871  1 a 1 wreg ]
@@ -1296,51 +1296,51 @@ HYST_MAX 5
 [v MTOUCH_Sensor_Calibrate@sensor sensor `E2871  1 a 1 7 ]
 "893
 } 0
-"492 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"492 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Baseline_Update@button button `*.4S1563  1 a 1 wreg ]
-[v Button_Baseline_Update@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.4S866  1 a 1 wreg ]
+[v Button_Baseline_Update@button button `*.4S866  1 a 1 wreg ]
 "494
 "492
-[v Button_Baseline_Update@button button `*.4S1563  1 a 1 8 ]
+[v Button_Baseline_Update@button button `*.4S866  1 a 1 8 ]
 "506
 } 0
 "486
 [v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Baseline_Initialize@button button `*.4S1563  1 a 1 wreg ]
-[v Button_Baseline_Initialize@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.4S866  1 a 1 wreg ]
+[v Button_Baseline_Initialize@button button `*.4S866  1 a 1 wreg ]
 "488
 "486
-[v Button_Baseline_Initialize@button button `*.4S1563  1 a 1 4 ]
+[v Button_Baseline_Initialize@button button `*.4S866  1 a 1 4 ]
 "490
 } 0
 "459
 [v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Reading_Update@button button `*.4S1563  1 a 1 wreg ]
-[v Button_Reading_Update@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.4S866  1 a 1 wreg ]
+[v Button_Reading_Update@button button `*.4S866  1 a 1 wreg ]
 "461
 "459
-[v Button_Reading_Update@button button `*.4S1563  1 a 1 3 ]
+[v Button_Reading_Update@button button `*.4S866  1 a 1 3 ]
 "471
 } 0
 "473
 [v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Reading_Update_Helper@button button `*.4S1563  1 a 1 wreg ]
-[v Button_Reading_Update_Helper@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update_Helper@button button `*.4S866  1 a 1 wreg ]
+[v Button_Reading_Update_Helper@button button `*.4S866  1 a 1 wreg ]
 "475
 "473
-[v Button_Reading_Update_Helper@button button `*.4S1563  1 a 1 2 ]
+[v Button_Reading_Update_Helper@button button `*.4S866  1 a 1 2 ]
 "484
 } 0
-"775 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_sensor.c
+"775 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c
 [v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
 {
 [v MTOUCH_Sensor_RawSample_Get@name name `E2871  1 a 1 wreg ]
@@ -1349,7 +1349,7 @@ HYST_MAX 5
 [v MTOUCH_Sensor_RawSample_Get@name name `E2871  1 a 1 9 ]
 "783
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+"4 /opt/microchip/xc8/v2.10/pic/sources/c99/common/Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
 {
 [v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
@@ -1362,18 +1362,18 @@ HYST_MAX 5
 [v ___bmul@multiplier multiplier `uc  1 a 1 5 ]
 "51
 } 0
-"410 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch_button.c
+"410 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c
 [v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
 {
-[s S1563 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
-[v Button_Deviation_Update@button button `*.4S1563  1 a 1 wreg ]
+[s S866 . 16 `DCE3067 1 name 1 0 `DCE3010 1 sensor 1 1 `E3114 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Deviation_Update@button button `*.4S866  1 a 1 wreg ]
 "412
 [v Button_Deviation_Update@deviation deviation `l  1 a 4 3 ]
 "410
-[v Button_Deviation_Update@button button `*.4S1563  1 a 1 wreg ]
+[v Button_Deviation_Update@button button `*.4S866  1 a 1 wreg ]
 "414
 "410
-[v Button_Deviation_Update@button button `*.4S1563  1 a 1 2 ]
+[v Button_Deviation_Update@button button `*.4S866  1 a 1 2 ]
 "430
 } 0
 "385
@@ -1385,7 +1385,7 @@ HYST_MAX 5
 [v MTOUCH_Button_isPressed@name name `E3067  1 a 1 4 ]
 "391
 } 0
-"132 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+"132 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/eusart.c
 [v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
 {
 "135
@@ -1403,22 +1403,22 @@ HYST_MAX 5
 [v EUSART_Write@txData txData `uc  1 a 1 3 ]
 "194
 } 0
-"52 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/interrupt_manager.c
+"52 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "78
 } 0
-"157 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"157 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "168
 } 0
-"71 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/mtouch/mtouch.c
+"71 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c
 [v _MTOUCH_ScanScheduler MTOUCH_ScanScheduler `(v  1 s 1 MTOUCH_ScanScheduler ]
 {
 "80
 } 0
-"175 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/tmr1.c
+"175 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/tmr1.c
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "178
@@ -1429,7 +1429,7 @@ HYST_MAX 5
 [v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
 "140
 } 0
-"206 D:\Dev\_Commonplace\cps_frames\touch_control\fw\mcc_generated_files/eusart.c
+"206 /home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/eusart.c
 [v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
 {
 "223

@@ -3,20 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_api_example.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/main.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/device_config.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_config.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/device_config.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/pin_manager.c</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/mcc.h</file>
-            <file>file:/D:/Dev/_Commonplace/cps_frames/touch_control/fw/mcc_generated_files/pin_manager.h</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/main.c</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.c</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.h</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/cps_touch.mc3</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_button.h</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_config.h</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch.c</file>
+            <file>file:/home/simon/dev/commonplace/cps_frames/cps_frames_git/touch_control/fw/mcc_generated_files/mtouch/mtouch_sensor.c</file>
         </group>
     </open-files>
 </project-private>

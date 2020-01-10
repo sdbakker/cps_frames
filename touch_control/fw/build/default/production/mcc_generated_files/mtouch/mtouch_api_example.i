@@ -4,23 +4,23 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
+# 1 "/opt/microchip/xc8/v2.10/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "mcc_generated_files/mtouch/mtouch_api_example.c" 2
 # 38 "mcc_generated_files/mtouch/mtouch_api_example.c"
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 1 3
+# 1 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 1 3
 
 
 
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
-# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "/opt/microchip/xc8/v2.10/pic/include/c99/musl_xc8.h" 1 3
+# 5 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 2 3
+# 22 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 3
+# 1 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 1 3
+# 127 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
@@ -43,7 +43,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -72,10 +72,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
-
+# 23 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 2 3
 
 typedef int8_t int_fast8_t;
 
@@ -105,20 +104,18 @@ typedef uint24_t uint_least24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 139 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 3
+# 1 "/opt/microchip/xc8/v2.10/pic/include/c99/bits/stdint.h" 1 3
 typedef int32_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
-# 38 "mcc_generated_files/mtouch/mtouch_api_example.c" 2
-
+# 140 "/opt/microchip/xc8/v2.10/pic/include/c99/stdint.h" 2 3
+# 39 "mcc_generated_files/mtouch/mtouch_api_example.c" 2
 # 1 "mcc_generated_files/mtouch/mtouch.h" 1
 # 40 "mcc_generated_files/mtouch/mtouch.h"
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdbool.h" 1 3
-# 40 "mcc_generated_files/mtouch/mtouch.h" 2
-
+# 1 "/opt/microchip/xc8/v2.10/pic/include/c99/stdbool.h" 1 3
+# 41 "mcc_generated_files/mtouch/mtouch.h" 2
 # 1 "mcc_generated_files/mtouch/mtouch_config.h" 1
 # 41 "mcc_generated_files/mtouch/mtouch_config.h"
 # 1 "mcc_generated_files/mtouch/mtouch_sensor.h" 1
@@ -177,13 +174,11 @@ typedef uint32_t uint_fast32_t;
     void MTOUCH_Sensor_Oversampling_Set (enum mtouch_sensor_names name, uint8_t value);
 
     void MTOUCH_Sensor_NotifyInterruptOccurred(void);
-# 41 "mcc_generated_files/mtouch/mtouch_config.h" 2
-
+# 42 "mcc_generated_files/mtouch/mtouch_config.h" 2
 # 1 "mcc_generated_files/mtouch/mtouch_button.h" 1
 # 41 "mcc_generated_files/mtouch/mtouch_button.h"
 # 1 "mcc_generated_files/mtouch/mtouch.h" 1
-# 41 "mcc_generated_files/mtouch/mtouch_button.h" 2
-
+# 42 "mcc_generated_files/mtouch/mtouch_button.h" 2
 
 
 
@@ -249,14 +244,14 @@ typedef uint32_t uint_fast32_t;
     _Bool MTOUCH_Button_isInitialized (enum mtouch_button_names button);
     mtouch_buttonmask_t MTOUCH_Button_Buttonmask_Get(void);
     uint8_t MTOUCH_Button_State_Get (enum mtouch_button_names button);
-# 42 "mcc_generated_files/mtouch/mtouch_config.h" 2
-# 41 "mcc_generated_files/mtouch/mtouch.h" 2
+# 43 "mcc_generated_files/mtouch/mtouch_config.h" 2
+# 42 "mcc_generated_files/mtouch/mtouch.h" 2
 # 53 "mcc_generated_files/mtouch/mtouch.h"
     void MTOUCH_Initialize (void);
     _Bool MTOUCH_Service_Mainloop (void);
     void MTOUCH_Tick (void);
     _Bool MTOUCH_Service_isInProgress (void);
-# 39 "mcc_generated_files/mtouch/mtouch_api_example.c" 2
+# 40 "mcc_generated_files/mtouch/mtouch_api_example.c" 2
 # 59 "mcc_generated_files/mtouch/mtouch_api_example.c"
 void touch_example(void)
 {
